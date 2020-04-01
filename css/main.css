@@ -486,7 +486,7 @@ body {
   list-style: none;
 }
 .footer-nav li ~ li {
-  padding-left: 5vw;
+  padding-left: 0;
 }
 .footer-nav a {
   border: 1px solid #fff;
