@@ -69,7 +69,7 @@ body {
   z-index: 20;
 }
 .header-logo li {
-  display: block;
+  display: inline-block;
   list-style: none;
   padding: 3vh 0 0 8vw;
   position: relative;
@@ -85,24 +85,97 @@ body {
   float: right;
   padding: 6.5vh 5vw 0 0;
 }
-.header-nav li {
+.header-nav > li {
   display: inline-block;
   list-style: none;
   padding-right: 3vw;
   text-align: center;
 }
-.header-nav a {
+.header-nav a,
+.drop-trigger,
+.show-mobile-menu {
   color: #4C4C4C;
-  /* cursor: pointer; */
   font-family: 'Buenard', serif;
   font-size: 1.2rem;
   text-decoration: none;
 }
-.header-nav a:after {
+.header-nav a:hover {
   color: darkgoldenrod;
 }
 
-/* FIX PROBLEM WITH CURSOR & AFTER FOR HEADER NAV */
+/* MOBILE DROPDOWN MENU */
+
+.dropdown {
+  position: relative;
+}
+.dropdown:hover .drop-menu {
+  display: block;
+}
+.drop-trigger {
+  display: inline-block;
+  position: relative;
+}
+.drop-menu {
+  box-shadow: 0 0 10px 0 rgba(240, 240, 240, 0.2);
+  display: none;
+  list-style: none;
+  padding: 1em 0 0;
+  position: absolute;
+  right: 0;
+  z-index: 9;
+}
+.drop-menu:before {
+  border: 0.6em solid;
+  border-color: transparent transparent rgb(240, 240, 240);
+  content: "";
+  height: 0;
+  position: absolute;
+  right: 1.8rem;
+  top: -0.1em;
+  width: 0;
+}
+.drop-menu li {
+  background-color: rgb(240, 240, 240);
+}
+.drop-menu li ~ li {
+  border-top: 1px dotted rgba(0,0,0,0.1)
+}
+.drop-menu li:first-child {
+  border-radius: 5px 5px 0 0;
+  padding: 0.5em 0 0;
+}
+.drop-menu li:last-child {
+  border-radius: 0 0 5px 5px;
+}
+.drop-menu a {
+  color: #333;
+  display: block;
+  font-size: 1.1rem;
+  font-weight: normal;
+  padding: 0.5em 2em 0.5em 1em;
+  text-align: left;
+  text-transform: none;
+  white-space: nowrap;
+}
+.drop-menu a:hover {
+  background-color: rgba(0,0,0,0.1);
+  color: #333;
+}
+
+/* MOBILE MENU */
+.mobile-menu-check,
+.show-mobile-menu {
+  display: none;
+}
+
+/* HIDE IN THE FOOTER */
+.footer .dropdown:hover .drop-menu,
+.footer .drop-trigger:after {
+  display: none;
+}
+.footer .drop-trigger {
+  padding-right: 0;
+}
 
 /* FOOTER STYLES */
 
@@ -134,13 +207,13 @@ body {
   padding-left: 1.5rem;
 }
 .footer-nav a {
-  color: #fff;
-  /* cursor: pointer; */
+  color: rgb(220, 220, 220);
+  cursor: pointer;
   font-family: 'Buenard', serif;
   font-size: 1.2rem;
   text-decoration: none;
 }
-.footer-nav a:after {
+.footer-nav a:hover {
   color: darkgoldenrod;
 }
 .footer-image img {
@@ -168,7 +241,7 @@ body {
   background-image: url(../images/hero2.jpg);
   background-position: bottom center;
   margin: 0 8vw 5vh;
-  transition: 5s ease-out;
+  transition: 3s ease-out;
 }
 .callout-works-content {
   font-family: 'Raleway', sans-serif;
@@ -205,23 +278,20 @@ body {
   overflow: hidden;
 }
 .callout-about-image {
-  background-image: url(../images/pedro_studio_upscaled_image_x4.jpg);
+  background-image: url(../images/pedro_about2.jpg);
   background-position: bottom center;
   margin: 0 8vw 5vh;
   /* transition: 5s ease-out; */
 }
 .callout-about-content {
-  /* background-color: rgba(255, 255, 255, 0.4); */
   font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  /* margin: 0 4vw; */
-  /* padding: 1.5vh 0; */
+  font-weight: 200;
   position: relative;
   text-align: center;
   top: 82%;
 }
 .callout-about-content a {
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
 }
 .callout-about-content h1 {
@@ -229,11 +299,216 @@ body {
   padding: 0 0 3vh;
 }
 .callout-about-content h1:hover {
-  color: rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 1);
 }
 .callout-about-content p {
   font-size: 1.2rem;
 }
 .callout-about-content p:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+/* CALLOUT: EXHIBITIONS STYLES */
+
+.callout-exhibitions {
+  background-size: auto;
+  box-sizing: border-box;
+  flex: 1 1 auto;
+  height: 81vh;
+  overflow: hidden;
+}
+.callout-exhibitions-image {
+  background-image: url(../images/pedro_exhibitions2.jpg);
+  background-position: center center;
+  margin: 0 8vw 5vh;
+  /* transition: 5s ease-out; */
+}
+.callout-exhibitions-content {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  position: relative;
+  text-align: center;
+  top: 82%;
+}
+.callout-exhibitions-content a {
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+}
+.callout-exhibitions-content h1 {
+  font-size: 2.5rem;
+  padding: 0 0 3vh;
+}
+.callout-exhibitions-content h1:hover {
   color: rgba(0, 0, 0, 1);
+}
+.callout-exhibitions-content p {
+  font-size: 1.2rem;
+}
+.callout-exhibitions-content p:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+
+
+
+@media (max-width: 800px) {
+ 
+  /* HEADER STYLES */
+
+  .header-logo a {
+    font-size: 11vw;
+  }
+
+  /* MOBILE MENU */
+  .show-mobile-menu {
+    display: block;
+    float: right;
+    font-size: 5vw;
+    margin-top: 1.5vh;
+    padding: 4vh 10vw 0 0;
+    position: relative;
+  }
+  .header-nav {
+    background-color: #4c4c4c;
+    box-sizing: border-box;
+    left: 0;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    top: 12vh;
+    transition: all 0.5s ease-in-out;
+    width: 100vw;
+    z-index: 9;
+  }
+  .header-nav li {
+    display: block;
+    margin-top: 1em;
+  }
+  .header-nav li {
+    border: 0;
+    padding: 0;
+  }
+  .header-nav li:first-child {
+    margin-top: 3vh;
+  }
+  .header-nav li:last-child {
+    margin-bottom: 2vh;
+  }
+  .header-nav li a {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;;
+    font-size: 4.5vw;
+    font-weight: 200;
+  }
+  /* HIDE DROPDOWN IN THE NAV MENU */
+  .header-nav .dropdown:hover .drop-menu,
+  .header-nav .drop-trigger:after {
+    display: none;
+  }
+  .header-nav .drop-trigger {
+    padding-right: 0;
+  }
+  .mobile-menu-check:checked ~ .header-nav {
+    max-height: 1000px;
+  }
+
+  /* CALLOUT: WORKS STYLES */
+
+.callout-works-image {
+  transition: none;
+}
+.callout-works-content {
+  top: 90%;
+}
+.callout-works-content h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 7vw;
+  padding: 0 0 3vh;
+}
+.callout-works-content p {
+  display: none;
+}
+.callout-works-content p:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+/* CALLOUT: ABOUT STYLES */
+
+.callout-about {
+  background-size: cover;
+}
+.callout-about-image {
+  background-image: url(../images/pedro_studio_upscaled_image_x4.jpg);
+  background-position: center center;
+}
+.callout-about-content {
+  top: 90%;
+}
+.callout-about-content a {
+  color: rgba(0, 0, 0, 0.8);
+}
+.callout-about-content h1 {
+  font-size: 8vw;
+}
+.callout-about-content p {
+  display: none;
+}
+
+
+/* CALLOUT: EXHIBITIONS STYLES */
+
+.callout-exhibitions-content {
+  top: 90%;
+}
+.callout-exhibitions-content a {
+  color: rgba(0, 0, 0, 0.8);
+}
+.callout-exhibitions-content h1 {
+  font-size: 8vw;
+}
+.callout-exhibitions-content h1 span {
+  display: none;
+}
+.callout-exhibitions-content p {
+  display: none;
+}
+
+/* FOOTER STYLES */
+
+.footer-nav {
+  padding: 0vh 8vw 5vh;
+  text-align: center;
+}
+.footer-nav li {
+  display: inline-block;
+  list-style: none;
+}
+.footer-nav li ~ li {
+  padding-left: 5vw;
+}
+.footer-nav a {
+  border: 1px solid #fff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 6vw;
+  font-weight: 200;
+  padding: 10px;
+  text-transform: uppercase;
+}
+.footer-nav .hide {
+  display: none;
+}
+.footer-image img {
+  border-radius: 50%;
+  display: inline-block;
+  height: 25vh;
+  left: 50%; 
+  object-fit: cover;
+  padding: 5vh 0;
+  position: relative;
+  transform: translate(-50%, 0); 
+  width: 25vh;
+}
+
 }

@@ -1,10 +1,32 @@
 <header class="header">
   <nav>
+    <input type="checkbox" id="mobile-menu" class="mobile-menu-check">
+    <label for="mobile-menu" class="show-mobile-menu"><i class="fas fa-bars"></i></label>
     <ul class="header-nav nav-links">
       <li><a href="/">Inicio</a></li>
-      <li><a href="/works">Obra</a></li>
-      <li><a href="/about">Biografía</a></li>
-      <li><a href="/exhibitions">Exposiciones</a></li>
+      <li class="dropdown">
+        <a class="drop-trigger" href="/works">Obra</a>
+        <ul class="drop-menu">
+          <li><a href="/series">Series</a></li>
+          <li><a href="/escultura">Escultura</a></li>
+          <li><a href="/dibujo">Dibujo</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a class="drop-trigger" href="/about">Biografia</a>
+        <ul class="drop-menu">
+          <li><a href="/presentacion">Presentación</a></li>
+          <li><a href="/writings">Writings</a></li>
+          <li><a href="/photos">Fotos</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a class="drop-trigger" href="/exhibitions">Exposiciones</a>
+        <ul class="drop-menu">
+          <li><a href="/individuales">Individuales</a></li>
+          <li><a href="/colectivas">Colectivas</a></li>
+        </ul>
+      </li>
       <li><a href="/reviews">Reseñas</a></li>
       <li><a href="/contact">Contacto</a></li>
     </ul>
