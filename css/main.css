@@ -238,10 +238,18 @@ body {
   overflow: hidden;
 }
 .callout-works-image {
+  animation: fadeIn ease 10s;
   background-image: url(../images/hero2.jpg);
   background-position: bottom center;
   margin: 0 8vw 5vh;
-  transition: 3s ease-out;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
 }
 .callout-works-content {
   font-family: 'Raleway', sans-serif;
@@ -348,6 +356,139 @@ body {
   color: rgba(0, 0, 0, 1);
 }
 
+/* WORKS PAGE STYLES */
+
+.works-section {
+  /* background-color: rgb(240, 240, 240); */
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  /* height: 88vh; */
+}
+.works-header {
+  background-color: #4c4c4c;
+  color: #fff;
+  flex: 1 1 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  padding: 4vh 16vw;
+  text-align: center;
+}
+.works-header h1 {
+  font-size: 2.2rem;
+  padding: 0 0 3vh;
+  text-transform: uppercase;
+}
+.works-header p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+.works-title h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.4rem;
+  text-align: center;
+  top: 70%;
+}
+.works-title h3 a {
+  color: #4c4c4c;
+  font-weight: 600;
+  position: relative;
+  text-decoration: none;
+}
+.works-title h3 a:hover {
+  color: darkgoldenrod;
+}
+.works-copy-wrapper {
+  align-items: top;
+  display: flex;
+  flex: 1 1 0;
+  padding: 2vh 0 4vh;
+  width: 100%;
+}
+.works-box {
+  align-items: center;
+  flex: 1;
+  /* padding: 2vh 3vh 3vh; */
+}
+.works-images {
+  padding: 3vh 0;
+  position: relative;
+  text-align: center;
+}
+.works-images img {
+  border-radius: 50%;
+  height: 25vw;
+  object-fit: cover;
+  opacity: 1;
+  width: 25vw;
+}
+.works-images img:hover {
+  opacity: 0.8;
+  transition: opacity 2s ease-out;
+}
+
+/* PAINTINGS LANDING PAGE STYLES */
+
+.paintings-wrapper {
+  display: flex;
+  flex: 1 1 auto;
+  width: 100%;
+	margin: 0 auto;
+}
+.paintings-heading {
+  color: #4c4c4c;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.8rem;
+  padding: 3vh 0 0;
+  text-align: center;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+	margin: 4vh 4vw;
+}
+.gallery-item > a span {
+  color: #4d4d4d;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.gallery-line {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 2vw;
+}
+.gallery-item {
+  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+  flex: 1 0 24rem;
+  height: 60vh;
+	margin: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 4s ease-out;
+}
+.gallery-image:hover {
+  opacity: 0.5;
+	transform: scale(1.2);
+}
+img.gallery-image + span /* hide spans immediately after images that are set to fade */ {
+  visibility:hidden;
+}
+img.gallery-image:hover + span /* display spans immediately after :hover faded images */ {
+  visibility: visible;
+}
+
 
 
 
@@ -394,7 +535,7 @@ body {
     margin-top: 3vh;
   }
   .header-nav li:last-child {
-    margin-bottom: 2vh;
+    margin-bottom: 3vh;
   }
   .header-nav li a {
     color: #fff;
@@ -478,7 +619,7 @@ body {
 /* FOOTER STYLES */
 
 .footer-nav {
-  padding: 0vh 8vw 5vh;
+  padding: 0vh 8vw 8vh;
   text-align: center;
 }
 .footer-nav li {
@@ -510,5 +651,79 @@ body {
   transform: translate(-50%, 0); 
   width: 25vh;
 }
+
+/* WORKS PAGE STYLES */
+
+.works-header {
+  padding: 3vh 5vw;
+}
+.works-header h1 {
+  font-size: 8vw;
+}
+.works-header p {
+  font-size: 4.2vw;
+  line-height: 1.6;
+}
+.works-title h3 {
+  /* border-bottom: 1px dotted rgba(76, 76, 76, 0.2); */
+  font-size: 7vw;
+  margin: 0 12vw;
+  padding: 4vh 0 6vh;
+}
+.works-title h3 a {
+  font-weight: 400;
+}
+.works-copy-wrapper {
+  align-items: top;
+  flex-direction: column;
+  padding: 2vh 0 4vh;
+}
+.works-images {
+  padding: 3vh 0 0;
+}
+.works-images img {
+  height: 66vw;
+  width: 66vw;
+}
+
+/* PAINTINGS LANDING PAGE STYLES */
+
+.paintings-heading {
+  font-size: 7vw;
+  padding: 3vh 16vw 0;
+}
+.gallery {
+  flex-direction: column;
+	margin: 4vh 4vw;
+}
+.gallery-item > a span {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 7vw;
+  font-weight: 400;
+  left: 50%;
+  position: absolute;
+  top: 94%;
+  transform: translate(-50%, -50%);
+}
+.gallery-line {
+  flex-direction: column;
+  margin: 0 2vw;
+}
+.gallery-item {
+  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+  flex: 1 0 24rem;
+	margin: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+.gallery-image {
+	width: 100%;
+	height: 100%;
+}
+
+img.gallery-image + span /* hide spans immediately after images that are set to fade */ {
+  visibility:visible;
+}
+
 
 }
