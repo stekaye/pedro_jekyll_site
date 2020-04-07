@@ -469,7 +469,7 @@ body {
 .gallery-item-overview > a span {
   color: #4d4d4d;
   font-family: 'Raleway', sans-serif;
-  font-size: 1.5vw;
+  font-size: 2.2vw;
   font-weight: 600;
   left: 50%;
   line-height: 1.6;
@@ -504,13 +504,13 @@ body {
   width: auto;
 }
 .gallery-image-portrait {
-	display: block;
+	/* display: block; */
 	width: 45vw;
 	height: 100%;
 	object-fit: cover;
 }
 .gallery-image-landscape {
-  display: block;
+  /* display: block; */
 	width: 100%;
 	height: 60vh;
 	object-fit: cover;
