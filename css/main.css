@@ -504,13 +504,13 @@ body {
   width: auto;
 }
 .gallery-image-portrait {
-	/* display: block; */
+	display: block;
 	width: 45vw;
 	height: 100%;
 	object-fit: cover;
 }
 .gallery-image-landscape {
-  /* display: block; */
+  display: block;
 	width: 100%;
 	height: 60vh;
 	object-fit: cover;
