@@ -481,6 +481,7 @@ body {
 }
 .gallery-line {
   display: flex;
+  flex-direction: row;
   /* flex-wrap: wrap; */
   margin: 0 2vw;
 }
