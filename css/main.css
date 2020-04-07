@@ -490,7 +490,7 @@ body {
 .gallery-item {
   /* box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4); */
   flex: 1 0 24rem;
-  height: 62vh;
+  height: 65vh;
 	margin: 1rem;
   overflow: hidden;
   position: relative;
@@ -511,8 +511,8 @@ body {
 }
 .gallery-image-landscape {
   display: block;
-	width: 100%;
-	height: 60vh;
+	width: 45vw;
+	height: 100%;
 	object-fit: cover;
 }
 .gallery-image {
