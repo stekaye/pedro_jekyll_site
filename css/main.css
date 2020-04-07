@@ -57,6 +57,9 @@ body {
   padding-top: 14vh;
   width: 100%;
 }
+.clickable-link {
+  padding: 100vw;
+}
 
 /* HOME STYLES */
 
@@ -238,25 +241,26 @@ body {
   overflow: hidden;
 }
 .callout-works-image {
-  animation: fadeIn ease 10s;
+  /* animation: fadeIn ease 10s; */
   background-image: url(../images/hero2.jpg);
   background-position: bottom center;
   margin: 0 8vw 5vh;
+  transition: 4s ease-out;
 }
-@keyframes fadeIn {
+/* @keyframes fadeIn {
   0% {
     opacity:0;
   }
   100% {
     opacity:1;
   }
-}
+} */
 .callout-works-content {
   font-family: 'Raleway', sans-serif;
-  font-weight: 200;
+  font-weight: 400;
   position: relative;
   text-align: center;
-  top: 82%;
+  top: 80%;
 }
 .callout-works-content a {
   color: rgba(255, 255, 255, 0.7);
@@ -270,7 +274,7 @@ body {
   color: rgba(255, 255, 255, 1);
 }
 .callout-works-content p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 .callout-works-content p:hover {
   color: rgba(255, 255, 255, 1);
@@ -293,10 +297,10 @@ body {
 }
 .callout-about-content {
   font-family: 'Raleway', sans-serif;
-  font-weight: 200;
+  font-weight: 400;
   position: relative;
   text-align: center;
-  top: 82%;
+  top: 80%;
 }
 .callout-about-content a {
   color: rgba(255, 255, 255, 0.7);
@@ -310,7 +314,7 @@ body {
   color: rgba(255, 255, 255, 1);
 }
 .callout-about-content p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 .callout-about-content p:hover {
   color: rgba(255, 255, 255, 1);
@@ -333,10 +337,10 @@ body {
 }
 .callout-exhibitions-content {
   font-family: 'Raleway', sans-serif;
-  font-weight: 200;
+  font-weight: 400;
   position: relative;
   text-align: center;
-  top: 82%;
+  top: 80%;
 }
 .callout-exhibitions-content a {
   color: rgba(0, 0, 0, 0.8);
@@ -350,7 +354,7 @@ body {
   color: rgba(0, 0, 0, 1);
 }
 .callout-exhibitions-content p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 .callout-exhibitions-content p:hover {
   color: rgba(0, 0, 0, 1);
@@ -438,7 +442,7 @@ body {
 .paintings-heading {
   color: #4c4c4c;
   font-family: 'Raleway', sans-serif;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   padding: 3vh 0 0;
   text-align: center;
 }
@@ -464,7 +468,7 @@ body {
   margin: 0 2vw;
 }
 .gallery-item {
-  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+  /* box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4); */
   flex: 1 0 24rem;
   height: 60vh;
 	margin: 1rem;
@@ -561,7 +565,7 @@ img.gallery-image:hover + span /* display spans immediately after :hover faded i
   transition: none;
 }
 .callout-works-content {
-  top: 90%;
+  top: 88%;
 }
 .callout-works-content h1 {
   color: rgba(255, 255, 255, 0.8);
@@ -585,7 +589,7 @@ img.gallery-image:hover + span /* display spans immediately after :hover faded i
   background-position: center center;
 }
 .callout-about-content {
-  top: 90%;
+  top: 88%;
 }
 .callout-about-content a {
   color: rgba(0, 0, 0, 0.8);
@@ -601,7 +605,7 @@ img.gallery-image:hover + span /* display spans immediately after :hover faded i
 /* CALLOUT: EXHIBITIONS STYLES */
 
 .callout-exhibitions-content {
-  top: 90%;
+  top: 88%;
 }
 .callout-exhibitions-content a {
   color: rgba(0, 0, 0, 0.8);
@@ -710,7 +714,7 @@ img.gallery-image:hover + span /* display spans immediately after :hover faded i
   margin: 0 2vw;
 }
 .gallery-item {
-  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+  /* box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4); */
   flex: 1 0 24rem;
 	margin: 1rem;
   overflow: hidden;
@@ -718,7 +722,8 @@ img.gallery-image:hover + span /* display spans immediately after :hover faded i
 }
 .gallery-image {
 	width: 100%;
-	height: 100%;
+  height: 100%;
+  transition: none;
 }
 
 img.gallery-image + span /* hide spans immediately after images that are set to fade */ {
