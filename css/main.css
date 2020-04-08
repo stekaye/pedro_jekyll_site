@@ -431,7 +431,7 @@ body {
   transition: opacity 2s ease-out;
 }
 
-/* WORK TYPE LANDING PAGE STYLES */
+/* ART/SERIES STYLES */
 
 .work-type-wrapper {
   display: flex;
@@ -440,10 +440,20 @@ body {
 	margin: 0 auto;
 }
 .work-type-heading {
+  border-top: 1px dotted rgba(0, 0, 0, 0.2);
   color: #4c4c4c;
   font-family: 'Raleway', sans-serif;
   font-size: 2.5rem;
-  padding: 3vh 0 0;
+  margin: 0 6vw;
+  padding: 4vh 0 0;
+  text-align: center;
+}
+.work-type-text {
+  color: #4c4c4c;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  padding: 3vh 20vw 0;
   text-align: center;
 }
 .gallery {
@@ -455,7 +465,7 @@ body {
 .gallery-item > a span {
   color: #4d4d4d;
   font-family: 'Raleway', sans-serif;
-  font-size: 1.5vw;
+  font-size: 1.4vw;
   font-weight: 600;
   left: 50%;
   line-height: 1.6;
@@ -483,7 +493,7 @@ body {
 .gallery-line {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   /* flex-wrap: wrap; */
   margin: 0 2vw;
 }
@@ -507,7 +517,7 @@ body {
 	display: block;
 	width: 45vw;
 	height: 100%;
-	object-fit: cover;
+	object-fit: contain;
 }
 .gallery-image-landscape {
   display: block;
@@ -532,19 +542,17 @@ img.gallery-image + span /* hide spans immediately after images that are set to 
 img.gallery-image:hover + span /* display spans immediately after :hover faded images */ {
   opacity: 1;
   transition-property: opacity;
-  transition-duration: 3s;
+  transition-duration: 2s;
   visibility: visible;
 }
 
 
-
-
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
  
   /* HEADER STYLES */
 
   .header-logo a {
-    font-size: 11vw;
+    font-size: 6vw;
   }
 
   /* MOBILE MENU */
@@ -601,6 +609,16 @@ img.gallery-image:hover + span /* display spans immediately after :hover faded i
   .mobile-menu-check:checked ~ .header-nav {
     max-height: 1000px;
   }
+
+}
+
+@media (max-width: 800px) {
+
+  /* HEADER STYLES */
+
+.header-logo a {
+  font-size: 11vw;
+}
 
   /* CALLOUT: WORKS STYLES */
 
@@ -739,6 +757,11 @@ img.gallery-image:hover + span /* display spans immediately after :hover faded i
   font-size: 7vw;
   padding: 3vh 16vw 0;
 }
+.work-type-text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  padding: 3vh 5vw 1vh;
+}
 .gallery {
   align-items: center;
   justify-content: center;
@@ -791,19 +814,22 @@ img.gallery-image:hover + span /* display spans immediately after :hover faded i
 .gallery-image-landscape {
 	width: 100%;
   height: 60%;
-  opacity: 1;
-  transition: none;
 }
 .gallery-image-portrait {
 	width: 85vw;
   height: 100%;
-  opacity: 1;
+}
+.gallery-image {
+  transform: none;
   transition: none;
+}
+.gallery-image:hover {
+  opacity: 1;
+  transform: none;
 }
 img.gallery-image + span /* hide spans immediately after images that are set to fade */ {
   visibility:visible;
   transform: none;
 }
-
 
 }
