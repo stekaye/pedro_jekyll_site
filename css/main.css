@@ -60,6 +60,9 @@ body {
 .clickable-link {
   padding: 100vw;
 }
+h1, h3, p {
+  font-family: 'Raleway', sans-serif;
+}
 
 /* HOME STYLES */
 
@@ -256,7 +259,7 @@ body {
   }
 } */
 .callout-works-content {
-  font-family: 'Raleway', sans-serif;
+  /* font-family: 'Raleway', sans-serif; */
   font-weight: 400;
   position: relative;
   text-align: center;
@@ -296,7 +299,7 @@ body {
   /* transition: 5s ease-out; */
 }
 .callout-about-content {
-  font-family: 'Raleway', sans-serif;
+  /* font-family: 'Raleway', sans-serif; */
   font-weight: 400;
   position: relative;
   text-align: center;
@@ -336,7 +339,7 @@ body {
   /* transition: 5s ease-out; */
 }
 .callout-exhibitions-content {
-  font-family: 'Raleway', sans-serif;
+  /* font-family: 'Raleway', sans-serif; */
   font-weight: 400;
   position: relative;
   text-align: center;
@@ -372,7 +375,7 @@ body {
 .works-header {
   color: #4c4c4c;
   flex: 1 1 0;
-  font-family: 'Raleway', sans-serif;
+  /* font-family: 'Raleway', sans-serif; */
   font-weight: 400;
   padding: 4vh 16vw 2vh;
   text-align: center;
@@ -387,7 +390,7 @@ body {
   line-height: 1.6;
 }
 .works-title h3 {
-  font-family: 'Raleway', sans-serif;
+  /* font-family: 'Raleway', sans-serif; */
   font-size: 1.4rem;
   text-align: center;
   top: 70%;
@@ -441,7 +444,7 @@ body {
 .work-type-heading {
   border-top: 1px dotted rgba(0, 0, 0, 0.2);
   color: #4c4c4c;
-  font-family: 'Raleway', sans-serif;
+  /* font-family: 'Raleway', sans-serif; */
   font-size: 2.5rem;
   margin: 0 6vw;
   padding: 4vh 0 0;
@@ -449,7 +452,7 @@ body {
 }
 .work-type-text {
   color: #4c4c4c;
-  font-family: 'Raleway', sans-serif;
+  /* font-family: 'Raleway', sans-serif; */
   font-size: 1.1rem;
   line-height: 1.6;
   padding: 3vh 20vw 0;
@@ -576,6 +579,83 @@ img.gallery-image:hover + span /* display spans immediately after :hover faded i
   transition-property: opacity;
   transition-duration: 2s;
   visibility: visible;
+}
+
+/* CONTACT FORM STYLES */
+
+.contact-wrapper {
+  align-content: flex-start;
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: row;
+  text-align: center;
+  width: 100%;
+}
+.contact-image {
+  background-position: center bottom;
+  background-image: url(../images/pedro_studio.jpg);
+  background-size: cover;
+  flex: 2 1 0;
+  margin: 2vh 0 5vh 8vw;
+}
+.contact-copy {
+  box-sizing: border-box;
+  flex: 3 1 0;
+  padding: 2vh 4vw 5vh 4vh;
+}
+.contact-copy h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+.contact-copy p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 2vh 4vw 1vh;
+}
+.contact-copy-text {
+  padding: 0 0 2vh;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], input[type=email], input[type=message], input[type=tel], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #4c4c4c; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 1.8vh; /* Add a top margin */
+  margin-bottom: 3vh; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+button[type=submit] {
+  background-color: #4c4c4c;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+button[type=submit]:hover {
+  background-color: darkgoldenrod;
+}
+
+/* Add a background color and some padding around the form */
+.contact-copy-form{
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 0 14vw;
+
+}
+label {
+  font-family: 'Raleway', Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 200;
 }
 
 

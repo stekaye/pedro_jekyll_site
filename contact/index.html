@@ -3,12 +3,32 @@ layout: default
 ---
 
 <div class="contact-wrapper">
-  <h1>Contact Pedro</h1>
-  <form class="contact-form" action="contactform.php" method="POST">
-    <input type="text" name="name" placeholder="Full Name">
-    <input type="text" name="mail" placeholder="Your Email">
-    <input type="text" name="subject" placeholder="Subject">
-    <textarea name="message" placeholder="Message"></textarea>
-    <button type="submit" name="submit">SEND</button>
-  </form>
+  <div class="contact-image">
+    
+  </div>
+  <div class="contact-copy">
+    
+    <div class="contact-copy-text">
+      <h1>Contact Pedro Muiño</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, id quam? Tempora, ex vel! Asperiores, omnis, iure iusto atque libero reprehenderit adipisci aliquam vel illum quia doloremque pariatur aliquid expedita.
+    </div>
+        
+    <div class="contact-copy-form">
+      <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/mdollkwv" method="post">
+        <fieldset id="fs-frm-inputs">
+          <label class="form-text" for="full-name">Full Name</label>
+          <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+          <label class="form-text" for="phone-number">Phone Number (Optional)</label>
+          <input type="tel" name="number" id="phone-number" placeholder="Include country code">
+          <label class="form-text" for="email-address">Email Address</label>
+          <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+          <label class="form-text" for="message">Your Message</label>
+          <textarea rows="5" name="message" id="message" placeholder="Type your message here..." required=""></textarea>
+          <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+        </fieldset>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+  </div>
 </div>
