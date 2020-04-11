@@ -1033,4 +1033,25 @@ img.gallery-image + span /* hide spans immediately after images that are set to 
   transform: none;
 }
 
+.contact-wrapper {
+  flex-direction: column-reverse;
+}
+.contact-image {
+  background-position: center center;
+  background-size: cover;
+  margin: 0 3vw 2vh;
+  min-height: 35vh;
+}
+.contact-copy {
+  flex: 1 1 0;
+  padding: 3vh 4vw 5vh 4vw;
+}
+.contact-copy h1 {
+  font-size: 8vw;
+}
+.contact-copy p {
+  font-size: 4.5vw;
+  padding: 3vh 3vw 3vh;
+}
+
 }
