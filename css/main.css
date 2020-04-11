@@ -598,10 +598,12 @@ img.gallery-image:hover + span /* display spans immediately after :hover faded i
   padding: 2vh 4vw 5vh 4vh;
 }
 .contact-copy h1 {
+  color: #4c4c4c;
   font-size: 2.2rem;
   font-weight: 600;
 }
 .contact-copy p {
+  color: #4c4c4c;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
