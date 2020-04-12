@@ -467,9 +467,8 @@ h1, h3, p {
 .gallery-line {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   flex-wrap: wrap;
-  margin: 0 2vw;
+  margin: 2vh 2vw;
 }
 .gallery-line-portrait {
   display: flex;
@@ -478,13 +477,16 @@ h1, h3, p {
 .gallery-item {
   /* box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4); */
   flex: 1 0 24rem;
-  height: 60vh;
 	margin: 1rem;
   overflow: hidden;
   position: relative;
 }
 .gallery-item-small {
   height: 53vh;
+  width: auto;
+}
+.gallery-item-normal {
+  height: 56vh;
   width: auto;
 }
 .gallery-item-medium {
@@ -519,10 +521,12 @@ h1, h3, p {
   top: 50%;
   transform: translate(-50%, -50%);
 }
+.gallery-item-medium,
+.gallery-item-normal,
 .gallery-item-large,
 .gallery-item-largest > a span {
-  font-size: 1.4vw;
-  font-weight: 600;
+  font-size: 1.3vw;
+  font-weight: 400;
 }
 .gallery-item-series > a span {
   font-size: 1.6vw;
@@ -553,16 +557,21 @@ h1, h3, p {
 	height: 100%;
 	object-fit: unset;
 }
+.gallery-image-normal {
+	width: 45vw;
+	height: 100%;
+	object-fit: unset;
+}
 .gallery-image {
   display: block;
   opacity: 1;
   transition-property: opacity, transform;
-  transition-duration: 4s, 4s;
+  transition-duration: 3s, 3s;
   /* transition: opacity 1s ease-in-out;
   transition: transform 4s ease-out; */
 }
 .gallery-image:hover {
-  opacity: 0.5;
+  opacity: 0.4;
 	transform: scale(1.05);
 }
 img.gallery-image + span /* hide spans immediately after images that are set to fade */ {
@@ -571,7 +580,7 @@ img.gallery-image + span /* hide spans immediately after images that are set to 
 img.gallery-image:hover + span /* display spans immediately after :hover faded images */ {
   opacity: 1;
   transition-property: opacity;
-  transition-duration: 2s;
+  transition-duration: 1.4s;
   visibility: visible;
 }
 
@@ -868,7 +877,7 @@ label {
 .work-type-text {
   font-size: 0.95rem;
   line-height: 1.5;
-  padding: 3vh 5vw 1vh;
+  padding: 3vh 5vw 3vh;
 }
 .work-type-heading {
   font-size: 2rem;
@@ -876,7 +885,7 @@ label {
 }
 .gallery {
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
 	margin: 4vh 2vw;
 }
@@ -886,28 +895,25 @@ label {
 }
 .gallery-line-portrait {
   flex-direction: column;
-  flex-wrap: nowrap;
-  margin: 0 0;
+  justify-content: start;
+  align-items: center;
 }
 .hide-in-mobile{
   display: none;
 }
-.gallery-item, .gallery-item-dates {
-  flex: 1 0 24rem;
-	margin: 4vh 4vw 0;
-}
-.gallery-item-small {
-  height: auto;
-  width: 85vw;
+.gallery-item {
+  flex: 1 0 auto;
+  margin: 0 0 24px;
+	margin: 0 4vw 3vh;
 }
 .gallery-item-series {
   margin: 2vh 0;
 }
 .gallery-item-portrait {
-  width: 100%;
-  height: 60%;
+  flex: 1 0 auto;
+  justify-self: center;
+  margin: 2vh 0 8vh;
 }
-.gallery-item-normal > a span,
 .gallery-item-large > a span,
 .gallery-item-largest > a span {
   border-bottom: 1px dotted rgba(0, 0, 0, 0.1);
@@ -924,18 +930,30 @@ label {
   transform: translate(-50%, -50%);
   width: 100%;
 }
-.gallery-item-portrait > a span {
+.gallery-item-normal > a span {
   border-bottom: 1px dotted rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
+  color: #4c4c4c;
+  font-size: 4vw;
+  font-weight: 600;
+  left: 0%;
+  opacity: 0.8;
+  padding: 0 0 4vh;
+  position: absolute;
+  top: 64%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.gallery-item-portrait > a span {
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
   color: #4c4c4c;
   font-size: 4vw;
   font-weight: 600;
   left: 0%;
   margin: 0 0;
   opacity: 0.8;
-  padding: 2vh 0 3vh;
+  padding-bottom: 4vh;
   position: absolute;
-  top: 70%;
+  top: 78%;
   transform: translate(-50%, -50%);
   width: 100%;
 }
@@ -948,9 +966,9 @@ label {
   left: 0%;
   margin: 0 0;
   opacity: 0.8;
-  padding: 0 0 3vh;
+  padding: 0 0 6vh;
   position: absolute;
-  top: 55%;
+  top: 60%;
   transform: translate(-50%, -50%);
   width: 100%;
 }
@@ -1005,22 +1023,24 @@ label {
   width: 100%;
   height: 60%;
 }
-.gallery-image-large, .gallery-image-largest {
+.gallery-image-large, 
+.gallery-image-largest {
   width: 100%;
   height: auto;
 }
+.gallery-image-normal,
 .gallery-image-landscape {
-	width: 100%;
+  width: 100%;
   height: 60%;
 }
 .gallery-image-portrait {
-  margin: 15vh 0;
-	width: 85vw;
-  height: auto;
+	width: auto;
+  height: 40vh;
+  text-align: center;
 }
 .gallery-image-small {
-	width: 85vw;
-  height: 30vh;
+	width: 100%;
+  height: 55%;
 }
 .gallery-image {
   transform: none;
