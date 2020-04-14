@@ -60,7 +60,7 @@ body {
 .clickable-link {
   padding: 100vw;
 }
-h1, h3, p {
+h1, h3, h2, p {
   font-family: 'Raleway', sans-serif;
 }
 
@@ -250,16 +250,7 @@ h1, h3, p {
   margin: 0 8vw 5vh;
   transition: 4s ease-out;
 }
-/* @keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-} */
 .callout-works-content {
-  /* font-family: 'Raleway', sans-serif; */
   font-weight: 400;
   position: relative;
   text-align: center;
@@ -582,6 +573,134 @@ img.gallery-image:hover + span /* display spans immediately after :hover faded i
   transition-property: opacity;
   transition-duration: 1.4s;
   visibility: visible;
+}
+
+/* BIOGRAPHY PAGE STYLES */
+
+.about-page-wrapper {
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  width: 100%;
+}
+.about-page-heading h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  padding: 6vh 0 4vh;
+  text-align: center;
+  text-transform: uppercase;
+}
+.about-page-intro {
+  /* background-color: #ffc906; */
+  display: flex;
+  flex: 1;
+  flex-direction: row-reverse;
+  min-height: 74vh;
+  width: 100%;
+}
+.about-page-intro-text {
+  flex: 1;
+  margin: 4vh 8vw 4vh 2vw;
+  text-align: center;
+}
+.about-page-intro-text li {
+  display: inline-block;
+  list-style: none;
+}
+.about-page-intro-text h1 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 2vh 0 2vh;
+}
+.about-page-intro-text p {
+  font-size: 1.1rem;
+  font-weight: 200;
+  line-height: 1.5;
+  padding: 1vh 0 4vh;
+}
+.about-page-intro-link {
+  text-decoration: none;
+}
+.about-page-intro-link h2:hover {
+  background-color: goldenrod;
+  border: 1px solid goldenrod;
+}
+.about-page-intro-link h2 {
+  background-color: #4c4c4c;
+  border: 1px solid #4c4c4c;
+  color: #fff;
+  padding: 1.5vh 1vw;
+}
+.about-page-intro-image {
+  background-image: url(../images/Biography/about_intro_image.jpg);
+  background-position: bottom center;
+  background-size: cover;
+  border-radius: 4%;
+  /* box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4); */
+  flex: 1;
+  margin: 4vh 2vw 4vh 8vw;
+}
+.about-page-texts {
+  align-content: flex-start;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  min-height: 74vh;
+  width: 100%;
+}
+.about-page-texts-text {
+  flex: 1;
+  margin: 6vh 2vw 6vh 8vw;
+  text-align: center;
+}
+.about-page-texts-text h1 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 2vh 0 2vh;
+}
+.about-page-texts-text p {
+  font-size: 1.1rem;
+  font-weight: 200;
+  line-height: 1.5;
+  padding: 1vh 0 4vh;
+}
+.about-page-texts-image {
+  background-image: url(../images/Biography/about_texts_image.jpg);
+  background-position: center center;
+  background-size: cover;
+  border-radius: 4%;
+  flex: 1;
+  margin: 4vh 8vw 4vh 2vw;
+}
+.about-page-texts-link {
+  display: block;
+  text-decoration: none;
+}
+.about-page-texts-text li {
+  display: inline-block;
+  list-style: none;
+}
+.about-page-texts-link h2:hover {
+  background-color: goldenrod;
+  border: 1px solid goldenrod;
+}
+.about-page-texts-link h2 {
+  background-color: #4c4c4c;
+  border: 1px solid #4c4c4c;
+  color: #fff;
+  padding: 1.5vh 1vw;
+  margin: 0 1vw;
+}
+.about-page-gallery {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  width: 100%;
+}
+.about-page-gallery h1 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 2vh 0 2vh;
 }
 
 /* CONTACT FORM STYLES */
