@@ -60,7 +60,7 @@ body {
 .clickable-link {
   padding: 100vw;
 }
-h1, h2, h3, h4, p {
+h1, h2, h3, h4, p, span {
   font-family: 'Raleway', sans-serif;
 }
 
@@ -501,6 +501,11 @@ h1, h2, h3, h4, p {
   height: 55vh;
   justify-content: center;
 }
+.gallery-item-portrait-small {
+  flex: 1;
+  height: 50vh;
+  justify-content: center;
+}
 .gallery-item > a span {
   color: #4d4d4d;
   font-family: 'Raleway', sans-serif;
@@ -575,7 +580,7 @@ img.gallery-image:hover + span /* display spans immediately after :hover faded i
   visibility: visible;
 }
 
-/* BIOGRAPHY PAGE STYLES */
+/* BIOGRAPHY LANDING PAGE STYLES */
 
 .about-page-wrapper {
   display: flex;
@@ -620,6 +625,9 @@ img.gallery-image:hover + span /* display spans immediately after :hover faded i
   line-height: 1.5;
   padding: 1vh 0 4vh;
 }
+.about-page-intro-text span {
+  display: none;
+}
 .about-page-intro-link {
   text-decoration: none;
 }
@@ -638,7 +646,6 @@ img.gallery-image:hover + span /* display spans immediately after :hover faded i
   background-position: bottom center;
   background-size: cover;
   border-radius: 4%;
-  /* box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4); */
   flex: 1;
   margin: 4vh 2vw 4vh 8vw;
 }
@@ -765,6 +772,54 @@ img.gallery-image:hover + span /* display spans immediately after :hover faded i
   margin: 4vh 2vw 4vh 8vw;
 }
 
+/* BIOGRAPHY MAIN PAGE STYLES */
+
+.biography-wrapper {
+  flex: 1 1 auto;
+  flex-direction: column;
+  width: 100%
+}
+.biography-hero-image {
+  background-image: url(../images/Biography/biography_hero.jpg);
+  background-position: top center;
+  background-size: cover;
+  height: 81vh;
+  margin: 0 8vw 5vh;
+  position: relative;
+}
+.biography-hero-content {
+  font-weight: 400;
+  left: 45%;
+  position: absolute;
+  text-align: center;
+  top: 75%;
+  transform: translate(-50%, -50%); 
+}
+.biography-hero-content h1 {
+  color:rgba(0, 0, 0, 0.5);
+  font-size: 2.8rem;
+  font-weight: 200;
+}
+.generic-main-content {
+  color: #000;
+  line-height: 1.8;
+  margin: 2vh 27vw 5vh;
+  text-align: center;
+}
+.generic-main-content h1 {
+  color: #4c4c4c;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 3vh 10vw 8vh;
+  padding: 3vh 0 5vh;
+}
+.generic-main-content p {
+  font-size: 1.05rem;
+  font-weight: 200;
+  padding: 0 0 3vh;
+  text-align: justify;
+}
 
 /* BLOG PAGE(S) STYLES */
 .page {
@@ -903,6 +958,7 @@ img.gallery-image:hover + span /* display spans immediately after :hover faded i
 }
 .post-content,
 .post-footer {
+  text-align: justify;
   margin: auto;
   max-width: 40em;
   width: 85vw;
@@ -935,6 +991,142 @@ img.gallery-image:hover + span /* display spans immediately after :hover faded i
   margin-top: 3em;
   padding-top: 2em;
   text-align: center;
+}
+
+/* EXHBITION LANDING PAGE STYLES */
+
+.exhibitions-wrapper {
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+.upcoming-exhibitions-image {
+  background-position: center center;
+  background-image: url(../images/Exhibitions/exhibition_hero.jpg);
+  background-size: contain;
+  flex: 1;
+  margin: 2vh 8vw 5vh 8vw;
+  min-height: 81vh;
+  opacity: 0.4;
+}
+.upcoming-exhibitions-content {
+  background-color: goldenrod;
+  display: block;
+  left: 50%;
+  opacity: 0.8;
+  padding: 3vh 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+.upcoming-exhibitions-content h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 600;
+  opacity: 0.8;
+  padding: 2vh 0;
+  text-transform: uppercase;
+}
+.upcoming-exhibitions-content h2 {
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: goldenrod;
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 400;
+  opacity: 0.8;
+  padding: 2vh 2vw;
+  text-transform: uppercase;
+}
+.upcoming-exhibitions-content h3 {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 200;
+  opacity: 0.8;
+  padding: 2vh 0;
+}
+.exhibitions-lists-wrapper {
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: row;
+  text-align: center;
+  width: 100%;
+}
+.exhibitions-individual {
+  background-position: center center;
+  background-image: url(../images/Exhibitions/individual.jpg);
+  background-size: contain;
+  flex: 1;
+  margin: 2vh 1.5vw 5vh 8vw;
+  min-height: 81vh;
+  opacity: 0.8;
+  text-decoration: none;
+}
+.exhibitions-individual h1 {
+  background-color: goldenrod;
+  color: #fff;
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  left: 50%;
+  opacity: 0.9;
+  padding: 2vh 0;
+  position: relative;
+  text-transform: uppercase;
+  top: 8%;
+  transform: translate(-50%, -50%);
+  width: 105%;
+}
+.exhibitions-collective {
+  background-position: center center;
+  background-image: url(../images/Exhibitions/collective.jpg);
+  background-size: contain;
+  flex: 1;
+  margin: 2vh 8vw 5vh 1.5vw;
+  min-height: 81vh;
+  opacity: 0.8;
+  text-decoration: none;
+}
+.exhibitions-collective h1 {
+  background-color: #4c4c4c;
+  color: #fff;
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  left: 50%;
+  opacity: 0.9;
+  padding: 2vh 0;
+  position: relative;
+  text-transform: uppercase;
+  top: 8%;
+  transform: translate(-50%, -50%);
+  width: 105%;
+}
+
+/* EXHBITION SUBPAGE STYLES */
+
+.exhibition-subpage-wrapper {
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+.exhibition-subpage-individual-images {
+  display: flex;
+  flex: 1 1 10px;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+.exhibition-subpage-content {
+  flex: 1;
+  text-align: center;
+  width: 100;
 }
 
 /* CONTACT FORM STYLES */
@@ -1470,6 +1662,14 @@ img.gallery-image + span /* hide spans immediately after images that are set to 
 .about-page-intro-text p {
   display: none;
 }
+.about-page-intro-text span {
+  color: #4c4c4c;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 1.5;
+  padding: 0 3vw 4vh;
+}
 .about-page-intro-link h2 {
   font-size: 4vw;
   padding: 1.5vh 2vw;
@@ -1480,6 +1680,7 @@ img.gallery-image + span /* hide spans immediately after images that are set to 
   margin: 4vh 5vw;
 }
 .about-page-texts {
+  background-color: rgb(245, 245, 245);
   flex-direction: column-reverse;
 }
 .about-page-texts-text {
@@ -1536,6 +1737,35 @@ img.gallery-image + span /* hide spans immediately after images that are set to 
 .about-page-archive-image {
   min-height: 35vh;
   margin: 4vh 5vw;
+}
+
+/* BIOGRAPHY MAIN PAGE MOBILE STYLES */
+
+.biography-hero-image {
+  height: 60vh;
+}
+.biography-hero-content {
+  left: 50%;
+  top: 93%;
+}
+.biography-hero-content h1 {
+  font-size: 2.4rem;
+}
+.generic-main-content {
+  line-height: 1.8;
+  margin: 1vh 0 5vh;
+  text-align: center;
+}
+.generic-main-content h1 {
+  border-bottom: 2px dotted rgba(0, 0, 0, 0.5);
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin: 3vh 15vw 8vh;
+  padding: 2vh 0 4vh;
+}
+.generic-main-content p {
+  font-size: 1.05rem;
+  padding: 0 5vw 3vh;
 }
 
 /* BLOG PAGE(S) MOBILE STYLES */
@@ -1639,5 +1869,61 @@ img.gallery-image + span /* hide spans immediately after images that are set to 
 .post-aside {
   background-color: rgba(0, 0, 0, 0.05);
 }
+
+/* EXHBITION LANDING MOBILE PAGE STYLES */
+
+.exhibitions-wrapper {
+  flex-direction: column;
+  width: 100vw;
+}
+.upcoming-exhibitions-image {
+  background-size: cover;
+  margin: 2vh 0 0 0;
+  min-height: 60vh;
+}
+.upcoming-exhibitions-content {
+  padding: 3vh 0;
+  top: 45%;
+  width: 90vw;
+}
+.upcoming-exhibitions-content h1 {
+  font-size: 6.5vw;
+  padding: 2vh 0;
+}
+.upcoming-exhibitions-content h2 {
+  font-size: 5vw;
+  padding: 2vh 2vw;
+}
+.upcoming-exhibitions-content h3 {
+  font-size: 4.2vw;
+  padding: 2vh 0;
+}
+.exhibitions-lists-wrapper {
+  flex-direction: column;
+  text-align: center;
+  width: 100vw;
+}
+.exhibitions-individual {
+  background-size: contain;
+  margin: 7vh 0 0 0;
+  min-height: 50vh;
+}
+.exhibitions-individual h1 {
+  font-size: 6vw;
+  padding: 2vh 0;
+  position: relative;
+  width: 100%;
+}
+.exhibitions-collective {
+  background-size: contain;
+  margin: 7vh 0 5vh 0;
+  min-height: 50vh;
+}
+.exhibitions-collective h1 {
+  font-size: 6vw;
+  padding: 2vh 0;
+  width: 100%;
+}
+
 
 }
