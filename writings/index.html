@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<div class="page blog-index">
+  <h1>Los Textos</h1>
+  <div class="col-two blog-cols">
+    <div class="col col-aside blog-recent">
+      <h4>Most Recent Texts</h4>
+      <ul class="blog-title-list">
+        {% for post in site.posts limit:5 %}
+          <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+            <span>Posted: {{ post.date | date: '%d %B, %Y' }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="col col-content blog-previews">
+      {% for post in site.posts %}
+        <div class="blog-posts">
+          <header class="post-header">
+            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <div class="post-byline">
+              <img src="{{ post.gravatar }}"/>
+              <span>by: {{ post.author }}</span>
+              <span><span class="remove-dash"> - </span>{{ post.date | date: '%d %B, %Y' }}</span>
+            </div>
+          </header>
+          <div class="posts-image" style="background-image:url({{ post.postHero }})"></div>
+          <p class="posts-excerpt">{{ post.excerpt }}</p>
+          <div class="posts-link">
+          <a href="{{ post.url }}"><h2>Read More</h2></a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

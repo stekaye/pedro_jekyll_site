@@ -16,30 +16,49 @@ layout: default
         <li><a href="/biografia" class="about-page-intro-link"><h2>Learn More</h2></a></li>
       </ul>
     </div>
-    <div class="about-page-intro-image">
+    <a href="/biografia"><div class="about-page-intro-image">
       <!-- Background image here -->
-    </div>
+    </div></a>
   </div>
 
   <div class="about-page-texts">
     <div class="about-page-texts-text">
       <h1>Textos</h1>
-      <p>El origen de toda creación artística, radica en la volición, la intención fundamental de una obra de arte es dar forma a   lo que acontece en la vida interior del hombre, es la confirmación de la supremacía de lo "espiritual" sobre lo material. El verdadero valor del arte es sacar a la luz esa parte intangible que existe en la soledad de cada hombre y que nadie podrá avasallar nunca...</p>
+      <div class="blog-posts blog-segment">
+        <header class="post-header">
+          <h2>
+            <a href="{{ site.posts.first.url }}"><span class="light-text">Most Recent: </span>
+            {{ site.posts.first.title }}</a>
+          </h2>
+          <div class="post-byline">
+            <img src="{{ site.posts.first.gravatar }}">
+            <span> by: {{ site.posts.first.author }}</span>
+            <span> - {{ site.posts.first.date | date: '%B %d, %Y' }}</span>
+          </div>
+        </header>
+        {{ site.posts.first.excerpt }}
+      </div>
       <ul>
-        <li><a href="/biografia" class="about-page-texts-link"><h2>Leer Mas</h2></a></li>
-        <li><a href="/biografia" class="about-page-texts-link"><h2>Todo Los Textos</h2></a></li>
+        <li><a href="{{ site.posts.first.url }}" class="about-page-texts-link"><h2 class="display-none">Leer Mas</h2></a></li>
+        <li><a href="/writings" class="about-page-texts-link"><h2>Ver los Textos</h2></a></li>
       </ul>
     </div>
-    <div class="about-page-texts-image">
+    <a href="/writings"><div class="about-page-texts-image">
       <!-- Background image here -->
-    </div>
+    </div></a>
   </div>
 
-  <div class="about-page-gallery">
-    <h1 class="about-page-gallery-heading">El Fotoarchivo</h1>
-    <div class="about-page-intro-gallery">
-      
+  <div class="about-page-archive">
+    <div class="about-page-archive-text">
+      <h1>Fotos y Videos</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio vitae in quos voluptatibus magnam blanditiis, nihil, debitis quae dolorum incidunt, veritatis molestias fugit eligendi animi voluptas nam omnis. Odio, debitis?</p>
+      <ul>
+        <li><a href="/media" class="about-page-archive-link"><h2>View Media</h2></a></li>
+      </ul>
     </div>
+    <a href="/media"><div class="about-page-archive-image">
+      <!-- Background image here -->
+    </div></a>
   </div>
 
 </div>

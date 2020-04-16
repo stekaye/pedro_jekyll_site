@@ -1,0 +1,48 @@
+---
+layout: post
+title: De los Tempos
+postHero: /images/blog/Painting_28_blog.jpg
+author: Pedro Muiño
+gravatar: /images/pedro_avatar.jpg
+---
+
+El TIEMPO adquiere un valor que antes no tenia, el tiempo en el sentido de esa percepción que a veces se hace presente cuando por ejemplo observamos alguna naturaleza muerta de Zurbarán, o de Sanchez Cotán o un interior de Vermeer, la ausencia del tiempo, el no-tiempo; y creo que es esta ausencia lo que genera otro elemento que cada vez me parece más importante,  EL SILENCIO, aunque lógicamente, no todas las obras consiguen generar ese silencio... 
+
+Y también es importante el tiempo como elemento de trabajo, (no como resultado), el tiempo-tiempo, la contemplación aparentemente pasiva de la obra en construcción, ese tiempo de observación, esa sensación de “vacío” de “tiempo perdido”, que en realidad no es tal, ese estado de espera, esperar a que ocurra algo, a que algo sea revelado (lo que no siempre ocurre , claro está), pero esos “tempos” en espera son cada vez más importantes para mí.
+
+
+Atención, concentración, tiempo, silencio, contemplación, conocimiento,   quizás que con el uso que damos a la combinación de estos elementos, nos podamos aproximar a eso que llamamos REFLEXION, (ese cúmulo de consideraciones que hacemos cuando construimos una obra, la atención que prestamos a todo ese proceso) y cuyo concepto se usa a menudo de una forma  tan gratuita, desvirtuando su esencia, convirtiéndolo en un cajón de sastre que sirve para todo; ante cualquier gesto, acción u objeto, muchos autores intentan argumentar su obra bajo la pretensión de que es una “reflexión” sobre las más peregrinas apreciaciones, más gratuito me parece aún cuando muchos autores nos cuentan que lo que intentan con su obra es que el espectador reflexione sobre tal o cual estado de cosas, me parecen ejercicios gratuitos cuya finalidad es intentar justificar la obra.  La obra debe de bastarse a sí misma, no deben de ser necesarias las justificaciones, la obra es por esencia o no es, debe de justificarse por si misma.
+
+
+En la plástica actual LA PALABRA ha adquirido un rol primordial, siendo muy a menudo imprescindible el uso de la misma para hacer mínimamente comprensible, entendible, una obra, (lo que con frecuencia se queda en un mero intento), de forma que muchas veces es la palabra la que prevalece sobre la obra, resultando que la esencia está en la palabra y no en la obra. El arte actual es completamente literario, su dependencia de la palabra es excesiva. La pintura debería resistir el exceso de la palabra.
+
+
+Cuando pienso en la INTENCIONALIDAD que debe de tener una obra se me hace presente la forma de “hacer” de “entender”  que tienen algunos autores,  se me hacen presentes  Balthus, Giacometti, pienso en Freud … esos artistas ajenos a modas, a corrientes, a movimientos, pienso en esa forma de hacer en solitario (hoy tan denostada), en silencio, pienso en ese concepto de transcendentalidad que debe de poseer una obra, pienso en Carra , pienso en “ese algo” difícil de definir, yo diría que “ese algo” que no podemos o no sabemos delimitar, navega por mares limítrofes  a lo que percibimos como MISTERIO, lo oculto, lo enigmático,  la obra debe de navegar por ese universo poco evidente, no fácilmente descifrable, pero que percibimos claramente cuando nos ponemos delante de una obra que posee “ese algo”; pienso en este momento en La Virgen de la anunciación de Antonello de la Mesina, o en algún Morandi …
+
+
+El método que uso para poner titulo a las obras, sigue siendo el mismo, “el bautizo colectivo”. Dado el proceso o génesis de creación  que empleo, no pongo títulos a las obras hasta que no están terminadas, espero a tener varias obras nuevas y cuando me parece apropiado, las bautizo colectivamente;  trabajo sobre series y las bautizo como tales. Doy gran importancia a los títulos, podría evitarlos perfectamente, el valor plástico de las obras no variaría, pero faltaría algo que me parece interesante, lo que piensa el autor cuando trabaja, cuando vive, las inquietudes que le asaltan, los deseos, sus dudas, las ansias, los desasosiegos, las situaciones mentales que le envuelven. Bautizar obras es una operación delicada, un escritor, un cineasta, pone muy pocos títulos a lo largo de su vida, un pintor puede poner sesenta o setenta al año; Para mí es un trabajo paralelo al de pintar y cada vez requiere de mayor esfuerzo. Ese título debe de arrojar luz sobre la obra (si esto es posible),  a la vez debe de mantener un cierto grado de autonomía, me gusta que los títulos tengan vida propia, pero deben  de habitar en el mismo plano mental que la obra a la que se adjudica.
+
+
+“LAS GEOGRAFIAS”, (de la vigilia, del deseo, del desasosiego, de la piel, de la memoria, de la seducción etc.).
+
+
+“LOS DIARIOS”, (del poeta, del seductor, del agnóstico, del escéptico, del taumaturgo, del contable, de un melómano,  de un confidente etc.)
+
+
+“LAS OBSESIONES”, (del arqueólogo, del alquimista, del filósofo, etc.)
+
+
+“LOS SECRETOS”, (del contable,  del melómano etc.)
+
+
+“LAS CICATRICES”, (de la memoria, de la vigilia, etc)
+
+
+“LOS DICCIONARIOS”, (de los murmullos, del narcisismo, de las convulsiones, de la noctambulia, de las obsesiones, de las confidencias, del escepticismo, etc..)
+
+
+“DE LOS TERRITORIOS” , (del desvelo, del viajero inmóvil, de los murmullos, etc) 
+
+
+“INTIMALIA”,  “DE LOS ALFABETOS DEL ALBEDRIO”,  “EL QUE ESCUCHA OTROS TAMBORES”,  “EL QUE COMPARTE SILENCIOS”,  “EL GRAN RELOJERO”,   “LA MUSICA MUDA DE CIERTOS HECHOS”,  “EL QUE PREGUNTA”, “EL QUE NO QUIERE SER SOLO UNO”, “EL VOYEUR”, “EL ANSIA “, “LA DUDA”, “DEL DISCURSO DE UN AGNÓSTICO”, “LA PALABRA SEDUCTORA”, “AÑORANZA Y QUEBRANTO”  ,”LA ESCALERA DE LA EVASIÓN”,   “ DEL EXILIO INTERIOR”,  ”LOS SONES DEL MATEMATICO”,  “LOS DESVELOS DEL POETA”, “LOS DIAS DEL CONTABLE”,  “EL QUE CONVERSA CONSIGO MISMO”,  “LOS AMANTES” etc etc.., son títulos de series que dan fe de ciertas convulsiones interiores;  Estos son títulos  de series de obras ejecutadas en años anteriores, muchas de ellas podrían ser válidas para la obra actual.  Con el paso del tiempo,  resulta más complicado hacer el bautizo, se evidencia una tendencia a repetir los títulos, lo cual hasta cierto punto, me parece lógico.  Últimamente  los títulos giran dentro de la misma espiral, como el agua que se cuela por el agujero de un lavabo, no siento necesidad de ir en contra de esa fuerza centrípeta,  confluye en un punto, como si en realidad desconocidas fuerzas te arrastraran a poner  siempre el mismo titulo.                                                                                                                                                                                    
+Por una especie de mecanismo de selección que no controlo, las imágenes que permanecen en mi memoria, mis referentes mentales, siguen siendo de pintores figurativos; aunque formalmente el resultado de mi obra pudiese parecer alejado de esta afirmación, en mi interior me sigo considerando un pintor figurativo, aunque este testimonio pueda parecer extraño, o absurdo, no deja de ser por ello cierto; no es que no sienta interés o desconocimiento por la pintura que no sea figurativa, simplemente por no sé que  suerte de mecanismo, no se fija en  mi memoria, así mismo tampoco me interesa especialmente el uso que de la figuración se hace en el arte actual.  Sigo manteniendo una cierta dependencia mental de la figuración del renacimiento , desde los primitivos del XIII, hasta los manieristas del XVI.
