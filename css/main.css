@@ -2010,12 +2010,11 @@ img.gallery-image + span /* hide spans immediately after images that are set to 
 .exhibitions-individual h1 {
   font-size: 6vw;
   padding: 2vh 0;
-  position: relative;
   width: 100%;
 }
 .exhibitions-collective {
   background-size: contain;
-  margin: 7vh 0 5vh 0;
+  margin: 7vh 0 0 0;
   min-height: 50vh;
 }
 .exhibitions-collective h1 {
@@ -2023,6 +2022,23 @@ img.gallery-image + span /* hide spans immediately after images that are set to 
   padding: 2vh 0;
   width: 100%;
 }
+.exhibitions-museum {
+  background-size: cover;
+  margin: 7vh 0 5vh 0;
+  min-height: 50vh;
+}
+.exhibitions-museum h1 {
+  font-size: 6vw;
+  padding: 2vh 0;
+  width: 100%;
+}
 
+/* EXHBITION SUBPAGE MOBILE STYLES */
 
+.exhibition-subpage-individual-images {
+  display: none;
+}
+.generic-main-content {
+  padding: 0 5vw;
+}
 }
