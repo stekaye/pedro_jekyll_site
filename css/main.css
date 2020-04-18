@@ -405,6 +405,7 @@ h1, h2, h3, h4, p, span {
 .works-box {
   align-items: center;
   flex: 1;
+  margin: 0 3vw;
   /* padding: 2vh 3vh 3vh; */
 }
 .works-images {
@@ -820,7 +821,13 @@ img.gallery-image:hover + span /* display spans immediately after :hover faded i
   padding: 0 0 3vh;
   text-align: justify;
 }
-
+.generic-main-content span {
+  font-weight: 400;
+}
+.generic-main-content h2 {
+  font-weight: 600;;
+  padding-bottom: 2vh;
+}
 /* BLOG PAGE(S) STYLES */
 .page {
   margin: 6vh auto 15vh;
@@ -1091,7 +1098,32 @@ img.gallery-image:hover + span /* display spans immediately after :hover faded i
   text-decoration: none;
 }
 .exhibitions-collective h1 {
-  background-color: #4c4c4c;
+  background-color: goldenrod;
+  color: #fff;
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  left: 50%;
+  opacity: 0.9;
+  padding: 2vh 0;
+  position: relative;
+  text-transform: uppercase;
+  top: 8%;
+  transform: translate(-50%, -50%);
+  width: 105%;
+}
+.exhibitions-museum {
+  background-position: center center;
+  background-image: url(../images/Exhibitions/collection_hero.jpg);
+  background-size: contain;
+  flex: 1;
+  margin: 2vh 8vw 5vh 8vw;
+  min-height: 81vh;
+  opacity: 0.8;
+  text-decoration: none;
+}
+.exhibitions-museum h1 {
+  background-color: goldenrod;
   color: #fff;
   display: block;
   font-size: 1.5rem;
@@ -1127,6 +1159,73 @@ img.gallery-image:hover + span /* display spans immediately after :hover faded i
   flex: 1;
   text-align: center;
   width: 100;
+}
+
+/* REVIEWS LANDING PAGE STYLES */
+
+.reviews-wrapper {
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+.reviews-lists-wrapper {
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: row;
+  text-align: center;
+  width: 100%;
+}
+.reviews-bibliografia {
+  background-position: center center;
+  background-image: url(../images/Reviews/bibliography_hero.jpg);
+  background-size: contain;
+  flex: 1;
+  margin: 2vh 1.5vw 5vh 8vw;
+  min-height: 81vh;
+  opacity: 0.8;
+  text-decoration: none;
+}
+.reviews-bibliografia h1 {
+  background-color: goldenrod;
+  color: #fff;
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  left: 50%;
+  opacity: 0.9;
+  padding: 2vh 0;
+  position: relative;
+  text-transform: uppercase;
+  top: 8%;
+  transform: translate(-50%, -50%);
+  width: 105%;
+}
+.reviews-resenas {
+  background-position: center center;
+  background-image: url(../images/Exhibitions/collective.jpg);
+  background-size: contain;
+  flex: 1;
+  margin: 2vh 8vw 5vh 1.5vw;
+  min-height: 81vh;
+  opacity: 0.8;
+  text-decoration: none;
+}
+.reviews-resenas h1 {
+  background-color: goldenrod;
+  color: #fff;
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  left: 50%;
+  opacity: 0.9;
+  padding: 2vh 0;
+  position: relative;
+  text-transform: uppercase;
+  top: 8%;
+  transform: translate(-50%, -50%);
+  width: 105%;
 }
 
 /* CONTACT FORM STYLES */
