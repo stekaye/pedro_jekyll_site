@@ -1084,13 +1084,13 @@ img.gallery-image:hover + span /* display spans immediately after :hover faded i
 }
 .photo-gallery {
   flex: 1;
-  padding: 5vh 0;
+  padding: 1vh 0;
   margin: 10px 50px 0;
   text-align: center;
 }
 .video-gallery {
   flex: 1;
-  padding: 5vh 0;
+  padding: 3vh 0 5vh;
   margin: 10px 50px 0;
   text-align: center;
 }
@@ -1430,20 +1430,20 @@ label {
   }
   .generic-main-content h1 {
     border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
-    font-size: 3.6vw;
+    font-size: 4vw;
     margin: 2vh 10vw 8vh;
-    padding: 0 0 5vh;
+    padding: 3vh 0 5vh;
   }
   .generic-main-content p {
-    font-size: 2vw;
+    font-size: 3vw;
     font-weight: 200;
   }
   .generic-main-content span {
     font-weight: 400;
   }
   .generic-main-content h2 {
-    font-size: 2.3vw;
-    padding-bottom: 0vh;
+    font-size: 4vw;
+    padding-bottom: 2vh;
   }
  
   /* TABLET HEADER STYLES */
@@ -1593,13 +1593,26 @@ label {
   .works-title h3 {
     padding: 2vh 0 0;
   }
+  .works-header {
+    padding: 3vh 10vw;
+  }
   .works-header h1 {
-    font-size: 2.7rem;
+    font-size: 6vw;
     font-weight: 600;
   }
   .works-header p {
-    font-size: 1.6rem;
+    font-size: 2.8vw;
     font-weight: 200;
+  }
+  .works-subheader {
+    padding: 2vh 18vw 0;
+  }
+  .works-subheader h1 {
+    font-size: 5vw;
+  }
+  .works-subheader p {
+    font-size: 2.8vw;
+    line-height: 1.6;
   }
 
 /* PAINTINGS TABLET LANDING PAGE STYLES */
@@ -1954,6 +1967,69 @@ img.gallery-image + span /* hide spans immediately after images that are set to 
   margin: 4vh 5vw;
 }
 
+/* BIOGRAPHY TABLET PAGE STYLES */
+
+.biography-hero-image {
+  height: 40vh;
+}
+.biography-hero-content {
+  left: 50%;
+  top: 93%;
+}
+.biography-hero-content h1 {
+  font-size: 5vw;
+}
+
+/* BLOG PAGE(S) STYLES */
+.page p {
+  font-size: 2.4vw;
+  line-height: 1.6;
+}
+.page h1 {
+  font-size: 6vw;
+  margin-bottom: 4vh;
+  padding: 0 4vw 3vh;
+}
+.page h2 {
+  font-size: 4vw;
+  text-align: left;
+}
+.page h4 {
+  font-size: 2.2vw;
+  margin: 1vh 0 4vh;
+}
+.blog-title-list span {
+  font-size: 2vw;
+  margin-top: 0.5em;
+}
+.blog-title-list a {
+  font-size: 2.3vw;
+  font-weight: 600;
+  margin-bottom: 1.3vh;
+}
+.blog-posts .post-header {
+  font-size: 2.1vw;
+}
+.post-header img {
+  height: 5vh;
+}
+.posts-image {
+  height: 25vh;
+}
+.posts-link a {
+  padding: 1vh 0 0;
+}
+.posts-link h2 {
+  font-size: 2vw;
+  padding: 2vh 2vw;
+}
+.half-hero {
+  height: 40vh;
+  margin: 5vh 8vw 0;
+}
+.col-two .col-aside {
+  flex: 0 0 16em;
+}
 
 /* EXHBITION LANDING TABLET PAGE STYLES */
 
@@ -2057,20 +2133,20 @@ label {
 }
 .generic-main-content h1 {
   border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
-  font-size: 5vw;
-  margin: 1vh 4vw 8vh;
+  font-size: 7vw;
+  margin: 4vh 4vw 8vh;
   padding: 0 0 5vh;
 }
 .generic-main-content p {
-  font-size: 3vw;
+  font-size: 4vw;
   font-weight: 200;
 }
 .generic-main-content span {
   font-weight: 400;
 }
 .generic-main-content h2 {
-  font-size: 3.5vw;
-  padding-bottom: 0vh;
+  font-size: 5vw;
+  padding-bottom: 1vh;
 }
 
   /* MOBILE HEADER STYLES */
@@ -2134,7 +2210,7 @@ label {
 /* WORKS MOBILE PAGE STYLES */
 
 .works-header {
-  padding: 3vh 5vw;
+  padding: 0 5vw;
 }
 .works-subheader {
   padding: 2vh 5vw;
