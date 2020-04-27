@@ -302,7 +302,6 @@ a {
   overflow: hidden;
 }
 .callout-works-image {
-  /* animation: fadeIn ease 10s; */
   background-image: url(../images/hero2.jpg);
   background-position: bottom center;
   margin: 0 8vw 5vh;
@@ -322,7 +321,7 @@ a {
   font-weight: 400;
   position: relative;
   text-align: center;
-  top: 88%;
+  top: 82%;
 }
 .callout-section-content a {
   text-decoration: none;
