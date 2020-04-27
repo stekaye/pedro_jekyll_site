@@ -2544,18 +2544,41 @@ label {
 
 /* LANDSCAPE MOBILE FOOTER STYLES */
 
+.footer-nav {
+  padding: 0vh 8vw 8vh;
+  text-align: center;
+}
+.footer-nav li {
+  display: inline-block;
+  list-style: none;
+}
+.footer-nav li ~ li {
+  padding-left: 0;
+}
 .footer-nav a {
-  font-size: 3vw;
+  border: 1px solid #fff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 6vh;
   font-weight: 200;
   padding: 10px;
+  text-transform: uppercase;
 }
-.footer-nav {
-  padding: 3vh 8vw 8vh;
+.footer-nav .hide {
+  display: none;
 }
 .footer-image img {
+  border-radius: 50%;
+  display: inline-block;
   height: 30vh;
+  left: 50%; 
+  margin-bottom: 3vh;
+  object-fit: cover;
+  padding: 5vh 0 5vh;
+  position: relative;
+  transform: translate(-50%, 0); 
   width: 30vh;
 }
+
 
 /* LANDSCAPE MOBILE CALLOUT PAGE STYLES */
 
