@@ -84,7 +84,7 @@ a {
   padding: 15px;
   width: auto;
 }
-.lanscape-photo-gallery {
+.landscape-photo-gallery {
   flex: 1;
   padding: 3vh 0 0;
   margin: 10px 50px 0;
@@ -292,7 +292,7 @@ a {
   width: 10rem;
 }
 
-/* CALLOUT: WORKS STYLES */
+/* CALLOUT STYLES */
 
 .callout-section {
   background-size: cover;
@@ -383,16 +383,17 @@ a {
   font-size: 1.2rem;
   line-height: 1.6;
 }
+.works-title {
+  margin: 0 0 4vh;
+}
 .works-title h3 {
-  /* font-family: 'Raleway', sans-serif; */
   font-size: 1.4rem;
   text-align: center;
-  top: 70%;
 }
 .works-title h3 a {
   color: #4c4c4c;
+  font-size: 1.4rem;
   font-weight: 600;
-  position: relative;
   text-decoration: none;
 }
 .works-title h3 a:hover {
@@ -413,7 +414,7 @@ a {
   /* padding: 2vh 3vh 3vh; */
 }
 .works-images {
-  padding: 3vh 0;
+  padding: 3vh 0 1vh;
   position: relative;
   text-align: center;
 }
@@ -622,7 +623,7 @@ img.gallery-image:hover + span /* display spans immediately after :hover faded i
 
 /* BIOGRAPHY LANDING PAGE STYLES */
 
-.about-page-wrapper {
+/* .about-page-wrapper {
   display: flex;
   flex: 1 1 0;
   flex-direction: column;
@@ -758,7 +759,6 @@ img.gallery-image:hover + span /* display spans immediately after :hover faded i
   color: goldenrod;
 }
 .about-page-archive {
-  /* background-color: #ffc906; */
   display: flex;
   flex: 1;
   flex-direction: row-reverse;
@@ -807,10 +807,9 @@ img.gallery-image:hover + span /* display spans immediately after :hover faded i
   background-position: center center;
   background-size: cover;
   border-radius: 4%;
-  /* box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4); */
   flex: 1;
   margin: 4vh 2vw 4vh 8vw;
-}
+} */
 
 /* BIOGRAPHY MAIN PAGE STYLES */
 
@@ -1384,6 +1383,7 @@ label {
     font-size: 4vw;
     padding-bottom: 2vh;
   }
+
  
   /* TABLET HEADER STYLES */
 
@@ -1793,7 +1793,7 @@ img.gallery-image + span /* hide spans immediately after images that are set to 
 
 /* BIOGRAPHY TABLET PAGE STYLES */
 
-.about-page-intro-text {
+/* .about-page-intro-text {
   margin: 0 2vw 4vh 2vw;
 }
 .about-page-intro-text h1 {
@@ -1877,7 +1877,7 @@ img.gallery-image + span /* hide spans immediately after images that are set to 
 .about-page-archive-image {
   min-height: 35vh;
   margin: 4vh 5vw;
-}
+} */
 
 /* BIOGRAPHY TABLET PAGE STYLES */
 
@@ -1890,6 +1890,18 @@ img.gallery-image + span /* hide spans immediately after images that are set to 
 }
 .biography-hero-content h1 {
   font-size: 5vw;
+}
+.portrait-photo-gallery {
+  flex: 1;
+  padding: 3vh 0 0;
+  margin: 10px 0 0;
+  text-align: center;
+}
+.portrait-photo-gallery img {
+  height: 35vh;
+  transition: 1s;
+  padding: 0 1vw;
+  width: auto;
 }
 
 /* BLOG PAGE(S) STYLES */
@@ -1947,7 +1959,7 @@ img.gallery-image + span /* hide spans immediately after images that are set to 
 
 .upcoming-exhibitions-image {
   margin: 0 4vw 1vh 4vw;
-  min-height: 40vh;
+  min-height: 41vh;
 }
 .upcoming-exhibitions-content {
   left: 50%;
@@ -1973,30 +1985,36 @@ img.gallery-image + span /* hide spans immediately after images that are set to 
   display: flex;
   flex: 1 1 0;
   flex-direction: row;
-  height: 40vh;
   text-align: center;
   width: 100%;
 }
 .exhibitions-individual {
-  margin: 1vh 1.5vw 1vh 8vw;
-  min-height: inherit;
+  margin: 1vh 1.5vw 1vh 4vw;
+  min-height: 41vh;
 }
 .exhibitions-individual h1 {
   font-size: 2.5vw;
+  top: 10%;
+  width: 90%;
 }
 .exhibitions-collective {
-  margin: 1vh 8vw 1vh 1.5vw;
-  min-height: inherit;
+  margin: 1vh 4vw 1vh 1.5vw;
+  min-height: 41vh;
 }
 .exhibitions-collective h1 {
+  background-color: #4c4c4c;
   font-size: 2.5vw;
+  top: 10%;
+  width: 90%;
 }
 .exhibitions-museum {
-  margin: 1vh 8vw 4vh 8vw;
-  min-height: inherit;
+  margin: 1vh 4vw 4vh;
+  min-height: 41vh;
 }
 .exhibitions-museum h1 {
   font-size: 2.5vw;
+  top: 15%;
+  width: 90%;
 }
 
 
@@ -2063,6 +2081,13 @@ label {
 .generic-main-content h2 {
   font-size: 5vw;
   padding-bottom: 1vh;
+}
+.portrait-photo-gallery {
+  margin: 0;
+}
+.portrait-photo-gallery img {
+  height: 81vh;
+  padding: 0 0 2vh;
 }
 
   /* 1-M-P MOBILE HEADER STYLES */
@@ -2200,6 +2225,10 @@ label {
 label {
   font-size: 4vw;
   font-weight: 200;
+}
+input[type=text], input[type=email], input[type=message], input[type=tel], select, textarea {
+  margin-bottom: 4vh; 
+  margin-top: 2vh; 
 }
 
 /* BIOGRAPHY MOBILE PAGE STYLES */
@@ -2472,33 +2501,36 @@ label {
 }
 .exhibitions-individual {
   background-size: contain;
-  margin: 4vh 0 2vh 0;
-  min-height: inherit;
+  margin: 4vh 2vw 2vh;
+  min-height: 30vh;
 }
 .exhibitions-individual h1 {
-  font-size: 6vw;
+  font-size: 5vw;
   padding: 2vh 0;
-  width: 100%;
+  top: 15%;
+  width: 90%;
 }
 .exhibitions-collective {
   background-size: contain;
-  margin: 2vh 0 2vh 0;
-  min-height: inherit;
+  margin: 2vh 2vw 2vh;
+  min-height: 30vh;
 }
 .exhibitions-collective h1 {
-  font-size: 6vw;
+  font-size: 5vw;
   padding: 2vh 0;
-  width: 100%;
+  top: 15%;
+  width: 90%;
 }
 .exhibitions-museum {
   background-size: cover;
-  margin: 2vh 0 4vh 0;
-  min-height: inherit
+  margin: 2vh 2vw 4vh;
+  min-height: 30vh;
 }
 .exhibitions-museum h1 {
-  font-size: 6vw;
+  font-size: 5vw;
   padding: 2vh 0;
-  width: 100%;
+  top: 15%;
+  width: 90%;
 } */
 
 /* EXHBITION SUBPAGE MOBILE STYLES */
@@ -2508,11 +2540,31 @@ label {
 }
 }
 
-/* SMALL: LANSCAPE MOBILE STYLES */
+/* SMALL: LANDSCAPE MOBILE STYLES */
 /* MAX-WIDTH: 767px */
 
 @media (max-width: 767px) and (orientation:landscape) {
 
+/* LANDSCAPE MOBILE GLOBAL STYLES */
+
+.generic-main-content {
+  line-height: 1.6;
+  margin: 2vh 16vw 5vh;
+}
+.generic-main-content h1 {
+  font-size: 1.6rem;
+}
+.generic-main-content p {
+  font-size: 2.7vw;
+}
+.portrait-photo-gallery {
+  margin: 10px 0 0;
+}
+.portrait-photo-gallery img {
+  height: 81vh;
+  padding: 0 1vw;
+}
+  
 /* LANDSCAPE MOBILE HEADER STYLES */
 
 .header {
@@ -2578,7 +2630,6 @@ label {
   width: 30vh;
 }
 
-
 /* LANDSCAPE MOBILE CALLOUT PAGE STYLES */
 
 .callout-section-content {
@@ -2592,6 +2643,135 @@ label {
 .callout-about-image {
   background-image: url(../images/pedro_about2.jpg);
   background-position: center center;
+}
+
+/* LANDSCAPE MOBILE EXHIBITION STYLES */
+
+.upcoming-exhibitions-image {
+  margin: 0 4vw 2vh;
+  min-height: 85vh;
+}
+.upcoming-exhibitions-content {
+  top: 55%;
+}
+.upcoming-exhibitions-content h1 {
+  font-size: 5.5vw;
+}
+.upcoming-exhibitions-content h2 {
+  font-size: 4vw;
+}
+.upcoming-exhibitions-content h3 {
+  font-size: 3.2vw;
+}
+.exhibitions-lists-wrapper {
+  flex-direction: row;
+  text-align: center;
+}
+.exhibitions-individual {
+  margin: 2vh 1vw 2vh 4vw;
+  min-height: 70vh;
+}
+.exhibitions-individual h1 {
+  font-size: 2.6vw;
+  padding: 3vh 0;
+  top: 15%;
+  width: 90%;
+}
+.exhibitions-collective {
+  margin: 2vh 4vw 2vh 1vw;
+  min-height: 70vh;
+}
+.exhibitions-collective h1 {
+  background-color: #4c4c4c;
+  font-size: 2.6vw;
+  padding: 3vh 0;
+  top: 15%;
+  width: 90%;
+}
+.exhibitions-museum {
+  margin: 2vh 4vw 4vh;
+  min-height: 70vh;
+}
+.exhibitions-museum h1 {
+  font-size: 2.6vw;
+  padding: 3vh 0;
+  top: 15%;
+  width: 90%;
+} 
+
+/* LANDSCAPE MOBILE WORKS PAGE STYLES */
+
+.works-header h1 {
+  font-size: 5vw;
+  padding: 2vh 0 3vh;
+}
+.works-header p {
+  font-size: 2.7vw;
+}
+.works-copy-wrapper {
+  min-height: 35vh;
+  padding: 2vh 8vw 4vh;
+}
+.works-box {
+  margin: 0 3vw;
+}
+.works-images {
+  padding: 5vh 0 2vh
+}
+.works-images img {
+  height: 34vw;
+  width: 34vw;
+}
+.works-title {
+  margin: 0 0 4vh;
+}
+.works-title h3 a {
+  font-weight: 600;
+  font-size: 3vw;
+}
+
+
+
+/* LANDSCAPE MOBILE BIOGRAPHY PAGE STYLES */
+
+.biography-hero-image {
+  height: 81vh;
+}
+.biography-hero-content {
+  left: 45%;
+  top: 64%;
+}
+.biography-hero-content h1 {
+  font-size: 4vw;
+  font-weight: 600;
+}
+
+/* LANDSCAPE MOBILE CONTACT FORM STYLES */
+
+.contact-image {
+  margin: 1vh 4vw 6vh;
+  min-height: 65vh;
+}
+.contact-copy {
+  padding: 0 4vw 5vh;
+}
+.contact-copy h1 {
+  font-size: 4.5vw;
+}
+.contact-copy p {
+  font-size: 2.5vw;
+  padding: 4vh 10vw 3vh;
+}
+.contact-copy-form{
+  padding: 3vh 12vw;
+}
+label {
+  font-size: 2.3vw;
+  font-weight: 200;
+}
+input[type=text], input[type=email], input[type=message], input[type=tel], select, textarea {
+  margin-bottom: 6vh; 
+  margin-top: 3vh; 
 }
 
 
