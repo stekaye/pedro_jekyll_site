@@ -351,6 +351,15 @@ a {
 .dark-content p:hover {
   color: rgba(0, 0, 0, 1);
 }
+.overlay {
+  background: rgba(255, 255, 255, 0.3);
+  height: 95vh;
+  left: 0;
+  margin: 0 8vw 5vh;
+  position: absolute;
+  top: 0;
+  width: 84vw; 
+}
 
 
 /* WORKS PAGE STYLES */
@@ -447,9 +456,10 @@ a {
 
 .work-type-wrapper {
   display: flex;
-  flex: 1 1 auto;
+  flex: 1 1 0;
+  flex-direction: column;
+  text-align: center;
   width: 100%;
-	margin: 0 auto;
 }
 .work-type-heading {
   border-top: 1px dotted rgba(0, 0, 0, 0.2);
@@ -467,6 +477,122 @@ a {
   line-height: 1.6;
   padding: 3vh 20vw 0;
   text-align: center;
+}
+.latest-series-image {
+  background-position: center center;
+  background-image: url(../images/paintings/2016-2020_main/Compressed_Images/landscape_14.jpg);
+  background-size: contain;
+  flex: 1;
+  margin: 2vh 8vw 3vh 8vw;
+  min-height: 81vh;
+  opacity: 0.7;
+}
+.latest-series-content {
+  background-color: #4c4c4c;
+  display: block;
+  left: 50%;
+  opacity: 0.8;
+  padding: 3vh 0;
+  position: absolute;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+.latest-series-content h1 {
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #4c4c4c;
+  display: inline-block;
+  font-size: 2.5rem;
+  font-weight: 600;
+  opacity: 0.8;
+  padding: 2vh 2vw;
+  text-transform: uppercase;
+}
+.latest-series-content h2 {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 400;
+  opacity: 0.8;
+  padding: 0 2vw;
+  text-transform: uppercase;
+}
+.latest-series-content h3 {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 200;
+  opacity: 0.8;
+  padding: 2vh 0;
+}
+.sub-series-content {
+  background-color: #4c4c4c;
+  display: block;
+  left: 50%;
+  opacity: 0.8;
+  padding: 2vh 0;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 105%;
+}
+.sub-series-content h1 {
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #4c4c4c;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  opacity: 0.8;
+  padding: 2vh 2vw;
+  text-transform: uppercase;
+}
+.sub-series-content h2 {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 400;
+  opacity: 0.8;
+  padding: 0 2vw;
+  text-transform: uppercase; 
+}
+.sub-series-content h3 {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.8;
+  padding: 2vh 0 0;
+}
+.series-wrapper {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 7vw;
+  width: auto;
+}
+.series-link-item {
+  flex: 1;
+  height: 50vh;
+  margin: 0 1vw 3vh;
+  opacity: 0.9;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+}
+.second-series-image {
+  background-position: center center;
+  background-image: url(../images/paintings/1993-2006_main//compressed_images/portrait_1.jpg);
+  background-size: contain;
+}
+.third-series-image {
+  background-position: center center;
+  background-image: url(../images/paintings/1988-1994_main/compressed_images/square_1.jpg);
+  background-size: contain;
+}
+.fourth-series-image {
+  background-position: center center;
+  background-image: url(../images/paintings/1984-1988/square_6.jpg);
+  background-size: contain;
 }
 .gallery {
   align-items: center;
@@ -487,7 +613,6 @@ a {
   margin: 1vh 2vw;
 }
 .gallery-item {
-  /* box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4); */
   flex: 1 0 24rem;
 	margin: 1rem;
   overflow: hidden;
@@ -1622,6 +1747,66 @@ label {
   font-weight: 600;
   line-height: 1.2;
 }
+.latest-series-image {
+  margin: 2vh 8vw 3vh 8vw;
+  min-height: 40vh;
+  opacity: 0.7;
+}
+.latest-series-content {
+  opacity: 0.9;
+  padding: 1vh 0;
+  top: 35%;
+}
+.latest-series-content h1 {
+  font-size: 2.3rem;
+  padding: 1vh 2vw;
+  text-transform: uppercase;
+}
+.latest-series-content h2 {
+  font-size: 1.6rem;
+}
+.latest-series-content h3 {
+  font-size: 1.4rem;
+  padding: 2vh 0;
+}
+.sub-series-content {
+  padding: 2vh 0;
+  top: 50%;
+  width: 105%;
+}
+.sub-series-content h1 {
+  font-size: 1.4rem;
+  padding: 2vh 2vw;
+}
+.sub-series-content h2 {
+  font-size: 1.2rem;
+  padding: 0 2vw;
+}
+.sub-series-content h3 {
+  font-size: 1rem;
+  padding: 2vh 0 0;
+}
+.series-wrapper {
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 10vw;
+}
+.series-link-item {
+  height: 38vh;
+  margin: 0 0 3vh;
+}
+.second-series-image {
+  background-image: url(../images/paintings/1993-2006_main//compressed_images/landscape_1.jpg);
+  background-size: cover;
+}
+.third-series-image {
+  background-image: url(../images/paintings/1988-1994_main/compressed_images/landscape_2.JPG);
+  background-size: cover;
+}
+.fourth-series-image {
+  background-image: url(../images/paintings/1984-1988/landscape_4.jpg);
+  background-size: cover;
+}
 .gallery {
   align-items: center;
   justify-content: flex-start;
@@ -2311,6 +2496,66 @@ label {
   padding: 3vh 8vw 1vh;
 }
 
+/* PAINTING SERIES MOBILE STYLES */
+
+.latest-series-image {
+  margin: 2vh 8vw 3vh 8vw;
+  min-height: 40vh;
+  opacity: 0.7;
+}
+.latest-series-content {
+  opacity: 0.9;
+  padding: 1vh 0;
+  top: 35%;
+}
+.latest-series-content h1 {
+  font-size: 1.3rem;
+  padding: 1vh 2vw;
+  text-transform: uppercase;
+}
+.latest-series-content h2 {
+  font-size: 1.15rem;
+}
+.latest-series-content h3 {
+  font-size: 1rem;
+  padding: 2vh 0;
+}
+.sub-series-content {
+  padding: 2vh 0;
+  top: 50%;
+  width: 105%;
+}
+.sub-series-content h1 {
+  font-size: 1.2rem;
+  padding: 2vh 2vw;
+}
+.sub-series-content h2 {
+  font-size: 1.1rem;
+  padding: 0 2vw;
+}
+.sub-series-content h3 {
+  font-size: 1rem;
+  padding: 2vh 0 0;
+}
+.series-wrapper {
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 10vw;
+}
+.series-link-item {
+  height: 38vh;
+  margin: 0 0 3vh;
+}
+.second-series-image {
+  background-size: cover;
+}
+.third-series-image {
+  background-size: cover;
+}
+.fourth-series-image {
+  background-size: cover;
+}
+
 /* CONTACT FORM MOBILE STYLES */
 
 .contact-wrapper {
@@ -2778,10 +3023,11 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 
 .callout-section-content {
   left: 30%;
-  top: 88%;
+  top: 86%;
 }
 .callout-section-content h1 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  font-weight: 600;
 }
 .light-to-dark h1 {
   color: rgba(255, 255, 255, 0.8);
@@ -2876,6 +3122,58 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 .work-type-text {
   font-size: 1.15rem;
   padding: 3vh 9vw 1vh;
+}
+
+/* PAINTING SERIES MOBILE STYLES */
+
+.latest-series-image {
+  margin: 2vh 8vw 3vh 8vw;
+  min-height: 81vh;
+}
+.latest-series-content {
+  opacity: 0.9;
+  padding: 2vh 0;
+  top: 55%;
+}
+.latest-series-content h1 {
+  font-size: 1.4rem;
+  padding: 2vh 2vw;
+}
+.latest-series-content h2 {
+  font-size: 1.1rem;
+}
+.latest-series-content h3 {
+  font-size: 0.95rem;
+  padding: 2vh 0;
+}
+.sub-series-content {
+  padding: 2vh 0;
+  top: 132%;
+  width: 100%;
+}
+.sub-series-content h1 {
+  font-size: 0.9rem;
+  padding: 2vh 1vw 1vh;
+}
+.sub-series-content h2 {
+  font-size: 0.9rem;
+  padding: 2vh 2vw;
+}
+.sub-series-content h3 {
+  font-size: 0.8rem;
+  padding: 2vh 0 0;
+}
+.series-wrapper {
+  flex-direction: row;
+  height: 60vh;
+  justify-content: center;
+  margin: 0 7vw;
+}
+.series-link-item {
+  margin: 1vh 1vw 3vh;
+}
+.second-series-image, .third-series-image, .fourth-series-image {
+  height: 35vh;
 }
 
 /* LANDSCAPE MOBILE BIOGRAPHY PAGE STYLES */
