@@ -56,8 +56,14 @@ body {
   flex-grow: 1;
   padding-top: 14vh;
   width: 100%;
+  padding-bottom: 4vh;
 }
-
+.center {
+  text-align: center;
+}
+.justify {
+  text-align: justify;
+}
 .clickable-link {
   padding: 100vw;
 }
@@ -113,8 +119,7 @@ a {
 .generic-main-content p {
   font-size: 1.05rem;
   font-weight: 200;
-  padding: 0 10vw 3vh;
-  text-align: center;
+  padding: 0 0 3vh;
 }
 .generic-main-content span {
   font-weight: 400;
@@ -123,6 +128,7 @@ a {
   font-weight: 600;;
   padding-bottom: 2vh;
 }
+
 
 /* HEADER STYLES */
 .header {
@@ -276,7 +282,8 @@ a {
   font-family: 'Buenard', serif;
   font-size: 1.2rem;
   text-decoration: none;
-}.works-title {
+}
+.works-title {
   margin: 0 0 4vh;
 }
 .footer-nav a:hover {
@@ -394,6 +401,7 @@ a {
   font-size: 1.2rem;
   font-weight: 200;
   line-height: 1.6;
+  margin-bottom: 4vh;
 }
 .works-title {
   margin: 0 0 4vh;
@@ -421,12 +429,11 @@ a {
   opacity: 0.8;
 }
 .works-copy-wrapper {
-  align-items: top;
   display: flex;
   flex: 1 1 0;
   flex-wrap: wrap;
   min-height: 35vh;
-  padding: 2vh 10vw 4vh;
+  padding: 0 10vw 0;
   width: auto;
 }
 .works-box {
@@ -466,7 +473,8 @@ a {
   color: #4c4c4c;
   /* font-family: 'Raleway', sans-serif; */
   font-size: 2.5rem;
-  margin: 0 6vw;
+  font-weight: 600;
+  margin: 2vh 6vw;
   padding: 4vh 0 0;
   text-align: center;
 }
@@ -475,12 +483,12 @@ a {
   /* font-family: 'Raleway', sans-serif; */
   font-size: 1.1rem;
   line-height: 1.6;
-  padding: 3vh 20vw 0;
+  padding: 3vh 25vw 0;
   text-align: center;
 }
 .latest-series-image {
   background-position: center center;
-  background-image: url(../images/paintings/2016-2020_main/Compressed_Images/landscape_14.jpg);
+  background-image: url(../images/paintings/2009-2020/2016-2020_main/incertidumbre/incertidumbre_1ab.JPG);
   background-size: contain;
   flex: 1;
   margin: 2vh 8vw 3vh 8vw;
@@ -595,7 +603,7 @@ a {
   background-size: contain;
 }
 .gallery {
-  align-items: center;
+  /* align-items: center; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -644,7 +652,8 @@ a {
   height: 55vh;
   justify-content: center;
 }
-.gallery-item-dates {
+.gallery-item-dates,
+.gallery-item-text {
   height: 68vh;
   width: auto;
 }
@@ -678,6 +687,7 @@ a {
   text-align: center;
   top: 50%;
   transform: translate(-50%, -50%);
+  width: 90%;
 }
 .gallery-item-circle > a span,
 .gallery-item-portrait > a span,
@@ -688,8 +698,8 @@ a {
 .gallery-item-normal > a span,
 .gallery-item-large > a span,
 .gallery-item-largest > a span {
-  font-size: 1.2vw;
-  font-weight: 400;
+  font-size: 1.3vw;
+  font-weight: 600;
 }
 .gallery-item-series > a span {
   font-size: 1.6vw;
@@ -699,13 +709,18 @@ a {
   font-size: 2.2vw;
   font-weight: 600;
 }
+.gallery-item-text > a span {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
 .gallery-image-series {
 	width: 45vw;
 	height: 100%;
 	object-fit: cover;
 }
 .gallery-image-square {
-	width: 45vw;
+  max-width: 100%;
+	width: auto;
 	height: 100%;
 	object-fit: unset;
 }
@@ -1710,7 +1725,7 @@ label {
     width: 37vw;
   }
   .works-copy-wrapper {
-    padding: 2vh 6vw 4vh;
+    padding: 0 6vw 0;
   }
   .works-title h3 {
     padding: 2vh 0;
@@ -1743,7 +1758,7 @@ label {
   padding: 3vh 18vw 1vh;
 }
 .work-type-heading {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 600;
   line-height: 1.2;
 }
@@ -1985,6 +2000,20 @@ label {
   transform: translate(-50%, -50%);
   width: 100%;
 }
+.gallery-item-text > a span {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 4vw;
+  font-weight: 600;
+  left: 0%;
+  margin: 0 0;
+  opacity: 0.8;
+  padding: 1vh 0;
+  position: absolute;
+  top: 4%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
 .gallery-item-series > a span {
   background-color: rgba(255, 255, 255, 0.6);
   color: rgba(0, 0, 0, 0.8);
@@ -2004,7 +2033,7 @@ label {
   height: 100%;
 }
 .gallery-image-square {
-  width: 100%;
+  width: auto;
   height: 60%;
 }
 .gallery-image-large, 
@@ -2147,7 +2176,7 @@ img.gallery-image + span /* hide spans immediately after images that are set to 
 /* BIOGRAPHY TABLET PAGE STYLES */
 
 .biography-hero-image {
-  height: 40vh;
+  height: 70vh;
 }
 .biography-hero-content {
   left: 50%;
@@ -2155,6 +2184,7 @@ img.gallery-image + span /* hide spans immediately after images that are set to 
 }
 .biography-hero-content h1 {
   font-size: 5vw;
+  font-weight: 400;
 }
 .portrait-photo-gallery {
   flex: 1;
@@ -2479,10 +2509,13 @@ label {
 .works-copy-wrapper {
   align-items: top;
   flex-direction: column;
-  padding: 2vh 0 4vh;
+  padding: 0;
 }
 .works-title h3 {
   width: 70vw;
+}
+.works-title h3 a {
+  font-size: 5vw;
 }
 .works-images {
   padding: 3vh 0 0;
@@ -2492,8 +2525,11 @@ label {
   width: 66vw;
 }
 .work-type-text {
-  font-size: 1.25rem;
-  padding: 3vh 8vw 1vh;
+  font-size: 4.4vw;
+  padding: 3vh 6vw 1vh;
+}
+.justify {
+  text-align: justify;
 }
 
 /* PAINTING SERIES MOBILE STYLES */
@@ -2554,6 +2590,17 @@ label {
 }
 .fourth-series-image {
   background-size: cover;
+}
+.gallery-image-square {
+	width: auto;
+  height: 28vh;
+  margin: 0 auto;
+  object-fit: contain;
+}
+.gallery-item-normal > a span {
+  font-size: 0.9rem;
+  top: 54%;
+  width: 100%;
 }
 
 /* CONTACT FORM MOBILE STYLES */
@@ -2882,10 +2929,10 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 .exhibitions-museum {
   background-size: cover;
   margin: 2vh 2vw 4vh;
-  min-height: 30vh;
+  min-height: 34vh;
 }
 .exhibitions-museum h1 {
-  font-size: 5vw;
+  font-size: 4.4vw;
   padding: 2vh 0;
   top: 15%;
   width: 90%;
@@ -3117,11 +3164,16 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 }
 .works-title h3 a {
   font-weight: 600;
-  font-size: 3vw;
+  font-size: 2.5vw;
 }
 .work-type-text {
   font-size: 1.15rem;
   padding: 3vh 9vw 1vh;
+}
+.work-type-heading {
+  font-size: rem;
+  font-weight: 600;
+  line-height: 1.2;
 }
 
 /* PAINTING SERIES MOBILE STYLES */
@@ -3175,6 +3227,83 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 .second-series-image, .third-series-image, .fourth-series-image {
   height: 35vh;
 }
+.gallery {
+  align-items: center;
+  display: flex;
+  margin: 4vh 0;
+  width: 100%;
+}
+.gallery-line {
+  flex-direction: column;
+  margin-bottom: 0;
+}
+.gallery-item {
+  flex: 1 0 24rem;
+	margin: 0 auto;
+  overflow: visible;
+  position: relative;
+  text-align: center;
+}
+.gallery-item-dates,
+.gallery-item-text {
+  height: 81vh;
+  width: auto;
+}
+.gallery-item-small,
+.gallery-item-normal,
+.gallery-item-medium, 
+.gallery-item-large,
+.gallery-item-largest {
+  height: 81vh;
+  margin-top: 2vh;
+  width: auto;
+}
+.gallery-item-dates > a span {
+  font-size: 1.3rem;
+  font-weight: 600;
+  left: 0%;
+  top: 5%;
+  width: 100%;
+}
+.gallery-item-text > a span {
+  font-size: 1.1rem;
+  font-weight: 600;
+  left: 0%;
+  top: 5%;
+  width: 100%;
+}
+.gallery-item-circle > a span,
+.gallery-item-portrait > a span,
+.gallery-item-portrait-small > a span,
+.gallery-item-portrait-large > a span,
+.gallery-item-portrait-largest > a span,
+.gallery-item-medium > a span,
+.gallery-item-large > a span,
+.gallery-item-largest > a span {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.gallery-item-normal > a span {
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.1);
+  color: #4c4c4c;
+  font-size: 0.9rem;
+  font-weight: 600;
+  left: 50%;
+  opacity: 0.8;
+  padding: 0 0 4vh;
+  position: absolute;
+  top: 82%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+}
+.gallery-image-square {
+  max-width: 95vw;
+	width: auto;
+	height: 250px;
+  object-fit: contain;
+}
+
+
 
 /* LANDSCAPE MOBILE BIOGRAPHY PAGE STYLES */
 
