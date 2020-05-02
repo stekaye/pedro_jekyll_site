@@ -589,7 +589,7 @@ a {
 }
 .second-series-image {
   background-position: center center;
-  background-image: url(../images/paintings/1993-2006_main//compressed_images/portrait_1.jpg);
+  background-image: url(../images/paintings/1993-2006_main/narcisista_5_s.jpg);
   background-size: contain;
 }
 .third-series-image {
@@ -613,8 +613,8 @@ a {
 .gallery-line {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  margin: 1vh 2vw;
+  /* flex-wrap: wrap; */
+  margin: 1vh 8vw;
 }
 .gallery-line-portrait {
   display: flex;
@@ -625,6 +625,7 @@ a {
 	margin: 1rem;
   overflow: hidden;
   position: relative;
+  width: 40%;
 }
 .gallery-item-small {
   height: 53vh;
@@ -659,7 +660,8 @@ a {
 }
 .gallery-item-portrait {
   flex: 1;
-  height: 55vh;
+  height: 75vh;
+  width: 28vw;
   justify-content: center;
 }
 .gallery-item-portrait-small {
@@ -722,20 +724,21 @@ a {
   max-width: 100%;
 	width: auto;
 	height: 100%;
-	object-fit: unset;
+  object-fit: unset;
+  margin: 0 auto;
 }
 .gallery-image-portrait,
 .gallery-image-portrait-narrow {
   height: 100%;
   object-fit: unset;
   padding: 0 0.3vw;
-  width: 20.3vw;
+  width: 100%;
 }
 .gallery-image-portrait-wide {
-  height: 100%;
+  height: auto;
   object-fit: unset;
   padding: 0 0.3vw;
-  width: 28vw;
+  width: 60%;
 }
 .gallery-image-circle {
   height: 100%;
@@ -1811,7 +1814,7 @@ label {
   margin: 0 0 3vh;
 }
 .second-series-image {
-  background-image: url(../images/paintings/1993-2006_main//compressed_images/landscape_1.jpg);
+  background-image: url(../images/paintings/1993-2006_main/murmullos_2_l.jpg);
   background-size: cover;
 }
 .third-series-image {
@@ -1849,6 +1852,7 @@ label {
   flex: 1 0 auto;
   height: 62vh;
   margin: 0 4vw 8vh;
+  width: 50vw;
 }
 .gallery-item-circle {
   border-radius: initial;
@@ -1889,7 +1893,7 @@ label {
 .gallery-item-normal > a span {
   border-bottom: 1px dotted rgba(0, 0, 0, 0.1);
   color: #4c4c4c;
-  font-size: 4vw;
+  font-size: 3vw;
   font-weight: 600;
   left: 0%;
   opacity: 0.8;
@@ -1903,7 +1907,7 @@ label {
 .gallery-item-portrait-small > a span {
   border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
   color: #4c4c4c;
-  font-size: 4vw;
+  font-size: 3vw;
   font-weight: 600;
   left: 0%;
   margin: 0 0;
@@ -2050,6 +2054,7 @@ label {
 	width: auto;
   height: 40vh;
   text-align: center;
+  margin: 0 auto;
 }
 .gallery-image-portrait-large {
 	width: auto;
@@ -2597,10 +2602,21 @@ label {
   margin: 0 auto;
   object-fit: contain;
 }
+.gallery-item-normal {
+  width: 90vw;
+}
 .gallery-item-normal > a span {
-  font-size: 0.9rem;
+  font-size: 4.4vw;
   top: 54%;
-  width: 100%;
+}
+.gallery-item-portrait {
+  height: 70vh;
+  margin-top: -5vh;
+  width: 80vw;
+}
+.gallery-item-portrait > a span {
+  font-size: 4.4vw;
+  top: 62%;
 }
 
 /* CONTACT FORM MOBILE STYLES */
@@ -3304,7 +3320,21 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 	height: 250px;
   object-fit: contain;
 }
-
+.gallery-item-portrait {
+  height: 85vh;
+  margin-top: 4vh;
+  width: 80vw;
+}
+.gallery-item-portrait > a span {
+  font-size: 1rem;
+  top: 70%;
+}
+.gallery-image-portrait {
+	width: auto;
+  height: 16rem;
+  text-align: center;
+  margin: 0 auto;
+}
 
 
 /* LANDSCAPE MOBILE BIOGRAPHY PAGE STYLES */
