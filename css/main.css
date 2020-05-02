@@ -594,12 +594,12 @@ a {
 }
 .third-series-image {
   background-position: center center;
-  background-image: url(../images/paintings/1988-1994_main/compressed_images/square_1.jpg);
+  background-image: url(../images/paintings/1988-1994_main/landscape-min.JPG);
   background-size: contain;
 }
 .fourth-series-image {
   background-position: center center;
-  background-image: url(../images/paintings/1984-1988/square_6.jpg);
+  background-image: url(../images/paintings/1984-1989_main/compressed_images/calme_1_l.jpg);
   background-size: contain;
 }
 .gallery {
@@ -632,7 +632,7 @@ a {
   width: auto;
 }
 .gallery-item-normal {
-  height: 56vh;
+  height: 60vh;
   width: auto;
 }
 .gallery-item-medium {
@@ -660,7 +660,7 @@ a {
 }
 .gallery-item-portrait {
   flex: 1;
-  height: 75vh;
+  height: 70vh;
   width: 28vw;
   justify-content: center;
 }
@@ -727,9 +727,14 @@ a {
   object-fit: unset;
   margin: 0 auto;
 }
-.gallery-image-portrait,
+.gallery-image-portrait {
+  height: auto;
+  object-fit: unset;
+  padding: 0 0.3vw;
+  width: 100%;
+}
 .gallery-image-portrait-narrow {
-  height: 100%;
+  height: auto;
   object-fit: unset;
   padding: 0 0.3vw;
   width: 100%;
@@ -1818,7 +1823,7 @@ label {
   background-size: cover;
 }
 .third-series-image {
-  background-image: url(../images/paintings/1988-1994_main/compressed_images/landscape_2.JPG);
+  background-image: url(../images/paintings/1988-1994_main/landscape_2-min.JPG);
   background-size: cover;
 }
 .fourth-series-image {
