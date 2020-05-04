@@ -2033,6 +2033,9 @@ label {
 .callout-section-content p {
   display: none;
 }
+.hero-quote {
+  top: 25%;
+}
 .hero-quote q {
   font-size: 3.4vw;
   font-weight: 400;;
