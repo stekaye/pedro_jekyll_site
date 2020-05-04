@@ -2569,18 +2569,18 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   
 /* LANDSCAPE MOBILE HEADER STYLES */
 
-/* .header {
-  height: 14vh;
-} */
 .header {
   height: 15vh;
 }
 .header-logo a {
-  font-size: 3.5vw;
+  font-size: 2vw;
 }
 .drop-trigger,
 .show-mobile-menu {
   font-size: 7vh;
+}
+.header-nav {
+  top: 18vh;
 }
 
 /* LANDSCAPE MOBILE DROPDOWN MENU */
@@ -2638,8 +2638,8 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 /* LANDSCAPE MOBILE CALLOUT PAGE STYLES */
 
 .callout-section-content {
-  left: 30%;
-  top: 86%;
+  left: 0%;
+  top: 87%;
 }
 .callout-section-content h1 {
   font-size: 1.7rem;
