@@ -1961,9 +1961,6 @@ label {
 
   /* 1-M-P MOBILE HEADER STYLES */
 
-.header {
-  height: 14vh;
-}
 .header-logo a {
   font-size: 7vw;
 }
