@@ -424,7 +424,7 @@ a {
   font-weight: 600;
   text-decoration: none;
 }
-.works-title h3:hover {
+.works-title h3 a:hover {
   color: darkgoldenrod;
   opacity: 0.8;
 }
@@ -432,7 +432,6 @@ a {
   display: flex;
   flex: 1 1 0;
   flex-wrap: wrap;
-  min-height: 35vh;
   padding: 0 10vw 0;
   width: auto;
 }
@@ -540,9 +539,9 @@ a {
   padding: 2vh 0;
   position: absolute;
   text-align: center;
-  top: 50%;
+  top: 125%;
   transform: translate(-50%, -50%);
-  width: 105%;
+  width: 100%;
 }
 .sub-series-content h1 {
   background-color: #fff;
@@ -573,19 +572,19 @@ a {
 .series-wrapper {
   align-items: flex-start;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: center;
-  margin: 0 7vw;
+  margin: 0 7vw 14vh;
   width: auto;
 }
 .series-link-item {
   flex: 1 1 24rem;
-  height: 50vh;
+  min-height: 40vh;
   margin: 0 1vw 3vh;
   opacity: 0.9;
   position: relative;
   text-decoration: none;
-  width: 100%;
+  /* width: 30vw; */
 }
 .second-series-image {
   background-position: center center;
@@ -595,12 +594,12 @@ a {
 .third-series-image {
   background-position: center center;
   background-image: url(../images/paintings/1988-1994_main/landscape-min.JPG);
-  background-size: contain;
+  background-size: cover;
 }
 .fourth-series-image {
   background-position: center center;
-  background-image: url(../images/paintings/1984-1989_main/compressed_images/calme_1_l.jpg);
-  background-size: contain;
+  background-image: url(../images/paintings/1984-1989_main/compressed_images/presencia_1_l.jpg);
+  background-size: cover;
 }
 .gallery {
   /* align-items: center; */
@@ -616,42 +615,16 @@ a {
   /* flex-wrap: wrap; */
   margin: 1vh 8vw;
 }
-.gallery-line-portrait {
-  display: flex;
-  margin: 1vh 2vw;
-}
 .gallery-item {
-  flex: 1 0 24rem;
+  flex: 1 1 24rem;
 	margin: 1rem;
   overflow: hidden;
   position: relative;
   width: 40%;
 }
-.gallery-item-small {
-  height: 53vh;
-  width: auto;
-}
 .gallery-item-normal {
   height: 60vh;
   width: auto;
-}
-.gallery-item-medium {
-  height: 65vh;
-  width: 100%;
-}
-.gallery-item-large {
-  height: 68vh;
-  width: auto;
-}
-.gallery-item-largest {
-  height: 78vh;
-  width: auto;
-}
-.gallery-item-circle {
-  border-radius: 50%;
-  flex: 1;
-  height: 55vh;
-  justify-content: center;
 }
 .gallery-item-dates,
 .gallery-item-text {
@@ -662,21 +635,6 @@ a {
   flex: 1;
   height: 70vh;
   width: 28vw;
-  justify-content: center;
-}
-.gallery-item-portrait-small {
-  flex: 1;
-  height: 50vh;
-  justify-content: center;
-}
-.gallery-item-portrait-large {
-  flex: 1;
-  height: 62vh;
-  justify-content: center;
-}
-.gallery-item-portrait-largest {
-  flex: 1;
-  height: 72vh;
   justify-content: center;
 }
 .gallery-item > a span {
@@ -691,7 +649,6 @@ a {
   transform: translate(-50%, -50%);
   width: 90%;
 }
-.gallery-item-circle > a span,
 .gallery-item-portrait > a span,
 .gallery-item-portrait-small > a span,
 .gallery-item-portrait-large > a span,
@@ -733,33 +690,6 @@ a {
   padding: 0 0.3vw;
   width: 100%;
 }
-.gallery-image-portrait-narrow {
-  height: auto;
-  object-fit: unset;
-  padding: 0 0.3vw;
-  width: 100%;
-}
-.gallery-image-portrait-wide {
-  height: auto;
-  object-fit: unset;
-  padding: 0 0.3vw;
-  width: 60%;
-}
-.gallery-image-circle {
-  height: 100%;
-  object-fit: unset;
-  width: 28vw;
-}
-.gallery-image-small {
-	width: 45vw;
-	height: 100%;
-	object-fit: unset;
-}
-.gallery-image-normal {
-	width: 45vw;
-	height: 100%;
-	object-fit: unset;
-}
 .gallery-image {
   display: block;
   opacity: 1;
@@ -781,196 +711,6 @@ img.gallery-image:hover + span /* display spans immediately after :hover faded i
   transition-duration: 1.4s;
   visibility: visible;
 }
-
-/* BIOGRAPHY LANDING PAGE STYLES */
-
-/* .about-page-wrapper {
-  display: flex;
-  flex: 1 1 0;
-  flex-direction: column;
-  width: 100%;
-}
-.about-page-heading h1 {
-  color: #4c4c4c;
-  font-size: 2.2rem;
-  font-weight: 600;
-  padding: 6vh 0 4vh;
-  text-align: center;
-  text-transform: uppercase;
-}
-.about-page-intro {
-  display: flex;
-  flex: 1;
-  flex-direction: row-reverse;
-  width: 100%;
-}
-.about-page-intro-text {
-  flex: 1;
-  margin: 4vh 8vw 4vh 2vw;
-  text-align: center;
-}
-.about-page-intro-text li {
-  display: inline-block;
-  list-style: none;
-}
-.about-page-intro-text h1 {
-  color: #4c4c4c;
-  font-size: 1.6rem;
-  font-weight: 600;
-  padding: 2vh 0 2vh;
-  text-transform: uppercase;
-}
-.about-page-intro-text p {
-  color: #4c4c4c;
-  font-size: 1.1rem;
-  font-weight: 200;
-  line-height: 1.5;
-  padding: 1vh 0 4vh;
-}
-.about-page-intro-text span {
-  display: none;
-}
-.about-page-intro-link {
-  text-decoration: none;
-}
-.about-page-intro-link h2:hover {
-  background-color: goldenrod;
-  border: 1px solid goldenrod;
-}
-.about-page-intro-link h2 {
-  background-color: #4c4c4c;
-  border: 1px solid #4c4c4c;
-  color: #fff;
-  padding: 1.5vh 1vw;
-}
-.about-page-intro-image {
-  background-image: url(../images/Biography/about_intro_image.jpg);
-  background-position: bottom center;
-  background-size: cover;
-  border-radius: 4%;
-  flex: 1;
-  margin: 4vh 2vw 4vh 8vw;
-}
-.about-page-texts {
-  align-content: flex-start;
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-  min-height: 74vh;
-  width: 100%;
-}
-.about-page-texts-text {
-  flex: 1;
-  margin: 6vh 2vw 6vh 8vw;
-  text-align: center;
-}
-.about-page-texts-text h1 {
-  border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
-  color: #4c4c4c;
-  font-size: 1.6rem;
-  font-weight: 600;
-  margin: 0 8vw 3vh;
-  padding: 2vh 0 3vh;
-  text-transform: uppercase;
-}
-.about-page-texts-text p {
-  color: #4c4c4c;
-  font-size: 1.1rem;
-  font-weight: 200;
-  line-height: 1.5;
-  padding: 1vh 0 1vh;
-}
-.about-page-texts-image {
-  background-image: url(../images/Biography/about_texts_image.jpg);
-  background-position: center center;
-  background-size: cover;
-  border-radius: 4%;
-  flex: 1;
-  margin: 4vh 8vw 4vh 2vw;
-}
-.about-page-texts-link {
-  display: block;
-  text-decoration: none;
-}
-.about-page-texts-text li {
-  display: inline-block;
-  list-style: none;
-}
-.about-page-texts-link h2:hover {
-  background-color: goldenrod;
-  border: 1px solid goldenrod;
-}
-.about-page-texts-link h2 {
-  background-color: #4c4c4c;
-  border: 1px solid #4c4c4c;
-  color: #fff;
-  padding: 1.5vh 1vw;
-  margin: 3vh 1vw;
-}
-.blog-segment h2 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: 2vh;
-}
-.blog-segment h2 a {
-  color: #4c4c4c;
-  text-decoration: none;
-}
-.blog-segment h2 a:hover {
-  color: goldenrod;
-}
-.about-page-archive {
-  display: flex;
-  flex: 1;
-  flex-direction: row-reverse;
-  margin-bottom: 5vh;
-  min-height: 74vh;
-  width: 100%;
-}
-.about-page-archive-text {
-  flex: 1;
-  margin: 4vh 8vw 4vh 2vw;
-  text-align: center;
-}
-.about-page-archive-text li {
-  display: inline-block;
-  list-style: none;
-}
-.about-page-archive-text h1 {
-  color: #4c4c4c;
-  font-size: 1.6rem;
-  font-weight: 600;
-  padding: 2vh 0 2vh;
-  text-transform: uppercase;
-}
-.about-page-archive-text p {
-  color: #4c4c4c;
-  font-size: 1.1rem;
-  font-weight: 200;
-  line-height: 1.5;
-  padding: 1vh 0 4vh;
-}
-.about-page-archive-link {
-  text-decoration: none;
-}
-.about-page-archive-link h2:hover {
-  background-color: goldenrod;
-  border: 1px solid goldenrod;
-}
-.about-page-archive-link h2 {
-  background-color: #4c4c4c;
-  border: 1px solid #4c4c4c;
-  color: #fff;
-  padding: 1.5vh 1vw;
-}
-.about-page-archive-image {
-  background-image: url(../images/Biography/about_archive_image.jpg);
-  background-position: center center;
-  background-size: cover;
-  border-radius: 4%;
-  flex: 1;
-  margin: 4vh 2vw 4vh 8vw;
-} */
 
 /* BIOGRAPHY MAIN PAGE STYLES */
 
@@ -1348,27 +1088,7 @@ h2 {
   width: 105%;
 }
 
-/* EXHBITION SUBPAGE STYLES */
 
-.exhibition-subpage-wrapper {
-  display: flex;
-  flex: 1 1 0;
-  flex-direction: column;
-  text-align: center;
-  width: 100%;
-}
-.exhibition-subpage-individual-images {
-  display: flex;
-  flex: 1 1 auto;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-}
-.exhibition-subpage-content {
-  flex: 1;
-  text-align: center;
-  width: 100;
-}
 
 /* CRITICAS LANDING PAGE STYLES */
 
@@ -1520,7 +1240,6 @@ blockquote span {
   font-size: 3vw;
   padding: 0 1vw 0 0
 }
-
 /* CONTACT FORM STYLES */
 
 .contact-wrapper {
@@ -1602,7 +1321,7 @@ label {
 
 /* MEDIUM - TABLET DEVICES */
 
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
 
   .hide-in-tablet {
     display: none;
@@ -1613,23 +1332,22 @@ label {
   }
   .generic-main-content h1 {
     border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
-    font-size: 3vw;
-    margin: 2vh 10vw 8vh;
+    font-size: 4.5vw;
+    margin: 2vh 0 8vh;
     padding: 3vh 0 5vh;
   }
   .generic-main-content p {
-    font-size: 2.1vw;
+    font-size: 3vw;
     font-weight: 200;
   }
   .generic-main-content span {
     font-weight: 400;
   }
   .generic-main-content h2 {
-    font-size: 2.7vw;
+    font-size: 3.5vw;
     padding-bottom: 2vh;
   }
 
- 
   /* TABLET HEADER STYLES */
 
   .header-logo a {
@@ -1740,14 +1458,24 @@ label {
     top: 22%;
     width: 40vw;
   }
+  .works-title h3 a {
+    font-size: 3vw;
+    /* text-transform: uppercase; */
+  }
   .works-header {
-    padding: 3vh 10vw;
+    padding: 3vh 14vw;
+  }
+  .works-header h1 {
+    font-size: 8vw;
+  }
+  .works-header p {
+    font-size: 2.8vw;
   }
   .works-subheader {
     padding: 2vh 18vw 0;
   }
   .works-subheader h1 {
-    font-size: 5vw;
+    font-size: 4rem;
   }
   .works-subheader p {
     font-size: 2.8vw;
@@ -1761,12 +1489,12 @@ label {
   padding: 3vh 16vw 0;
 }
 .work-type-text {
-  font-size: 1.25rem;
+  font-size: 3vw;
   line-height: 1.5;
-  padding: 3vh 18vw 1vh;
+  padding: 2vh 13vw 1vh;
 }
 .work-type-heading {
-  font-size: 2.2rem;
+  font-size: 5.5vw;
   font-weight: 600;
   line-height: 1.2;
 }
@@ -1776,29 +1504,28 @@ label {
   opacity: 0.7;
 }
 .latest-series-content {
-  opacity: 0.9;
   padding: 1vh 0;
   top: 35%;
 }
 .latest-series-content h1 {
-  font-size: 2.3rem;
+  font-size: 4vw;
   padding: 1vh 2vw;
   text-transform: uppercase;
 }
 .latest-series-content h2 {
-  font-size: 1.6rem;
+  font-size: 3vw;
 }
 .latest-series-content h3 {
-  font-size: 1.4rem;
+  font-size: 2.5vw;
   padding: 2vh 0;
 }
 .sub-series-content {
   padding: 2vh 0;
-  top: 50%;
-  width: 105%;
+  top: 78%;
+  width: 70%;
 }
 .sub-series-content h1 {
-  font-size: 1.4rem;
+  font-size: 3vw;
   padding: 2vh 2vw;
 }
 .sub-series-content h2 {
@@ -1806,8 +1533,8 @@ label {
   padding: 0 2vw;
 }
 .sub-series-content h3 {
-  font-size: 1rem;
-  padding: 2vh 0 0;
+  font-size: 2.5vw;
+  padding: 1vh 0 0;
 }
 .series-wrapper {
   flex-direction: column;
@@ -1817,6 +1544,7 @@ label {
 .series-link-item {
   height: 38vh;
   margin: 0 0 3vh;
+  width: 100%;
 }
 .second-series-image {
   background-image: url(../images/paintings/1993-2006_main/murmullos_2_l.jpg);
@@ -1824,10 +1552,6 @@ label {
 }
 .third-series-image {
   background-image: url(../images/paintings/1988-1994_main/landscape_2-min.JPG);
-  background-size: cover;
-}
-.fourth-series-image {
-  background-image: url(../images/paintings/1984-1988/landscape_4.jpg);
   background-size: cover;
 }
 .gallery {
@@ -1840,60 +1564,15 @@ label {
   flex-direction: column;
   margin: 0 0;
 }
-.gallery-line-portrait {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 .gallery-item {
   flex: 1 1 auto;
-  /* margin: 0 0 24px; */
 	margin: 0 4vw 2vh;
-}
-.gallery-item-series {
-  margin: 2vh 0;
 }
 .gallery-item-portrait {
   flex: 1 0 auto;
   height: 62vh;
   margin: 0 4vw 8vh;
   width: 50vw;
-}
-.gallery-item-circle {
-  border-radius: initial;
-  height: 70vh;
-  margin: 0 4vw 2vh;
-}
-.gallery-item-circle img {
-  border-radius: 50%;
-  margin: 0 auto;
-}
-.gallery-item-portrait-large {
-  flex: 1 0 auto;
-  height: 80vh;
-  margin: 0 4vw 4vh;
-}
-.gallery-item-portrait-largest {
-  flex: 1 0 auto;
-  height: 86vh;
-  margin: 0 4vw 5vh;
-}
-
-.gallery-item-large > a span,
-.gallery-item-largest > a span {
-  border-bottom: 1px dotted rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
-  color: #4c4c4c;
-  font-size: 4vw;
-  font-weight: 600;
-  left: 0%;
-  margin: 0 0;
-  opacity: 0.8;
-  padding: 2vh 0 3vh;
-  position: absolute;
-  top: 62%;
-  transform: translate(-50%, -50%);
-  width: 100%;
 }
 .gallery-item-normal > a span {
   border-bottom: 1px dotted rgba(0, 0, 0, 0.1);
@@ -1908,8 +1587,7 @@ label {
   transform: translate(-50%, -50%);
   width: 100%;
 }
-.gallery-item-portrait > a span,
-.gallery-item-portrait-small > a span {
+.gallery-item-portrait > a span {
   border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
   color: #4c4c4c;
   font-size: 3vw;
@@ -1923,82 +1601,10 @@ label {
   transform: translate(-50%, -50%);
   width: 100%;
 }
-.gallery-item-circle > a span {
-  border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
-  color: #4c4c4c;
-  font-size: 4vw;
-  font-weight: 600;
-  left: 0%;
-  margin: 0 0;
-  opacity: 0.8;
-  padding-bottom: 4vh;
-  position: absolute;
-  top: 70%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-}
-.gallery-item-portrait-largest > a span {
-  border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
-  color: #4c4c4c;
-  font-size: 4vw;
-  font-weight: 600;
-  left: 0%;
-  margin: 0 0;
-  opacity: 0.8;
-  padding-bottom: 4vh;
-  position: absolute;
-  top: 78%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-}
-.gallery-item-portrait-large > a span {
-  border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
-  color: #4c4c4c;
-  font-size: 4vw;
-  font-weight: 600;
-  left: 0%;
-  margin: 0 0;
-  opacity: 0.8;
-  padding-bottom: 4vh;
-  position: absolute;
-  top: 70%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-}
-.gallery-item-small > a span {
-  border-bottom: 1px dotted rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
-  color: #4c4c4c;
-  font-size: 4vw;
-  font-weight: 600;
-  left: 0%;
-  margin: 0 0;
-  opacity: 0.8;
-  padding: 0 0 6vh;
-  position: absolute;
-  top: 60%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-}
-.gallery-item-medium > a span {
-  background-color: rgba(255, 255, 255, 0.6);
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 4.2vw;
-  font-weight: 600;
-  left: 0%;
-  margin: 0 0;
-  opacity: 0.8;
-  padding: 1vh 0;
-  position: absolute;
-  text-align: center;
-  top: 5%;
-  transform: translate(-50%, -50%);
-  width: 92%;
-}
 .gallery-item-dates > a span {
   background-color: rgba(255, 255, 255, 0.6);
   color: rgba(0, 0, 0, 0.8);
-  font-size: 6vw;
+  font-size: 5vw;
   font-weight: 600;
   left: 0%;
   margin: 0 0;
@@ -2012,7 +1618,7 @@ label {
 .gallery-item-text > a span {
   background-color: rgba(255, 255, 255, 0.6);
   color: rgba(0, 0, 0, 0.8);
-  font-size: 4vw;
+  font-size: 3.5vw;
   font-weight: 600;
   left: 0%;
   margin: 0 0;
@@ -2045,43 +1651,13 @@ label {
   width: auto;
   height: 60%;
 }
-.gallery-image-large, 
-.gallery-image-largest {
-  width: 100%;
-  height: auto;
-}
-.gallery-image-normal,
-.gallery-image-landscape {
-  width: 100%;
-  height: 60%;
-}
 .gallery-image-portrait {
 	width: auto;
   height: 40vh;
   text-align: center;
   margin: 0 auto;
 }
-.gallery-image-portrait-large {
-	width: auto;
-  height: 52vh;
-  text-align: center;
-}
-.gallery-image-portrait-wide {
-  height: 60vh;
-  width: auto;
-}
-.gallery-image-portrait-narrow {
-  height: 60vh;
-  width: 30vh;
-}
-.gallery-image-small {
-	width: 100%;
-  height: 55%;
-}
-.gallery-image-circle {
-	width: 90%;
-  height: auto;
-}
+
 .gallery-image {
   transform: none;
   transition: none;
@@ -2097,94 +1673,6 @@ img.gallery-image + span /* hide spans immediately after images that are set to 
 
 /* BIOGRAPHY TABLET PAGE STYLES */
 
-/* .about-page-intro-text {
-  margin: 0 2vw 4vh 2vw;
-}
-.about-page-intro-text h1 {
-  font-size: 3.2vw;
-  padding: 2vh 0 4vh;
-  margin-top: 2vh;
-}
-.about-page-intro-text p {
-  display: none;
-}
-.about-page-intro-text span {
-  color: #4c4c4c;
-  display: inline-block;
-  font-size: 2.8vw;
-  font-weight: 200;
-  line-height: 1.5;
-  padding: 0 3vw 4vh;
-}
-.about-page-intro-link h2 {
-  font-size: 2vw;
-  padding: 1.5vh 2vw;
-}
-.about-page-intro-image {
-  background-position: center center;
-  min-height: 35vh;
-  margin: 4vh 0 4vh 5vw;
-}
-.about-page-texts {
-  background-color: rgb(245, 245, 245);
-  min-height: 40vh;
-}
-.about-page-texts-text {
-  margin: 0 6vw 4vh;
-}
-.about-page-texts-text h1 {
-  border-bottom: none;
-  font-size: 3.2vw;
-  padding: 4vh 0 0;
-}
-.about-page-texts-text h2 {
-  padding: 0;
-}
-.about-page-texts-text p {
-  display: initial;
-  font-size: 2.8vw;
-  text-align: center;
-}
-.about-page-texts-image {
-  display: none;
-}
-.about-page-texts-link h2 {
-  font-size: 2vw;
-  padding: 1.5vh 2vw;
-}
-.display-none {
-  display: none;
-}
-.light-text {
-  font-weight: 200;
-}
-.about-page-archive {
-  background-color: #e6e6e6;
-  flex-direction: column-reverse;
-  margin-bottom: 0;
-}
-.about-page-archive-text {
-  margin: 0 2vw 4vh 2vw;
-}
-.about-page-archive-text h1 {
-  font-size: 3.2vw;
-  padding: 2vh 0 2vh;
-}
-.about-page-archive-text p {
-  font-size: 2.8vw;
-  padding: 1vh vw 4vh;
-}
-.about-page-archive-link h2 {
-  font-size: 2vw;
-  padding: 1.5vh 2vw;
-}
-.about-page-archive-image {
-  min-height: 35vh;
-  margin: 4vh 5vw;
-} */
-
-/* BIOGRAPHY TABLET PAGE STYLES */
-
 .biography-hero-image {
   height: 70vh;
 }
@@ -2193,8 +1681,8 @@ img.gallery-image + span /* hide spans immediately after images that are set to 
   top: 93%;
 }
 .biography-hero-content h1 {
-  font-size: 5vw;
-  font-weight: 400;
+  font-size: 6vw;
+  font-weight: 600;
 }
 .portrait-photo-gallery {
   flex: 1;
@@ -2207,57 +1695,6 @@ img.gallery-image + span /* hide spans immediately after images that are set to 
   transition: 1s;
   padding: 0 1vw;
   width: auto;
-}
-
-/* BLOG PAGE(S) STYLES */
-.page p {
-  font-size: 2.4vw;
-  line-height: 1.6;
-}
-.page h1 {
-  font-size: 6vw;
-  margin-bottom: 4vh;
-  padding: 0 4vw 3vh;
-}
-.page h2 {
-  font-size: 4vw;
-  text-align: left;
-}
-.page h4 {
-  font-size: 2.2vw;
-  margin: 1vh 0 4vh;
-}
-.blog-title-list span {
-  font-size: 2vw;
-  margin-top: 0.5em;
-}
-.blog-title-list a {
-  font-size: 2.3vw;
-  font-weight: 600;
-  margin-bottom: 1.3vh;
-}
-.blog-posts .post-header {
-  font-size: 2.1vw;
-}
-.post-header img {
-  height: 5vh;
-}
-.posts-image {
-  height: 25vh;
-}
-.posts-link a {
-  padding: 1vh 0 0;
-}
-.posts-link h2 {
-  font-size: 2vw;
-  padding: 2vh 2vw;
-}
-.half-hero {
-  height: 40vh;
-  margin: 5vh 8vw 0;
-}
-.col-two .col-aside {
-  flex: 0 0 16em;
 }
 
 /* EXHBITION LANDING TABLET PAGE STYLES */
@@ -2322,29 +1759,30 @@ img.gallery-image + span /* hide spans immediately after images that are set to 
   width: 90%;
 }
 
-/* CRITICAS MOBILE MAIN PAGE */
+/* CRITICAS TABLET MAIN PAGE */
 
 .accordion {
-  font-size: 1.1rem;
+  font-size: 3vw;
 }
 .accordion span {
-  font-size: 0.9rem;
+  font-size: 2.3vw;
 }
 .panel h1 {
-  font-size: 1.5rem;
+  font-size: 3.5vw;
 }
 .panel h2 {
-  font-size: 1.2rem;
+  font-size: 2.4vw;
 }
 .panel p {
-  font-size: 1.1rem;
-  padding: 0 16vw 3vh;
+  font-size: 2.5vw;
+  padding: 0 12vw 3vh;
 }
 .panel blockquote {
-  margin: 1vh 21vw 4vh;
+  font-size: 2.5vw;
+  margin: 1vh 16vw 4vh;
 }
 blockquote span {
-  font-size: 0.9rem;
+  font-size: 2.2vw;
 }
 
 /* CONTACT FORM TABLET */
@@ -2372,12 +1810,17 @@ blockquote span {
 .contact-copy-form{
   padding: 0 18vw;
 }
+input[type=text], input[type=email], input[type=message], input[type=tel], select, textarea {
+  padding: 24px; /* Some padding */ 
+  margin-top: 2vh; /* Add a top margin */
+  margin-bottom: 3vh; /* Bottom margin */
+}
 button[type=submit] {
-  font-size: 1.2rem;
+  font-size: 2.5vw;
 }
 label {
   font-size: 2.5vw;
-  font-weight: 200;
+  font-weight: 400;
 }
 
 }
@@ -2611,8 +2054,8 @@ label {
   width: 90vw;
 }
 .gallery-item-normal > a span {
-  font-size: 4.4vw;
-  top: 54%;
+  font-size: 4vw;
+  top: 52%;
 }
 .gallery-item-portrait {
   height: 70vh;
@@ -3410,6 +2853,410 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   margin-bottom: 6vh; 
   margin-top: 3vh; 
 }
+
+
+
+}
+
+
+
+/* WIDE - DESKTOP DEVICES */
+
+@media (min-width: 1600px) {
+
+/* GENERAL STYLES */
+
+.generic-main-content {
+  line-height: 1.8;
+  margin: 2vh 24vw 5vh;
+  text-align: center;
+}
+.generic-main-content h1 {
+  font-size: 3.5rem;
+  margin: 3vh 5vw 8vh;
+}
+.generic-main-content p {
+  font-size: 2rem;
+  font-weight: 200;
+  padding: 0 0 3vh;
+}
+.generic-main-content h2 {
+  font-size: 2.2rem;
+  font-weight: 600;;
+  padding-bottom: 3vh;
+}
+.portrait-photo-gallery img {
+  height: 30vh;
+  width: auto;
+}
+.landscape-photo-gallery img {
+  height: 450px;
+  width: 600px;
+}
+
+/* WIDESCREEN HEADER STYLES */
+
+.header-logo a {
+  font-size: 3.75vw;
+  text-transform: uppercase;
+}
+.header-nav {
+  padding: 6.5vh 6vw 0 0;
+}
+.header-nav a,
+.drop-trigger,
+.show-mobile-menu {
+  font-size: 1.6vw;
+}
+
+/* WIDESCREEN DROPDOWN MENU */
+.drop-menu a {
+  font-size: 1.6rem;
+}
+
+/* WIDESCREEN FOOTER STYLES */
+.footer-nav a {
+  font-size: 2rem;
+}
+.footer-image img {
+  height: 18rem;
+  width: 18rem;
+}
+
+/* WIDESCREEN CALLOUT STYLES */
+
+.callout-section-content {
+  top: 75%;
+}
+.callout-section-content h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  padding: 0 0 2vh;
+}
+.callout-section-content p {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+/* WORKS PAGE STYLES */
+
+.works-header,
+.works-subheader {
+  padding: 4vh 22vw 0;
+}
+.works-header h1 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+.works-subheader h1 {
+  font-size: 3rem;
+}
+.works-header p {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 4vh;
+}
+.works-title {
+  margin: 0 0 4vh;
+}
+.works-title h3 {
+  background-color: #4c4c4c;
+  border-radius: 10%;
+  opacity: 1;
+  top: 90%;
+}
+.works-title h3 a {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.works-title h3 a:hover {
+  color: #fff;
+  font-weight: 600;
+}
+.works-title h3:hover {
+  background-color: goldenrod;
+}
+.works-copy-wrapper {
+  padding: 0 13vw 0;
+}
+.works-images img {
+  height: 30vw;
+  width: 30vw;
+}
+.works-images img:hover {
+  height: 30.1vw;
+  width: 30.1vw;
+  transition: 0.2s ease-out;
+}
+
+
+/* ART/SERIES STYLES */
+
+.work-type-heading {
+  border-top: none;
+  font-size: 4rem;
+}
+.work-type-text {
+  font-size: 2rem;
+  padding: 3vh 22vw 0;
+}
+.latest-series-image {
+  opacity: 0.7;
+}
+.latest-series-content {
+  opacity: 0.9;
+}
+.latest-series-content h1 {
+  font-size: 4rem;
+  padding: 2.5vh 2vw;
+}
+.latest-series-content h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.latest-series-content h3 {
+  font-size: 2.3rem;
+  font-weight: 200;
+}
+.sub-series-content {
+  background-color: transparent;
+  opacity: 1;
+  /* padding: 3vh 0; */
+  top: 122%;
+  width: 90%;
+}
+.sub-series-content h1 {
+  background-color: #4c4c4c;
+  color: #fff;
+  font-size: 2.2rem;
+  padding: 2.5vh 2vw;
+}
+.sub-series-content h3 {
+  color: #4c4c4c;
+  font-size: 1.8rem;
+}
+.series-link-item {
+  flex: 1 1 24rem;
+  height: 35vh;
+  margin: 0 1vw 3vh;
+  opacity: 0.9;
+}
+.series-wrapper {
+  margin: 0 7vw 10vh;
+}
+.gallery-item-normal {
+  height: 48vh;
+  width: auto;
+}
+.gallery-item-dates,
+.gallery-item-text {
+  height: 55vh;
+}
+.gallery-item-portrait {
+  flex: 1;
+  height: 70vh;
+  width: 28vw;
+  justify-content: center;
+}
+.gallery-item-portrait-small {
+  flex: 1;
+  height: 50vh;
+  justify-content: center;
+}
+.gallery-item-portrait-large {
+  flex: 1;
+  height: 62vh;
+  justify-content: center;
+}
+.gallery-item-portrait-largest {
+  flex: 1;
+  height: 72vh;
+  justify-content: center;
+}
+
+.gallery-item-portrait > a span,
+.gallery-item-portrait-small > a span,
+.gallery-item-portrait-large > a span,
+.gallery-item-portrait-largest > a span,
+.gallery-item-medium > a span,
+.gallery-item-normal > a span,
+.gallery-item-large > a span,
+.gallery-item-largest > a span {
+  font-size: 2rem;
+}
+.gallery-item-dates > a span {
+  font-size: 3.5rem;
+}
+.gallery-item-text > a span {
+  font-size: 2.2rem;
+}
+.gallery-image-series {
+	width: 42vw;
+}
+
+/* EXHBITION LANDING PAGE STYLES */
+
+.upcoming-exhibitions-image {
+  opacity: 0.5;
+}
+.upcoming-exhibitions-content h1 {
+  font-size: 3.4rem;
+}
+.upcoming-exhibitions-content h2 {
+  font-size: 3.6rem;
+  padding: 2.5vh 2vw;
+  text-transform: uppercase;
+}
+.upcoming-exhibitions-content h3 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.exhibitions-individual,
+.exhibitions-collective,
+.exhibitions-museum {
+  min-height: 50vh;
+}
+.exhibitions-individual h1,
+.exhibitions-collective h1,
+.exhibitions-museum h1 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  top: 12%;
+  width: 105%;
+}
+
+/* BIOGRAPHY MAIN PAGE STYLES */
+
+.biography-hero-image {
+  height: 81vh;
+}
+.biography-hero-content {
+  font-weight: 400;
+  top: 65%;
+}
+.biography-hero-content h1 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+/* CONTACT FORM STYLES */
+
+.contact-copy h1 {
+  font-size: 3.5rem;
+}
+.contact-copy p {
+  font-size: 2rem;
+}
+.contact-copy-text {
+  padding: 0 0 4vh;
+}
+button[type=submit] {
+  font-size: 1.6rem;
+}
+label {
+  font-size: 1.5rem;
+}
+
+/* CRITICAS LANDING PAGE STYLES */
+
+.reviews-wrapper {
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+.reviews-lists-wrapper {
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: row;
+  text-align: center;
+  width: 100%;
+}
+.reviews-bibliografia {
+  background-position: center center;
+  background-image: url(../images/Reviews/bibliography_hero.jpg);
+  background-size: contain;
+  flex: 1;
+  margin: 2vh 1.5vw 5vh 8vw;
+  min-height: 81vh;
+  opacity: 0.8;
+  text-decoration: none;
+}
+.reviews-bibliografia h1 {
+  background-color: goldenrod;
+  color: #fff;
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  left: 50%;
+  opacity: 0.9;
+  padding: 2vh 0;
+  position: relative;
+  text-transform: uppercase;
+  top: 8%;
+  transform: translate(-50%, -50%);
+  width: 105%;
+}
+.reviews-resenas {
+  background-position: center center;
+  background-image: url(../images/Exhibitions/collective.jpg);
+  background-size: contain;
+  flex: 1;
+  margin: 2vh 8vw 5vh 1.5vw;
+  min-height: 81vh;
+  opacity: 0.8;
+  text-decoration: none;
+}
+.reviews-resenas h1 {
+  background-color: goldenrod;
+  color: #fff;
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  left: 50%;
+  opacity: 0.9;
+  padding: 2vh 0;
+  position: relative;
+  text-transform: uppercase;
+  top: 8%;
+  transform: translate(-50%, -50%);
+  width: 105%;
+}
+
+/* CRITICAS MAIN PAGE */
+
+.accordion {
+  font-size: 1.8rem;
+  margin: 0 16vw 2vh;
+}
+.accordion span {
+  font-size: 1.6rem;
+}
+.accordion:first-child {
+  margin-top: 4vh;
+}
+.panel h1 {
+  font-size: 3.5rem;
+}
+.panel h2 {
+  font-size: 2.5rem;
+}
+.panel p {
+  font-size: 1.8rem;
+  padding: 0 22vw 3vh;
+}
+.panel blockquote {
+  font-size: 1.8rem;
+  margin: 1vh 26vw 4vh;
+}
+blockquote span {
+  font-size: 1.6rem;
+}
+
+
 
 
 
