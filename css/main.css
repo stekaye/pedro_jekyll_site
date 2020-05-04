@@ -131,29 +131,41 @@ a {
 
 
 /* HEADER STYLES */
+
 .header {
+  align-items: flex-end;
   background-color: #fff;
+  display: flex;
+  flex-direction: row-reverse;
   height: 12vh;
+  padding-bottom: 3vh;
   position: fixed;
   width: 100%;
   z-index: 20;
 }
+.header-logo {
+  flex: 1 1 0;
+  margin-left: 8vw;
+}
 .header-logo li {
+  border: 2px solid #4c4c4c;
   display: inline-block;
   list-style: none;
-  padding: 3vh 0 0 8vw;
   position: relative;
+  padding: 6px;
+  margin-bottom: -1vh;
+  text-transform: uppercase;
 }
 .header-logo a {
   color: #4C4C4C;
   cursor: pointer;
-  font-family: 'Buenard', serif;
-  font-size: 3rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
   text-decoration: none;
 }
 .header-nav {
-  float: right;
-  padding: 6.5vh 6vw 0 0;
+  flex: 1 1 0;
+  margin-right: 8vw;
 }
 .header-nav > li {
   display: inline-block;
@@ -161,12 +173,15 @@ a {
   padding-right: 2vw;
   text-align: center;
 }
+.header-nav > li:last-child {
+  padding-right: 0;
+}
 .header-nav a,
 .drop-trigger,
 .show-mobile-menu {
   color: #4C4C4C;
-  font-family: 'Buenard', serif;
-  font-size: 1.2rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1rem;
   text-decoration: none;
 }
 .header-nav a:hover {
@@ -309,12 +324,13 @@ a {
   flex: 1 1 auto;
   height: 81vh;
   overflow: hidden;
+  position: relative;
 }
 .callout-works-image {
   background-image: url(../images/New_Images/Small_Images/Imagen\ para\ inicio-min.JPG);
   background-position: center center;
   margin: 0 8vw 5vh;
-  transition: 4s ease-out;
+  /* transition: 4s ease-out; */
 }
 .callout-about-image {
   background-image: url(../images/pedro_about2.jpg);
@@ -330,7 +346,7 @@ a {
   font-weight: 400;
   position: relative;
   text-align: center;
-  top: 82%;
+  top: 85%;
 }
 .callout-section-content a {
   text-decoration: none;
@@ -342,6 +358,58 @@ a {
 .callout-section-content p {
   font-size: 1.3rem;
 }
+.fade-in {
+  animation: fadeIn ease 10s;
+  -webkit-animation: fadeIn ease 10s;
+  -moz-animation: fadeIn ease 10s;
+  -o-animation: fadeIn ease 10s;
+  -ms-animation: fadeIn ease 10s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
 .light-content h1,
 .light-content p {
   color: rgba(255, 255, 255, 0.7);
@@ -358,14 +426,28 @@ a {
 .dark-content p:hover {
   color: rgba(0, 0, 0, 1);
 }
-.overlay {
-  background: rgba(255, 255, 255, 0.3);
-  height: 95vh;
-  left: 0;
-  margin: 0 8vw 5vh;
+
+blockquote {
   position: absolute;
-  top: 0;
-  width: 84vw; 
+  left: 50%;
+  text-align: center;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  word-wrap: none;
+}
+blockquote q {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 5vw;
+  font-weight: 400;
+  letter-spacing: .05rem;
+  line-height: 0.3;
+  opacity: 0.7;
+}
+blockquote q span { 
+  will-change: opacity, filter;
+  opacity: 0;
+  filter: blur(0px);
 }
 
 
@@ -637,6 +719,12 @@ a {
   width: 28vw;
   justify-content: center;
 }
+.gallery-item-portrait-large {
+  flex: 1;
+  height: 82vh;
+  width: 28vw;
+  justify-content: center;
+}
 .gallery-item > a span {
   color: #4d4d4d;
   font-family: 'Raleway', sans-serif;
@@ -684,9 +772,10 @@ a {
   object-fit: unset;
   margin: 0 auto;
 }
-.gallery-image-portrait {
+.gallery-image-portrait,
+.gallery-image-portrait-large {
   height: auto;
-  object-fit: unset;
+  object-fit: cover;
   padding: 0 0.3vw;
   width: 100%;
 }
@@ -699,7 +788,7 @@ a {
   transition: transform 4s ease-out; */
 }
 .gallery-image:hover {
-  opacity: 0.4;
+  opacity: 0.3;
 	transform: scale(1.05);
 }
 img.gallery-image + span /* hide spans immediately after images that are set to fade */ {
@@ -708,7 +797,7 @@ img.gallery-image + span /* hide spans immediately after images that are set to 
 img.gallery-image:hover + span /* display spans immediately after :hover faded images */ {
   opacity: 1;
   transition-property: opacity;
-  transition-duration: 1.4s;
+  transition-duration: 1s;
   visibility: visible;
 }
 
@@ -1351,8 +1440,8 @@ label {
   /* TABLET HEADER STYLES */
 
   .header-logo a {
-    font-size: 7vh;
-    margin-top: 6vh;
+    font-size: 5vh;
+    /* margin-top: 6vh; */
   } 
   .drop-trigger,
   .show-mobile-menu {
@@ -1364,7 +1453,7 @@ label {
     display: block;
     float: right;
     font-size: 5vh;
-    margin-top: 4.5vh;
+    /* margin-top: 4.5vh; */
     padding: 0 10vw 0 0;
     position: relative;
   }
@@ -1377,7 +1466,7 @@ label {
     padding: 0;
     position: absolute;
     text-align: center;
-    top: 12vh;
+    top: 15vh;
     transition: all 0.5s ease-in-out;
     width: 100vw;
     z-index: 9;
@@ -1439,6 +1528,14 @@ label {
 .light-to-dark h1:hover,
 .light-to-dark p:hover {
   color: rgba(0, 0, 0, 1);
+}
+blockquote {
+  top: 22%;
+}
+blockquote q {
+  font-size: 7vw;
+  font-weight: 400;;
+  opacity: 0.9;
 }
 
   /* WORKS PAGE TABLET */
@@ -1865,7 +1962,7 @@ label {
   /* 1-M-P MOBILE HEADER STYLES */
 
 .header-logo a {
-  font-size: 9vw;
+  font-size: 8vw;
 }
 .header-nav a,
 .drop-trigger,
@@ -1878,7 +1975,7 @@ label {
   display: block;
   float: right;
   font-size: 4vh;
-  margin-top: 5.5vh;
+  /* margin-top: 5.5vh; */
   padding: 0 10vw 0 0;
   position: relative;
 }
@@ -1935,6 +2032,11 @@ label {
 }
 .callout-section-content p {
   display: none;
+}
+blockquote q {
+  font-size: 10vw;
+  font-weight: 400;;
+  opacity: 0.9;
 }
 
 /* WORKS MOBILE PAGE STYLES */
@@ -2063,7 +2165,7 @@ label {
   width: 80vw;
 }
 .gallery-item-portrait > a span {
-  font-size: 4.4vw;
+  font-size: 4vw;
   top: 62%;
 }
 
@@ -2467,11 +2569,14 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   
 /* LANDSCAPE MOBILE HEADER STYLES */
 
-.header {
+/* .header {
   height: 14vh;
+} */
+.header {
+  height: 15vh;
 }
 .header-logo a {
-  font-size: 4vw;
+  font-size: 3.5vw;
 }
 .drop-trigger,
 .show-mobile-menu {
@@ -2548,6 +2653,14 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 }
 .callout-exhibitions-image {
   background-position: center center;
+}
+blockquote {
+  top: 32%;
+}
+blockquote q {
+  font-size: 7vw;
+  font-weight: 400;;
+  opacity: 0.9;
 }
 
 /* LANDSCAPE MOBILE EXHIBITION STYLES */
@@ -2746,13 +2859,13 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 .gallery-item-medium > a span,
 .gallery-item-large > a span,
 .gallery-item-largest > a span {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 600;
 }
 .gallery-item-normal > a span {
   border-bottom: 1px dotted rgba(0, 0, 0, 0.1);
   color: #4c4c4c;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 600;
   left: 50%;
   opacity: 0.8;
@@ -2896,12 +3009,12 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 
 /* WIDESCREEN HEADER STYLES */
 
-.header-logo a {
-  font-size: 3.75vw;
-  text-transform: uppercase;
+.header {
+  height: 14vh;
 }
-.header-nav {
-  padding: 6.5vh 6vw 0 0;
+.header-logo a {
+  font-size: 3vw;
+  text-transform: uppercase;
 }
 .header-nav a,
 .drop-trigger,
@@ -2926,7 +3039,7 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 /* WIDESCREEN CALLOUT STYLES */
 
 .callout-section-content {
-  top: 75%;
+  top: 83%;
 }
 .callout-section-content h1 {
   font-size: 4rem;
