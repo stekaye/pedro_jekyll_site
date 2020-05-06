@@ -104,7 +104,7 @@ a {
 }
 .generic-main-content {
   color: #000;
-  line-height: 1.8;
+  line-height: 1.6;
   margin: 2vh 20vw 5vh;
   text-align: center;
 }
@@ -113,22 +113,21 @@ a {
   border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
   font-size: 1.8rem;
   font-weight: 600;
-  margin: 3vh 10vw 8vh;
-  padding: 3vh 0 5vh;
+  margin: 3vh 0 5vh;
+  padding: 3vh 0;
 }
 .generic-main-content p {
   font-size: 1.05rem;
   font-weight: 200;
-  padding: 0 0 3vh;
+  padding: 0 0 1vh;
 }
 .generic-main-content span {
   font-weight: 400;
 }
 .generic-main-content h2 {
-  font-weight: 600;;
-  padding-bottom: 2vh;
+  font-weight: 600;
+  margin-bottom: -0.05vh;
 }
-
 
 /* HEADER STYLES */
 
@@ -148,7 +147,7 @@ a {
   margin-left: 8vw;
 }
 .header-logo li {
-  border: 2px solid #4c4c4c;
+  /* border: 2px solid #4c4c4c; */
   display: inline-block;
   list-style: none;
   position: relative;
@@ -161,6 +160,7 @@ a {
   cursor: pointer;
   font-family: 'Raleway', sans-serif;
   font-size: 2rem;
+  font-weight: 400;
   text-decoration: none;
 }
 .header-nav {
@@ -289,12 +289,12 @@ a {
   list-style: none;
 }
 .footer-nav li ~ li {
-  padding-left: 1.5rem;
+  padding-left: 2rem;
 }
 .footer-nav a {
   color: rgb(220, 220, 220);
   cursor: pointer;
-  font-family: 'Buenard', serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 1.2rem;
   text-decoration: none;
 }
@@ -498,7 +498,7 @@ a {
   top: 20%;
   text-align: center;
   transform: translate(-50%, -50%);
-  width: 32vw;
+  width: 24vw;
 }
 .works-title h3 a {
   color: #4c4c4c;
@@ -514,13 +514,13 @@ a {
   display: flex;
   flex: 1 1 0;
   flex-wrap: wrap;
-  padding: 0 10vw 0;
+  padding: 0 8vw 0;
   width: auto;
 }
 .works-box {
   align-items: center;
   flex: 1;
-  margin: 0 3vw;
+  margin: 0 1vw;
   position: relative;
   /* padding: 2vh 3vh 3vh; */
 }
@@ -531,11 +531,15 @@ a {
 }
 .works-images img {
   border-radius: 50%;
-  height: 28vw;
+  height: 22vw;
   object-fit: cover;
   opacity: 1;
-  width: 28vw;
+  width: 22vw;
 }
+/* .works-images-bigger img {
+  height: 28vw;
+  width: 28vw;
+} */
 .works-images img:hover {
   transition: opacity 2s ease-out;
 }
@@ -1417,13 +1421,11 @@ label {
   }
   .generic-main-content {
     flex: 1;
-    margin: 2vh 15vw 5vh;
+    margin: 2vh 18vw 5vh;
   }
   .generic-main-content h1 {
     border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
-    font-size: 4.5vw;
-    margin: 2vh 0 8vh;
-    padding: 3vh 0 5vh;
+    font-size: 4vw;
   }
   .generic-main-content p {
     font-size: 3vw;
@@ -1434,7 +1436,7 @@ label {
   }
   .generic-main-content h2 {
     font-size: 3.5vw;
-    padding-bottom: 2vh;
+    padding-bottom: 0;
   }
 
   /* TABLET HEADER STYLES */
@@ -1487,7 +1489,7 @@ label {
   }
   .header-nav li a {
     color: #fff;
-    font-family: 'Raleway', sans-serif;;
+    font-family: 'Raleway', sans-serif;
     font-size: 4vw;
     font-weight: 200;
   }
@@ -1501,6 +1503,15 @@ label {
   }
   .mobile-menu-check:checked ~ .header-nav {
     max-height: 1000px;
+  }
+
+  /* FOOTER STYLES */
+
+  .footer-nav li ~ li {
+    padding-left: 1.5rem;
+  }
+  .footer-nav a {
+    font-size: 2.2vh;
   }
 
   /* TABLET CALLOUT STYLES */
@@ -1541,11 +1552,11 @@ label {
   /* WORKS PAGE TABLET */
 
   .works-images {
-    padding: 0;
+    padding: 0 0;
   }
   .works-images img {
-    height: 37vw;
-    width: 37vw;
+    height: 50vw;
+    width: 50vw;
   }
   .works-copy-wrapper {
     padding: 0 6vw 0;
@@ -1553,10 +1564,10 @@ label {
   .works-title h3 {
     padding: 2vh 0;
     top: 22%;
-    width: 40vw;
+    width: 54vw;
   }
   .works-title h3 a {
-    font-size: 3vw;
+    font-size: 3.5vw;
     /* text-transform: uppercase; */
   }
   .works-header {
@@ -1926,7 +1937,7 @@ label {
 /* X-SMALL: PORTRAIT MOBILE STYLES */
 /* MAX-WIDTH: 575px */
 
-@media (max-width: 575px) {
+@media (max-width: 566px) {
 
 .hide-in-mobile {
   display: none;
@@ -1937,8 +1948,6 @@ label {
 .generic-main-content h1 {
   border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
   font-size: 7vw;
-  margin: 4vh 4vw 8vh;
-  padding: 0 0 5vh;
 }
 .generic-main-content p {
   font-size: 4vw;
@@ -1949,7 +1958,7 @@ label {
 }
 .generic-main-content h2 {
   font-size: 5vw;
-  padding-bottom: 1vh;
+  padding-bottom: 0;
 }
 .portrait-photo-gallery {
   margin: 0;
@@ -2045,13 +2054,14 @@ label {
 /* WORKS MOBILE PAGE STYLES */
 
 .works-header {
-  padding: 2vh 5vw;
+  padding: 5vh 5vw;
 }
 .works-subheader {
   padding: 2vh 5vw;
 }
 .works-header h1 {
   font-size: 8vw;
+  padding-bottom: 0;
 }
 .works-subheader h1 {
   font-size: 7vw;
@@ -2116,19 +2126,15 @@ label {
 }
 .sub-series-content {
   padding: 2vh 0;
-  top: 50%;
-  width: 105%;
+  top: 85%;
+  width: 70%;
 }
 .sub-series-content h1 {
-  font-size: 1.2rem;
-  padding: 2vh 2vw;
-}
-.sub-series-content h2 {
-  font-size: 1.1rem;
-  padding: 0 2vw;
+  font-size: 3.5vw;
+  padding: 1vh 8vw;
 }
 .sub-series-content h3 {
-  font-size: 1rem;
+  font-size: 3vw;
   padding: 2vh 0 0;
 }
 .series-wrapper {
@@ -2513,7 +2519,7 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   display: none;
 }
 
-/* CRITICAS TABLET MAIN PAGE */
+/* CRITICAS MOBILE MAIN PAGE */
 
 .accordion {
   font-size: 1.2rem;
@@ -2535,6 +2541,228 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   font-size: 1rem;
   margin: 1vh 6vw 4vh;
 }
+.quote span {
+  font-size: 0.9rem;
+}
+
+}
+
+/* SMALL: LANDSCAPE MOBILE STYLES */
+/* MAX-WIDTH: 767px */
+
+@media (max-width: 1366px) and (orientation:landscape) {
+
+  /* LANDSCAPE TABLET GLOBAL STYLES */
+
+.generic-main-content {
+  line-height: 1.6;
+  margin: 2vh 12vw 5vh;
+}
+.generic-main-content h1 {
+  font-size: 3.5vw;
+}
+.generic-main-content p {
+  font-size: 2vw;
+  padding: 0 6vw 3vh;
+}
+.portrait-photo-gallery {
+  margin: 10px 0 0;
+}
+.portrait-photo-gallery img {
+  height: 81vh;
+  padding: 0 1vw;
+}
+.generic-main-content h2 {
+  font-size: 2.5vw;
+  padding-bottom: 2vh;
+}
+
+  /* LANDSCAPE TABLETS HEADER STYLES */
+
+.header-logo a {
+  font-size: 3.5vw;
+}
+.header-nav li a {
+  font-size: 2.5vw;
+}
+
+/* LANDSCAPE TABLETS CALLOUT STYLES */
+
+.callout-section-content {
+  top: 90%;
+}
+.callout-section-content h1 {
+  font-size: 4vw;
+  padding: 0;
+}
+.hero-quote {
+  top: 22%;
+}
+.hero-quote q {
+  font-size: 2.2vw;
+  letter-spacing: .1rem;
+  line-height: 1.5;
+}
+
+/* WORKS LANDSCAPE TABLETS PAGE STYLES */
+
+.works-header h1 {
+  font-size: 5vw;
+  padding: 3vh 0 3vh;
+}
+.works-title h3 {
+  width: 28vw;
+}
+.works-title h3 a {
+  font-size: 2.5vw;
+}
+.works-images {
+  padding-bottom: 5vh;
+}
+.works-images img {
+  height: 24vw;
+  width: 24vw;
+}
+.works-title h3 {
+  background-color: #4c4c4c;
+  border-radius: 10%;
+  opacity: 1;
+  top: 80%;
+  width: 25vw;
+}
+.works-title h3 a {
+  color: #fff;
+  font-size: 2vw;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* LANDSCAPE TABLET EXHIBITION STYLES */
+
+.upcoming-exhibitions-image {
+  margin: 0 4vw 2vh;
+  min-height: 85vh;
+}
+.upcoming-exhibitions-content {
+  top: 55%;
+}
+.upcoming-exhibitions-content h1 {
+  font-size: 5.5vw;
+}
+.upcoming-exhibitions-content h2 {
+  font-size: 4vw;
+}
+.upcoming-exhibitions-content h3 {
+  font-size: 3.2vw;
+}
+.exhibitions-lists-wrapper {
+  flex-direction: row;
+  text-align: center;
+}
+.exhibitions-individual {
+  margin: 2vh 1vw 2vh 4vw;
+  min-height: 60vh;
+}
+.exhibitions-individual h1 {
+  font-size: 2.6vw;
+  padding: 3vh 0;
+  top: 15%;
+  width: 90%;
+}
+.exhibitions-collective {
+  margin: 2vh 4vw 2vh 1vw;
+  min-height: 60vh;
+}
+.exhibitions-collective h1 {
+  background-color: #4c4c4c;
+  font-size: 2.6vw;
+  padding: 3vh 0;
+  top: 15%;
+  width: 90%;
+}
+.exhibitions-museum {
+  margin: 2vh 4vw 4vh;
+  min-height: 60vh;
+}
+.exhibitions-museum h1 {
+  font-size: 2.6vw;
+  padding: 3vh 0;
+  top: 15%;
+  width: 90%;
+} 
+
+/* LANDSCAPE TABLET BIOGRAPHY PAGE STYLES */
+
+.biography-hero-image {
+  height: 81vh;
+}
+.biography-hero-content {
+  left: 50%;
+  top: 90%;
+}
+.biography-hero-content h1 {
+  font-size: 4vw;
+  font-weight: 600;
+}
+
+/* CRITICAS TABLET LANDSCAPE MAIN PAGE */
+
+.accordion {
+  font-size: 2.6vw;
+}
+.accordion span {
+  font-size: 1.8vw;
+}
+.panel h1 {
+  font-size: 2.6vw;
+  margin-top: 3vh;
+}
+.panel h2 {
+  font-size: 2.3vw;
+}
+.panel p {
+  font-size: 2vw;
+  padding: 0 12vw 3vh;
+}
+.panel .quote {
+  font-size: 2vw;
+  margin: 2vh 16vw 6vh;
+}
+.quote span {
+  font-size: 1.8vw;
+}
+
+/* LANDSCAPE TABLET CONTACT FORM STYLES */
+
+.contact-wrapper {
+  flex-direction: column;
+}
+.contact-image {
+  margin: 1vh 4vw 6vh;
+  min-height: 65vh;
+}
+.contact-copy {
+  padding: 0 4vw 5vh;
+}
+.contact-copy h1 {
+  font-size: 4.5vw;
+}
+.contact-copy p {
+  font-size: 2.5vw;
+  padding: 4vh 10vw 3vh;
+}
+.contact-copy-form{
+  padding: 3vh 18vw;
+}
+label {
+  font-size: 2.3vw;
+  font-weight: 200;
+}
+input[type=text], input[type=email], input[type=message], input[type=tel], select, textarea {
+  margin-bottom: 6vh; 
+  margin-top: 3vh; 
+}
+
 }
 
 /* SMALL: LANDSCAPE MOBILE STYLES */
@@ -2553,7 +2781,7 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 }
 .generic-main-content p {
   font-size: 2.6vw;
-  padding: 0 6vw 3vh;
+  padding: 0 6vw 1vh;
 }
 .portrait-photo-gallery {
   margin: 10px 0 0;
@@ -2564,7 +2792,7 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 }
 .generic-main-content h2 {
   font-size: 3vw;
-  padding-bottom: 1vh;
+  padding-bottom: 0;
 }
 .hide-in-mobile {
   display: none;
@@ -2576,7 +2804,7 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   height: 15vh;
 }
 .header-logo a {
-  font-size: 2vw;
+  font-size: 4vw;
 }
 .drop-trigger,
 .show-mobile-menu {
@@ -2724,27 +2952,39 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 
 .works-header h1 {
   font-size: 5vw;
-  padding: 2vh 0 3vh;
+  padding: 5vh 0;
 }
 .works-header p {
   font-size: 2.7vw;
 }
 .works-box {
-  margin: 0 3vw;
+  margin: 0 1vw;
+}
+.works-copy-wrapper {
+  padding-bottom: 10vh;
 }
 .works-images {
-  padding: 5vh 0 2vh
+  padding: 5vh 0 5vh
 }
 .works-images img {
-  height: 34vw;
-  width: 34vw;
+  height: 25vw;
+  width: 25vw;
 }
 .works-title {
   margin: 0 0 4vh;
 }
+.works-title h3 {
+  background-color: #4c4c4c;
+  border-radius: 10%;
+  opacity: 1;
+  top: 85%;
+  width: 25vw;
+}
 .works-title h3 a {
-  font-weight: 600;
-  font-size: 2.5vw;
+  color: #fff;
+  font-size: 1.8vw;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 .work-type-text {
   font-size: 1.15rem;
@@ -2780,12 +3020,12 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 }
 .sub-series-content {
   padding: 3vh 0;
-  top: 20%;
-  width: 105%;
+  top: 85%;
+  width: 50%;
 }
 .sub-series-content h1 {
-  font-size: 1.2rem;
-  padding: 2vh 1vw 1vh;
+  font-size: 2.5vw;
+  padding: 2vh 6vw;
 }
 .sub-series-content h2 {
   font-size: 0.9rem;
@@ -2989,17 +3229,16 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 }
 .generic-main-content h1 {
   font-size: 3.5rem;
-  margin: 3vh 5vw 8vh;
 }
 .generic-main-content p {
   font-size: 2rem;
   font-weight: 200;
-  padding: 0 0 3vh;
+  padding: 0 0 1vh;
 }
 .generic-main-content h2 {
   font-size: 2.2rem;
   font-weight: 600;;
-  padding-bottom: 3vh;
+  padding-bottom: 0;
 }
 .portrait-photo-gallery img {
   height: 30vh;
@@ -3057,11 +3296,11 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   font-size: 2.4vw;
 }
 
-/* WORKS PAGE STYLES */
+/* WIDESCREEN WORKS PAGE STYLES */
 
 .works-header,
 .works-subheader {
-  padding: 4vh 22vw 0;
+  padding: 9vh 22vw 0;
 }
 .works-header h1 {
   font-size: 4rem;
@@ -3083,6 +3322,7 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   border-radius: 10%;
   opacity: 1;
   top: 90%;
+  width: 25vw;
 }
 .works-title h3 a {
   color: #fff;
@@ -3098,20 +3338,22 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   background-color: goldenrod;
 }
 .works-copy-wrapper {
-  padding: 0 13vw 0;
+  padding: 3vh 6vw 8vh;
 }
 .works-images img {
-  height: 30vw;
-  width: 30vw;
+  height: 26.8vw;
+  opacity: 1;
+  width: 26.8vw;
 }
 .works-images img:hover {
-  height: 30.1vw;
-  width: 30.1vw;
-  transition: 0.2s ease-out;
+  /* height: 27vw;
+  width: 27vw; */
+  opacity: 0.8;
+  transition: 1s ease-out;
 }
 
 
-/* ART/SERIES STYLES */
+/* WIDESCREEN ART/SERIES STYLES */
 
 .work-type-heading {
   border-top: none;
@@ -3143,7 +3385,7 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   background-color: transparent;
   opacity: 1;
   /* padding: 3vh 0; */
-  top: 122%;
+  top: 120%;
   width: 90%;
 }
 .sub-series-content h1 {
