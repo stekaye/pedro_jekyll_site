@@ -3266,9 +3266,9 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 
 /* WIDESCREEN HEADER STYLES */
 
-.header {
+/* .header {
   height: 14vh;
-}
+} */
 .header-logo a {
   font-size: 3vw;
   text-transform: uppercase;
