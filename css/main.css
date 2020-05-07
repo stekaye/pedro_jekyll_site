@@ -1429,7 +1429,7 @@ label {
 
 /* MEDIUM - TABLET DEVICES */
 
-@media (max-width: 1025px) and (orientation:portrait) {
+@media (max-width: 1025px) {
 
   .hide-in-tablet {
     display: none;
@@ -1948,15 +1948,11 @@ label {
   display: block;
   float: right;
   font-size: 4vh;
-  /* margin-top: 5.5vh; */
   padding: 0 10vw 0 0;
   position: relative;
 }
 .header-nav li {
   margin-top: 1em;
-}
-.header-nav li a {
-  font-size: 4.5vw;
 }
 
 /* MOBILE FOOTER STYLES */
@@ -2564,9 +2560,6 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 .header-logo a {
   font-size: 3.5vw;
 }
-.header-nav li a {
-  font-size: 1.8vw;
-}
 
 /* LANDSCAPE TABLETS CALLOUT STYLES */
 
@@ -2852,19 +2845,10 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   
 /* LANDSCAPE MOBILE HEADER STYLES */
 
-.header {
-  height: 15vh;
-}
 .header-logo a {
-  font-size: 4vw;
+  font-size: 3vw;
 }
-.drop-trigger,
-.show-mobile-menu {
-  font-size: 7vh;
-}
-.header-nav {
-  top: 18vh;
-}
+
 
 /* LANDSCAPE MOBILE DROPDOWN MENU */
 
