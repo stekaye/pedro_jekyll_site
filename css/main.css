@@ -338,8 +338,9 @@ a {
   margin: 0 8vw 5vh;
 }
 .callout-exhibitions-image {
-  background-image: url(../images/pedro_exhibitions2.jpg);
+  background-image: url(../images/exhibition_hero.jpg);
   background-position: center center;
+  background-size: unset;
   margin: 0 8vw 5vh;
 }
 .callout-section-content {
@@ -715,52 +716,10 @@ a {
   height: 40vh;
   width: auto;
 } */
-/* .gallery-item-portrait {
+.gallery-item-portrait {
   flex: 1;
-  height: 70vh;
-  width: 28vw;
-  justify-content: center;
-}
-.gallery-item-portrait-large {
-  flex: 1;
-  height: 82vh;
-  width: 28vw;
-  justify-content: center;
-} */
-.gallery-item > a span {
-  color: #4d4d4d;
-  font-family: 'Raleway', sans-serif;
-  left: 50%;
-  line-height: 1.6;
-  opacity: 0;
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 90%;
-}
-.gallery-item-portrait > a span,
-.gallery-item-portrait-small > a span,
-.gallery-item-portrait-large > a span,
-.gallery-item-portrait-largest > a span,
-.gallery-item-medium > a span,
-.gallery-item-normal > a span,
-.gallery-item-large > a span,
-.gallery-item-largest > a span {
-  font-size: 1.3vw;
-  font-weight: 600;
-}
-.gallery-item-series > a span {
-  font-size: 1.6vw;
-  font-weight: 600;
-}
-.gallery-item-dates > a span {
-  font-size: 2.2vw;
-  font-weight: 600;
-}
-.gallery-item-text > a span {
-  font-size: 1.4rem;
-  font-weight: 600;
+  height: 45vh;
+  width: 30vw;
 }
 .gallery-image-series {
 	width: 40vw;
@@ -769,8 +728,8 @@ a {
 }
 .gallery-image-square {
   left: 50%;
-  max-height: 95%;
-	max-width: 95%;
+  max-height: 100%;
+	max-width: 100%;
 	height: auto;
   object-fit: contain;
   position: absolute;
@@ -778,12 +737,16 @@ a {
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.gallery-image-portrait,
-.gallery-image-portrait-large {
-  height: auto;
-  object-fit: cover;
-  padding: 0 0.3vw;
-  width: 100%;
+.gallery-image-portrait {
+  left: 50%;
+  max-height: 100%;
+	max-width: 100%;
+	height: 100%;
+  object-fit: contain;
+  position: absolute;
+  margin: 0 auto;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .gallery-image {
   display: block;
@@ -820,6 +783,7 @@ a {
   transition-duration: 1s;
 }
 .gallery-item:hover .gallery-image-square,
+.gallery-item:hover .gallery-image-portrait,
 .gallery-item:hover .gallery-image-series {
   opacity: 0.3;
 }
@@ -850,7 +814,7 @@ a {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-  width: 80%;
+  width: 50%;
 }
 
 
@@ -1722,20 +1686,16 @@ label {
 .gallery-item-dates {
   height: 50vh;
 }
-.gallery-item-normal {
+.gallery-item-normal,
+.gallery-item-portrait {
   height: 40vh;
   width: auto;
-  margin: 0 auto 20vh;
+  margin: 0 auto 23vh;
 }
-.gallery-item-portrait {
-  flex: 1 0 auto;
-  height: 62vh;
-  margin: 0 4vw 8vh;
-  width: 50vw;
-}
-.gallery-image-square {
+.gallery-image-square,
+.gallery-image-portrait {
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   position: initial;
   margin: 0 auto;
   width: auto;
@@ -1743,12 +1703,6 @@ label {
 .gallery-image-series {
   width: 85vw;
   height: 100%;
-}
-.gallery-image-portrait {
-	width: auto;
-  height: 40vh;
-  text-align: center;
-  margin: 0 auto;
 }
 .gallery-image {
   transform: none;
@@ -1764,6 +1718,7 @@ label {
   width: 100%;
 }
 .gallery-item:hover .gallery-image-square,
+.gallery-item:hover .gallery-image-portrait,
 .gallery-item:hover .gallery-image-series {
   opacity: 1;
 }
@@ -1772,7 +1727,7 @@ label {
   height: 100%;
   left: 50%;
   opacity: 1;
-  top: 118%;
+  top: 122%;
   transition: none;
   width: 100%;
 }
@@ -1784,7 +1739,7 @@ label {
 .overlay-text-details {
   color: #4c4c4c;
   font-size: 2.8vw;
-  width: 110%;
+  width: 200%;
 }
 
 /* BIOGRAPHY TABLET PAGE STYLES */
@@ -2163,37 +2118,29 @@ label {
 .fourth-series-image {
   background-size: cover;
 }
-/* .gallery-image-square {
-	width: auto;
-  height: 28vh;
-  margin: 0 auto;
-  object-fit: contain;
-} */
-
-.gallery-item-normal {
-  height: 30vh;
-  margin: 0 auto 20vh;
-}
-.gallery-item-normal > a span {
-  font-size: 4vw;
-  top: 52%;
-}
+.gallery-item-normal,
 .gallery-item-portrait {
-  height: 70vh;
-  margin-top: -5vh;
-  width: 80vw;
+  height: 36vh;
+  margin: 0 auto 23vh;
 }
-.gallery-item-portrait > a span {
-  font-size: 4vw;
-  top: 62%;
+.gallery-image-square,
+.gallery-image-portrait {
+  height: 100%;
+  object-fit: cover;
+  position: initial;
+  margin: 0 auto;
+  width: auto;
 }
 .overlay {
-  top: 124%;
+  top: 122%;
 }
 .overlay-text-details {
   color: #4c4c4c;
-  font-size: 3.2vw;
-  width: 105%;
+  font-size: 3.4vw;
+  width: 150%;
+}
+.final-item {
+  margin-bottom: 0;
 }
 
 /* CONTACT FORM MOBILE STYLES */
@@ -2657,7 +2604,8 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 
 /* LANDSCAPE TABLET PAINTINGS STYLES */
 
-.gallery-item-normal {
+.gallery-item-normal,
+.gallery-item-portrait {
   height: 25vh;
   width: 25vw;
   margin: 0 1vw 20vh;
@@ -2672,12 +2620,24 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   max-height: 100%;
 	max-width: 100%;
 	height: auto;
-  object-fit: cover;
+  object-fit: contain;
   position: absolute;
   margin: 0 auto;
   top: 0%;
   transform: translate(-50%, -50%);
   width: 100%;
+}
+.gallery-image-portrait {
+  left: 50%;
+  max-height: 100%;
+	max-width: 100%;
+	height: 100%;
+  object-fit: contain;
+  position: initial;
+  margin: 0 auto;
+  top: 0%;
+  transform: translate(-50%, -50%);
+  width: auto;
 }
 .gallery-image {
   transform: none;
@@ -3131,7 +3091,8 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   flex-direction: row;
   margin: 0 auto;
 }
-.gallery-item-normal {
+.gallery-item-normal,
+.gallery-item-portrait {
   height: 30vh;
   width: 25vw;
   margin: 0 1vw 20vh;
@@ -3141,27 +3102,24 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   max-height: 100%;
 	max-width: 100%;
 	height: auto;
-  object-fit: cover;
+  object-fit: contain;
   position: absolute;
   margin: 0 auto;
   top: 0%;
   transform: translate(-50%, -50%);
   width: 100%;
 }
-.gallery-item-portrait {
-  height: 85vh;
-  margin-top: 4vh;
-  width: 80vw;
-}
-.gallery-item-portrait > a span {
-  font-size: 1rem;
-  top: 70%;
-}
 .gallery-image-portrait {
-	width: auto;
-  height: 16rem;
-  text-align: center;
+  left: 50%;
+  max-height: 100%;
+	max-width: 100%;
+	height: 100%;
+  object-fit: contain;
+  position: initial;
   margin: 0 auto;
+  top: 0%;
+  transform: translate(-50%, -50%);
+  width: auto;
 }
 .gallery-image-series {
 	width: 40vw;
@@ -3472,7 +3430,8 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   margin: 1rem;
   position: relative;
 }
-.gallery-item-normal {
+.gallery-item-normal,
+.gallery-item-portrait {
   height: 45vh;
   width: 30vw;
 }
@@ -3481,7 +3440,8 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 	height: 55vh;
 	object-fit: cover;
 }
-.gallery-image-square {
+.gallery-image-square,
+.gallery-image-portrait {
   left: 50%;
   max-height: 95%;
 	max-width: 95%;
@@ -3491,13 +3451,6 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   margin: 0 auto;
   top: 50%;
   transform: translate(-50%, -50%);
-}
-.gallery-image-portrait,
-.gallery-image-portrait-large {
-  height: auto;
-  object-fit: cover;
-  padding: 0 0.3vw;
-  width: 100%;
 }
 .gallery-image {
   display: block;
