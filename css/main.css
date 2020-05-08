@@ -333,31 +333,43 @@ a {
   /* transition: 4s ease-out; */
 }
 .callout-about-image {
-  background-image: url(../images/pedro_about2.jpg);
-  background-position: bottom center;
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(../images/pedro_about2.jpg);
+  background-position: center bottom;
+  background-size: cover;
   margin: 0 8vw 5vh;
+  position: relative;
 }
 .callout-exhibitions-image {
-  background-image: url(../images/exhibition_hero.jpg);
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(/images/exhibition_hero.jpg);
   background-position: center center;
   background-size: cover;
   margin: 0 8vw 5vh;
-}
-.callout-section-content {
-  font-weight: 400;
   position: relative;
-  text-align: center;
-  top: 85%;
+}
+.callout-section-content h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  position: absolute;
+  top: 88%;
+  left: 50%;
+  font-size: 2.6vw;
+  transform: translate(-50%, -50%);
 }
 .callout-section-content a {
   text-decoration: none;
-}
-.callout-section-content h1 {
-  font-size: 2.5rem;
-  padding: 0 0 3vh;
-}
-.callout-section-content p {
-  font-size: 1.3rem;
 }
 .fade-in {
   animation: fadeIn ease 10s;
@@ -374,60 +386,6 @@ a {
     opacity:1;
   }
 }
-
-@-moz-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-@-o-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-@-ms-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-.light-content h1,
-.light-content p {
-  color: rgba(255, 255, 255, 0.7);
-}
-.light-content h1:hover,
-.light-content p:hover {
-  color: rgba(255, 255, 255, 1);
-}
-.dark-content h1,
-.dark-content p {
-  color: rgba(0, 0, 0, 0.7);
-}
-.dark-content h1:hover,
-.dark-content p:hover {
-  color: rgba(0, 0, 0, 1);
-}
-
 .hero-quote {
   position: absolute;
   left: 50%;
@@ -439,11 +397,11 @@ a {
 .hero-quote q {
   color: #fff;
   font-family: 'Raleway', sans-serif;
-  font-size: 1.4vw;
-  font-weight: 400;
-  letter-spacing: .1rem;
+  font-size: 1.2vw;
+  font-weight: 200;
+  letter-spacing: .5rem;
   line-height: 1.5;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 .hero-quote q span { 
   will-change: opacity, filter;
@@ -828,16 +786,16 @@ a {
   width: 100%
 }
 .biography-hero-image {
-  background-image: url(../images/Biography/biography_hero_2.jpg);
+  background-image: url(../images/Biography/biography_hero_6.jpg);
   background-position: center center;
-  background-size: cover;
+  background-size: contain;
   height: 81vh;
   margin: 0 8vw 5vh;
   position: relative;
 }
 .biography-hero-content {
   font-weight: 400;
-  left: 85%;
+  left: 50%;
   position: absolute;
   text-align: center;
   top: 90%;
@@ -1026,25 +984,38 @@ a {
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
-  width: 100%
+  width: 100%;
 }
 .photo-gallery {
+  display: flex;
   flex: 1;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  margin: 0 8vw;
+  max-width: 84vw;
   padding: 1vh 0;
-  margin: 10px 50px 0;
   text-align: center;
 }
 .video-gallery {
+  display: flex;
   flex: 1;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 8vw;
+  max-width: 84vw;
   padding: 3vh 0 5vh;
-  margin: 10px 50px 0;
   text-align: center;
 }
+.video-gallery iframe {
+  flex: 1;
+  padding: 10px;
+}
 .photo-gallery img {
+  flex: 1;
   height: auto;
   transition: 1s;
-  padding: 15px;
-  width: 18vw;
+  padding: 1vw;
+  width: 340px;
 }
 h2 {
   font-size: 1.1rem;
@@ -1457,7 +1428,7 @@ label {
   /* TABLET HEADER STYLES */
 
   .header-logo a {
-    font-size: 5vh;
+    /* font-size: 5vh; */
     /* margin-top: 6vh; */
   } 
   .drop-trigger,
@@ -1531,35 +1502,25 @@ label {
 
   /* TABLET CALLOUT STYLES */
 
-.callout-works-image {
-  transition: none;
-}
-.callout-section-content {
-  top: 90%;
-}
 .callout-section-content h1 {
-  font-size: 6vh
-}
-.callout-section-content p {
-  display: none;
+  font-size: 6vw;
+  top: 94%;
 }
 .callout-about-image {
-  background-image: url(../images/pedro_studio_upscaled_image_x4.jpg);
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(../images/pedro_studio_upscaled_image_x4.jpg);
   background-position: center center;
-}
-.light-to-dark h1,
-.light-to-dark p {
-  color: rgba(0, 0, 0, 0.7);
-}
-.light-to-dark h1:hover,
-.light-to-dark p:hover {
-  color: rgba(0, 0, 0, 1);
+  background-size: cover;
 }
 .hero-quote {
   top: 22%;
 }
 .hero-quote q {
-  font-size: 3vw;
+  font-size: 2.2vw;
   font-weight: 400;;
   opacity: 0.9;
 }
@@ -1745,10 +1706,11 @@ label {
 /* BIOGRAPHY TABLET PAGE STYLES */
 
 .biography-hero-image {
-  height: 40vh;
+  height: 50vh;
+  background-size: cover;
 }
 .biography-hero-content {
-  left: 80%;
+  left: 50%;
   top: 90%;
 }
 .biography-hero-content h1 {
@@ -2002,15 +1964,13 @@ label {
 .callout-section-content h1 {
   font-size: 8.5vw;
 }
-.callout-section-content p {
-  display: none;
-}
 .hero-quote {
-  top: 25%;
+  top: 22%;
 }
 .hero-quote q {
-  font-size: 3.4vw;
-  font-weight: 400;;
+  font-size: 2.7vw;
+  font-weight: 400;
+  letter-spacing: .2rem;
   opacity: 0.9;
 }
 
@@ -2280,7 +2240,7 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 
 .biography-hero-image {
   background-image: url(../images/Biography/biography_hero_3.jpg);
-  background-position: left bottom;
+  background-position: center top;
   background-size: cover;
   height: 65vh;
   margin: 0 8vw 5vh;
@@ -2292,7 +2252,7 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 }
 .biography-hero-content h1 {
    color:rgba(255, 255, 255, 0.8);
-  font-size: 8vw;
+  font-size: 7.5vw;
 }
 
 /* BLOG PAGE(S) MOBILE STYLES */
@@ -2562,28 +2522,25 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   /* LANDSCAPE TABLETS HEADER STYLES */
 
 .header-logo a {
-  font-size: 3.5vw;
+  font-size: 3vw;
 }
-
 .header-nav li a {
-  font-size: 2.5vw;
+  font-size: 2.1vw;
 }
 
 /* LANDSCAPE TABLETS CALLOUT STYLES */
 
-.callout-section-content {
-  top: 90%;
-}
 .callout-section-content h1 {
-  font-size: 4vw;
+  font-size: 3.4vw;
   padding: 0;
+  top: 93%;
 }
 .hero-quote {
-  top: 22%;
+  top: 47%;
 }
 .hero-quote q {
-  font-size: 2.2vw;
-  letter-spacing: .1rem;
+  font-size: 1.4vw;
+  font-weight: 400;
   line-height: 1.5;
 }
 
@@ -2746,10 +2703,11 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 /* LANDSCAPE TABLET BIOGRAPHY PAGE STYLES */
 
 .biography-hero-image {
-  height: 81vh;
+  height: 50vh;
+  background-size: contain;
 }
 .biography-hero-content {
-  left: 80%;
+  left: 50%;
   top: 90%;
 }
 .biography-hero-content h1 {
@@ -2870,7 +2828,7 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   margin-bottom: 1.2rem;
 }
 .header-nav li a {
-  font-size: 2vw;
+  font-size: 2.5vw;
 }
 
 /* LANDSCAPE MOBILE FOOTER STYLES */
@@ -2912,29 +2870,20 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 
 /* LANDSCAPE MOBILE CALLOUT PAGE STYLES */
 
-.callout-section-content {
-  left: 0%;
-  top: 87%;
-}
 .callout-section-content h1 {
-  font-size: 1.7rem;
-  font-weight: 600;
-}
-.light-to-dark h1 {
-  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.9rem;
+  top: 90%;
 }
 .callout-works-image {
   background-position: bottom center;
-}
-.callout-exhibitions-image {
-  background-position: center center;
 }
 .hero-quote  {
   top: 32%;
 }
 .hero-quote q {
-  font-size: 2.2vw;
-  font-weight: 400;;
+  font-size: 1.6vw;
+  font-weight: 400;
+  letter-spacing: .3rem;
   opacity: 0.9;
 }
 
@@ -3158,11 +3107,11 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 /* LANDSCAPE MOBILE BIOGRAPHY PAGE STYLES */
 
 .biography-hero-image {
-  background-image: url(../images/Biography/biography_hero_2.jpg);
-  height: 81vh;
+  background-image: url(../images/Biography/biography_hero_6.jpg);
+  height: 65vh;
 }
 .biography-hero-content {
-  left: 80%;
+  left: 50%;
   top: 90%;
 }
 .biography-hero-content h1 {
@@ -3295,20 +3244,12 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 
 /* WIDESCREEN CALLOUT STYLES */
 
-.callout-section-content {
-  top: 83%;
-}
 .callout-section-content h1 {
-  font-size: 4rem;
-  font-weight: 600;
-  padding: 0 0 2vh;
-}
-.callout-section-content p {
-  font-size: 1.8rem;
-  font-weight: 400;
+  font-size: 3vw;
+  top: 90%;
 }
 .hero-quote q {
-  font-size: 2.4vw;
+  font-size: 1.8vw;
 }
 
 /* WIDESCREEN WORKS PAGE STYLES */
@@ -3553,10 +3494,10 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 /* BIOGRAPHY MAIN PAGE STYLES */
 
 .biography-hero-image {
-  height: 81vh;
+  height: 66vh;
 }
 .biography-hero-content {
-  left: 80%;
+  left: 50%;
   top: 90%;
 }
 .biography-hero-content h1 {
