@@ -105,19 +105,19 @@ a {
 .generic-main-content {
   color: #000;
   line-height: 1.8;
-  margin: 2vh 24vw 5vh;
+  margin: 2vh 28vw 5vh;
   text-align: center;
 }
 .generic-main-content h1 {
   color: #4c4c4c;
-  border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
-  font-size: 1.8rem;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  font-size: 2vw;
   font-weight: 600;
   margin: 3vh 0 5vh;
-  padding: 3vh 0;
+  padding: 2vh 1vw;
 }
 .generic-main-content p {
-  font-size: 1.05rem;
+  font-size: 1.2vw;
   font-weight: 200;
   padding: 0 0 2vh;
 }
@@ -159,7 +159,7 @@ a {
   color: #4C4C4C;
   cursor: pointer;
   font-family: 'Raleway', sans-serif;
-  font-size: 2rem;
+  font-size: 3.2vw;
   font-weight: 400;
   text-decoration: none;
 }
@@ -298,9 +298,6 @@ a {
   font-size: 1.2rem;
   text-decoration: none;
 }
-.works-title {
-  margin: 0 0 4vh;
-}
 .footer-nav a:hover {
   color: darkgoldenrod;
 }
@@ -413,17 +410,14 @@ a {
 /* WORKS PAGE STYLES */
 
 .works-section {
-  /* background-color: rgb(240, 240, 240); */
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
-  /* height: 88vh; */
 }
 .works-header,
 .works-subheader {
   color: #4c4c4c;
   flex: 1 1 0;
-  /* font-family: 'Raleway', sans-serif; */
   font-weight: 400;
   padding: 4vh 16vw 2vh;
   text-align: center;
@@ -481,7 +475,6 @@ a {
   flex: 1;
   margin: 0 1vw;
   position: relative;
-  /* padding: 2vh 3vh 3vh; */
 }
 .works-images {
   padding: 3vh 0 1vh;
@@ -495,10 +488,6 @@ a {
   opacity: 1;
   width: 22vw;
 }
-/* .works-images-bigger img {
-  height: 28vw;
-  width: 28vw;
-} */
 .works-images img:hover {
   transition: opacity 2s ease-out;
 }
@@ -515,8 +504,7 @@ a {
 .work-type-heading {
   border-top: 1px dotted rgba(0, 0, 0, 0.2);
   color: #4c4c4c;
-  /* font-family: 'Raleway', sans-serif; */
-  font-size: 2.5rem;
+  font-size: 2.5vw;
   font-weight: 600;
   margin: 2vh 6vw;
   padding: 4vh 0 0;
@@ -524,10 +512,9 @@ a {
 }
 .work-type-text {
   color: #4c4c4c;
-  /* font-family: 'Raleway', sans-serif; */
-  font-size: 1.1rem;
+  font-size: 1.3vw;
   line-height: 1.6;
-  padding: 3vh 25vw 0;
+  padding: 2vh 25vw 4vh;
   text-align: center;
 }
 .latest-series-image {
@@ -617,7 +604,6 @@ a {
 .series-wrapper {
   align-items: flex-start;
   display: flex;
-  /* flex-wrap: wrap; */
   justify-content: center;
   margin: 0 7vw 14vh;
   width: auto;
@@ -629,7 +615,6 @@ a {
   opacity: 0.9;
   position: relative;
   text-decoration: none;
-  /* width: 30vw; */
 }
 .second-series-image {
   background-position: center center;
@@ -669,11 +654,6 @@ a {
   height: 45vh;
   width: 30vw;
 }
-/* .gallery-item-dates,
-.gallery-item-text {
-  height: 40vh;
-  width: auto;
-} */
 .gallery-item-portrait {
   flex: 1;
   height: 45vh;
@@ -711,14 +691,7 @@ a {
   opacity: 1;
   transition-property: opacity, transform;
   transition-duration: 3s, 3s;
-  /* transition: opacity 1s ease-in-out;
-  transition: transform 4s ease-out; */
 }
-/* .gallery-image:hover {
-  opacity: 0.5;
-	transform: scale(1.05);
-} */
-
 .overlay-title,
 .overlay {
   position: absolute;
@@ -733,7 +706,6 @@ a {
   transition: .5s ease;
   background-color: transparent;
 }
-
 .gallery-item:hover .overlay,
 .gallery-item:hover .overlay-title {
   opacity: 0.9;
@@ -745,7 +717,6 @@ a {
 .gallery-item:hover .gallery-image-series {
   opacity: 0.3;
 }
-
 .overlay-text {
   color: #4c4c4c;
   font-family: 'Raleway', sans-serif;
@@ -775,9 +746,6 @@ a {
   width: 50%;
 }
 
-
-
-
 /* BIOGRAPHY MAIN PAGE STYLES */
 
 .biography-wrapper {
@@ -805,177 +773,6 @@ a {
   color:rgba(255, 255, 255, 0.5);
   font-size: 2.8rem;
   font-weight: 200;
-}
-/* BLOG PAGE(S) STYLES */
-.page {
-  margin: 6vh auto 15vh;
-  max-width: 980px;
-  width: 85vw;
-}
-.page p {
-  font-size: 1rem;
-  line-height: 1.8;
-}
-.page h1 {
-  color: #4c4c4c;
-  font-size: 2.2rem;
-  font-weight: 600;
-  margin-bottom: 4vh;
-  padding: 4vh 4vw;
-  text-align: center;
-  text-transform: uppercase;
-}
-.page h2 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 2vh;
-}
-.page h2 a {
-  color: #4c4c4c;
-  text-decoration: none;
-}
-.page h2 a:hover {
-  color: goldenrod;
-}
-.page h4 {
-  color: #4c4c4c;
-  font-weight: 600;
-  margin-bottom: 4vh;
-  text-transform: uppercase;
-}
-.col-two {
-  display: flex;
-}
-.col-two .col-aside {
-  flex: 0 0 20em;
-  order: 1;
-}
-.col-two .col-content {
-  flex: 1;
-}
-.blog-recent {
-  padding-top: 2vh;
-  text-align: right;
-}
-.blog-title-list {
-  list-style: none;
-  padding: 0;
-}
-.blog-title-list li ~ li {
-  margin-top: 2.5vh;
-}
-.blog-title-list span {
-  color: #4c4c4c;
-  display: block;
-  font-family: 'Raleway', sans-serif;
-  font-size: 0.8em;
-  margin-top: 0.5em;
-}
-.blog-title-list a {
-  color: #4c4c4c;
-  display: block;
-  font-family: 'Raleway', sans-serif;
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-bottom: 1.3vh;
-  text-decoration: none;
-}
-.blog-title-list a:hover {
-  color: goldenrod;
-}
-.blog-posts ~ .blog-posts {
-  border-top: 1px dotted rgba(0, 0, 0, 0.1);
-  margin-top: 6vh;
-  padding-top: 6vh;
-}
-.blog-posts .post-header {
-  font-size: 0.8rem;
-}
-.post-header {
-  margin-bottom: 3vh;
-}
-.post-header img,
-.post-header .social-link {
-  margin-right: 0.7vw;
-}
-.post-header img {
-  border-radius: 99px;
-  display: inline-block;
-  height: 6vh;
-  vertical-align: middle;
-}
-.post-byline span {
-  font-family: 'Raleway', sans-serif;
-}
-.posts-image {
-  background-position: center center;
-  background-size: cover;
-  height: 30vh;
-  margin-bottom: 3vh;
-}
-.posts-link a {
-  display: inline-block;
-  padding: 3vh 0 0;
-  text-decoration: none;
-}
-.posts-link h2 {
-  background-color: #4c4c4c;
-  border: 1px solid #4c4c4c;
-  color: #fff;
-  font-size: 1rem;
-  padding: 1.5vh 1vw;
-}
-.posts-link h2:hover {
-  background-color: goldenrod;
-  border: 1px solid goldenrod;
-}
-.post {
-  width: 100%;
-}
-.post h1 {
-  padding: 3vh 4vw 0;
-}
-.half-hero {
-  background-position: center center;
-  background-size: cover;
-  height: 40vh;
-  margin: 5vh 20vw 0;
-}
-.post-content,
-.post-footer {
-  text-align: justify;
-  margin: auto;
-  max-width: 40em;
-  width: 85vw;
-}
-.pull-left {
-  float: left;
-  margin: 2em 2em 2em -2%;
-}
-.pull-right {
-  float: right;
-  margin: 2em -2% 2em 2em
-}
-.post-aside {
-  background-color: rgba(0, 0, 0, 0.01);
-  float: right;
-  margin: 0 0 2em 2em;
-  padding: 2em;
-}
-.post .post-header {
-  margin-bottom: 2.5em;
-  text-align: center;
-}
-.post-content {
-  font-size: 1.1rem;
-}
-.post-footer {
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  /* font-style: italic; */
-  font-size: 0.8em;
-  margin-top: 3em;
-  padding-top: 2em;
-  text-align: center;
 }
 
 /* MEDIA PAGE STYLES */
@@ -1167,8 +964,6 @@ h2 {
   width: 105%;
 }
 
-
-
 /* CRITICAS LANDING PAGE STYLES */
 
 .reviews-wrapper {
@@ -1330,27 +1125,27 @@ h2 {
   width: 100%;
 }
 .contact-image {
-  background-position: center bottom;
-  background-image: url(../images/pedro_studio.jpg);
+  background-position: center center;
+  background-image: url(../images/contact_image.JPG);
   background-size: cover;
   flex: 2 1 0;
-  margin: 2vh 0 5vh 8vw;
+  margin: 4vh 0 5vh 8vw;
 }
 .contact-copy {
   box-sizing: border-box;
   flex: 3 1 0;
-  padding: 2vh 4vw 5vh 4vw;
+  padding: 4vh 4vw 5vh 4vw;
 }
 .contact-copy h1 {
   color: #4c4c4c;
-  font-size: 2.2rem;
+  font-size: 2.5vw;
   font-weight: 600;
 }
 .contact-copy p {
   color: #4c4c4c;
-  font-size: 1rem;
+  font-size: 1.15vw;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.6;
   padding: 2vh 4vw 1vh;
 }
 .contact-copy-text {
@@ -1400,25 +1195,19 @@ label {
 
 /* MEDIUM - TABLET DEVICES */
 
-@media (max-width: 1025px) {
+@media (max-width: 1025px) and (orientation:portrait) {
 
   .hide-in-tablet {
     display: none;
   }
   .generic-main-content {
-    flex: 1;
     margin: 2vh 18vw 5vh;
   }
   .generic-main-content h1 {
-    border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
     font-size: 3.5vw;
   }
   .generic-main-content p {
-    font-size: 2.2vw;
-    font-weight: 200;
-  }
-  .generic-main-content span {
-    font-weight: 400;
+    font-size: 2.5vw;
   }
   .generic-main-content h2 {
     font-size: 3vw;
@@ -1428,8 +1217,7 @@ label {
   /* TABLET HEADER STYLES */
 
   .header-logo a {
-    /* font-size: 5vh; */
-    /* margin-top: 6vh; */
+    font-size: 4vh;
   } 
   .drop-trigger,
   .show-mobile-menu {
@@ -1544,7 +1332,6 @@ label {
   }
   .works-title h3 a {
     font-size: 3.5vw;
-    /* text-transform: uppercase; */
   }
   .works-header {
     padding: 3vh 14vw;
@@ -1573,14 +1360,10 @@ label {
   padding: 3vh 16vw 0;
 }
 .work-type-text {
-  font-size: 2.3vw;
-  line-height: 1.8;
-  padding: 2vh 15vw 1vh;
+  font-size: 2.5vw;
 }
 .work-type-heading {
-  font-size: 3.5vw;
-  font-weight: 600;
-  line-height: 1.2;
+  font-size: 4vw;
 }
 .latest-series-image {
   margin: 2vh 8vw 3vh 8vw;
@@ -1634,10 +1417,7 @@ label {
   background-image: url(../images/paintings/1993-2006_main/murmullos_2_l.jpg);
   background-size: cover;
 }
-/* .third-series-image {
-  background-image: url(../images/paintings/1988-1994_main/landscape_2-min.JPG);
-  background-size: cover;
-} */
+
 .gallery-line {
   flex-direction: column;
 }
@@ -1805,7 +1585,7 @@ label {
   font-size: 3.5vw;
 }
 .panel h2 {
-  font-size: 2.4vw;
+  font-size: 2.8vw;
 }
 .panel p {
   font-size: 2.5vw;
@@ -1825,20 +1605,18 @@ label {
   flex-direction: column;
 }
 .contact-image {
-  background-position: center center;
-  background-size: cover;
+  background-image: url(../images/pedro_studio.jpg);
   margin: 0 3vw 2vh;
   min-height: 35vh;
 }
 .contact-copy {
   flex: 1 1 0;
-  padding: 3vh 4vw 5vh 4vw;
 }
 .contact-copy h1 {
   font-size: 5vw;
 }
 .contact-copy p {
-  font-size: 3.5vw;
+  font-size: 2.5vw;
   padding: 3vh 8vw 3vh;
 }
 .contact-copy-form{
@@ -1846,11 +1624,11 @@ label {
 }
 input[type=text], input[type=email], input[type=message], input[type=tel], select, textarea {
   padding: 24px; /* Some padding */ 
-  margin-top: 2vh; /* Add a top margin */
+  margin-top: 1vh; /* Add a top margin */
   margin-bottom: 3vh; /* Bottom margin */
 }
 button[type=submit] {
-  font-size: 2.5vw;
+  font-size: 3vw;
 }
 label {
   font-size: 2.5vw;
@@ -1869,21 +1647,16 @@ label {
   display: none;
 }
 .generic-main-content {
-  margin: 2vh 8vw 5vh;
+  margin: 2vh 10vw 5vh;
 }
 .generic-main-content h1 {
-  border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
-  font-size: 7vw;
+  font-size: 5.5vw;
 }
 .generic-main-content p {
-  font-size: 4vw;
-  font-weight: 200;
-}
-.generic-main-content span {
-  font-weight: 400;
+  font-size: 3.5vw;
 }
 .generic-main-content h2 {
-  font-size: 5vw;
+  font-size: 4.5vw;
   padding-bottom: 0;
 }
 .portrait-photo-gallery {
@@ -2016,11 +1789,11 @@ label {
   width: 66vw;
 }
 .work-type-text {
-  font-size: 4vw;
+  font-size: 3.5vw;
   padding: 3vh 6vw 1vh;
 }
 .work-type-heading {
-  font-size: 7vw;
+  font-size: 5.5vw;
 }
 .justify {
   text-align: justify;
@@ -2108,132 +1881,28 @@ label {
 
 /* CONTACT FORM MOBILE STYLES */
 
-.contact-wrapper {
-  flex-direction: column;
-}
-.contact-image {
-  flex: 1 1 0;
-  margin: 0 4vw 5vh;
-}
 .contact-copy {
   flex: 1 1 0;
   padding: 1vh 4vw 5vh 4vw;
 }
 .contact-copy h1 {
-  font-size: 7.5vw;
+  font-size: 7vw;
   font-weight: 600;
 }
 .contact-copy p {
-  font-size: 4.3vw;
+  font-size: 4.2vw;
   padding: 4vh 3vw 3vh;
 }
 .contact-copy-form{
   padding: 0 12vw;
 }
 label {
-  font-size: 4vw;
+  font-size: 4.5vw;
   font-weight: 200;
 }
 input[type=text], input[type=email], input[type=message], input[type=tel], select, textarea {
   margin-bottom: 4vh; 
   margin-top: 2vh; 
-}
-
-/* BIOGRAPHY MOBILE PAGE STYLES */
-
-.about-page-heading h1 {
-  display: none;
-}
-.about-page-intro {
-  background-color: #e6e6e6;
-  flex-direction: column-reverse;
-}
-.about-page-intro-text {
-  margin: 0 2vw 4vh 2vw;
-}
-.about-page-intro-text h1 {
-  font-size: 1.6rem;
-  padding: 0 0 4vh;
-}
-.about-page-intro-text p {
-  display: none;
-}
-.about-page-intro-text span {
-  color: #4c4c4c;
-  display: inline-block;
-  font-size: 1rem;
-  font-weight: 200;
-  line-height: 1.5;
-  padding: 0 3vw 4vh;
-}
-.about-page-intro-link h2 {
-  font-size: 4vw;
-  padding: 1.5vh 2vw;
-}
-.about-page-intro-image {
-  background-position: center center;
-  min-height: 35vh;
-  margin: 4vh 5vw;
-}
-.about-page-texts {
-  background-color: rgb(245, 245, 245);
-  flex-direction: column-reverse;
-}
-.about-page-texts-text {
-  margin: 0 2vw 4vh 2vw;
-}
-.about-page-texts-text h1 {
-  border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
-  font-size: 1.6rem;
-  padding: 0 0 4vh;
-}
-.about-page-texts-text h2 {
-  padding: 4vh 0 0;
-}
-.about-page-texts-text h2 {
-  padding: 4vh 0 0;
-}
-.about-page-texts-text p {
-  display: none;
-}
-.about-page-texts-image {
-  display: initial;
-  min-height: 35vh;
-  margin: 4vh 5vw;
-}
-.about-page-texts-link h2 {
-  font-size: 4vw;
-  padding: 1.5vh 2vw;
-}
-.display-none {
-  display: none;
-}
-.light-text {
-  font-weight: 200;
-}
-.about-page-archive {
-  background-color: #e6e6e6;
-  flex-direction: column-reverse;
-  margin-bottom: 0;
-}
-.about-page-archive-text {
-  margin: 0 2vw 4vh 2vw;
-}
-.about-page-archive-text h1 {
-  font-size: 1.6rem;
-  padding: 0 0 4vh;
-}
-.about-page-archive-text p {
-  font-size: 1rem;
-  padding: 1vh 3vw 4vh;
-}
-.about-page-archive-link h2 {
-  font-size: 4vw;
-  padding: 1.5vh 2vw;
-}
-.about-page-archive-image {
-  min-height: 35vh;
-  margin: 4vh 5vw;
 }
 
 /* BIOGRAPHY MAIN PAGE MOBILE STYLES */
@@ -2253,108 +1922,6 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 .biography-hero-content h1 {
    color:rgba(255, 255, 255, 0.8);
   font-size: 7.5vw;
-}
-
-/* BLOG PAGE(S) MOBILE STYLES */
-.page {
-  margin: 2vh auto 5vh;
-  width: 90vw;
-}
-.page p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
-.page h1 {
-  font-size: 8vw;
-  margin-bottom: 4vh;
-  padding: 1vh 0;
-}
-.page h2 {
-  font-size: 6vw;
-  margin: 4vh 0 2vh;
-  text-align: center;
-}
-.page h4 {
-  border: 1px solid #4c4c4c;
-  display: inline-block;
-  font-size: 4.5vw;
-  font-weight: 400;
-  padding: 2vh 3vw;
-}
-.col-two {
-  display: flex;
-  flex-direction: column-reverse;
-}
-.col-two .col-aside {
-  flex: 0 0 20em;
-  order: 1;
-}
-.col-two .col-content {
-  flex: 1;
-}
-.blog-recent {
-  background-color: #e6e6e6;
-  padding-top: 4vh;
-  text-align: center;
-}
-.blog-posts .post-header {
-  text-align: center;
-}
-.blog-posts p {
-  padding: 2vh 3vw 0;
-  text-align: center;
-}
-.post-header {
-  margin-bottom: 3vh;
-}
-.post-header img {
-  margin-right: 2vw;
-}
-.post-header img {
-  height: 7vh;
-}
-.posts-image {
-  margin: 2vh 0 0;
-}
-.posts-link {
-  text-align: center;
-}
-.posts-link a {
-  padding: 0 0 0;
-}
-.posts-link h2 {
-  font-size: 3.5vw;
-  padding: 1.5vh 3vw;
-}
-.post h1 {
-  padding: 3vh 4vw 0;
-}
-.half-hero {
-  height: 35vh;
-  margin: 5vh 4vw 0;
-}
-.post-content,
-.post-footer {
-  margin: 2vh 4vw;
-  max-width: 85vw;
-  width: 85vw;
-}
-.pull-left {
-  float: none;
-  margin: 0;
-  max-width: 85vw;
-  padding: 2vh 0;
-  text-align: center;
-}
-.pull-right {
-  float: none;
-  margin: 0;
-  max-width: 85vw;
-  padding: 2vh 0;
-  text-align: center;
-}
-.post-aside {
-  background-color: rgba(0, 0, 0, 0.05);
 }
 
 /* MEDIA PAGE STYLES */
@@ -2381,7 +1948,6 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   width: 100%;
   height: auto;
 }
-
 
 /* EXHBITION LANDING MOBILE PAGE STYLES */
 
@@ -2457,27 +2023,27 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 /* CRITICAS MOBILE MAIN PAGE */
 
 .accordion {
-  font-size: 1.2rem;
+  font-size: 3.8vw;
 }
 .accordion span {
-  font-size: 1rem;
+  font-size: 2.8vw;
 }
 .panel h1 {
-  font-size: 1.3rem;
+  font-size: 5.5vw;
 }
 .panel h2 {
-  font-size: 1.2rem;
+  font-size: 4vw;
 }
 .panel p {
-  font-size: 1rem;
+  font-size: 3.5vw;
   padding: 0 6vw 3vh;
 }
 .panel .quote {
-  font-size: 1rem;
+  font-size: 3.5vw;
   margin: 1vh 6vw 4vh;
 }
 .quote span {
-  font-size: 0.9rem;
+  font-size: 3vw;
 }
 
 }
@@ -2491,14 +2057,14 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 
 .generic-main-content {
   line-height: 1.6;
-  margin: 2vh 12vw 5vh;
+  margin: 2vh 22vw 5vh;
 }
 .generic-main-content h1 {
-  font-size: 3.5vw;
+  font-size: 3.5vh;
 }
 .generic-main-content p {
-  font-size: 2vw;
-  padding: 0 6vw 3vh;
+  font-size: 2vh;
+  padding: 0 6vw 1vh;
 }
 .portrait-photo-gallery {
   margin: 10px 0 0;
@@ -2508,24 +2074,71 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   padding: 0 1vw;
 }
 .generic-main-content h2 {
-  font-size: 2.5vw;
-  padding-bottom: 2vh;
+  font-size: 2.5vh;
+  padding-bottom: 1vh;
 }
 .work-type-heading {
-  font-size: 3.5vw;
+  font-size: 5vh;
 }
 .work-type-text {
-  font-size: 2vw;
-  padding: 3vh 14vw 0;
+  font-size: 2.5vh;
 }
 
   /* LANDSCAPE TABLETS HEADER STYLES */
 
-.header-logo a {
-  font-size: 3vw;
+/* TABLET MOBILE MENU */
+.show-mobile-menu {
+  display: block;
+  float: right;
+  font-size: 5vh;
+  /* margin-top: 4.5vh; */
+  padding: 0 10vw 0 0;
+  position: relative;
+}
+.header-nav {
+  background-color: #4c4c4c;
+  box-sizing: border-box;
+  left: 0;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  top: 15vh;
+  transition: all 0.5s ease-in-out;
+  width: 100vw;
+  z-index: 9;
+}
+.header-nav li {
+  display: block;
+  margin-top: 1.5em;
+}
+.header-nav li {
+  border: 0;
+  padding: 0;
+}
+.header-nav li:first-child {
+  margin-top: 3vh;
+}
+.header-nav li:last-child {
+  margin-bottom: 3vh;
 }
 .header-nav li a {
-  font-size: 2.1vw;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.6vw;
+  font-weight: 200;
+}
+/* HIDE DROPDOWN IN THE NAV MENU */
+.header-nav .dropdown:hover .drop-menu,
+.header-nav .drop-trigger:after {
+  display: none;
+}
+.header-nav .drop-trigger {
+  padding-right: 0;
+}
+.mobile-menu-check:checked ~ .header-nav {
+  max-height: 1000px;
 }
 
 /* LANDSCAPE TABLETS CALLOUT STYLES */
@@ -2719,20 +2332,20 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 /* CRITICAS TABLET LANDSCAPE MAIN PAGE */
 
 .accordion {
-  font-size: 2.6vw;
+  font-size: 3vh;
 }
 .accordion span {
-  font-size: 1.8vw;
+  font-size: 2vh;
 }
 .panel h1 {
-  font-size: 2.6vw;
+  font-size: 3.5vh;
   margin-top: 3vh;
 }
 .panel h2 {
-  font-size: 2.3vw;
+  font-size: 3vh;
 }
 .panel p {
-  font-size: 2vw;
+  font-size: 2.3vh;
   padding: 0 12vw 3vh;
 }
 .panel .quote {
@@ -2746,32 +2359,34 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 /* LANDSCAPE TABLET CONTACT FORM STYLES */
 
 .contact-wrapper {
-  flex-direction: column;
+  flex-direction: row;
 }
 .contact-image {
-  margin: 1vh 4vw 6vh;
-  min-height: 65vh;
+  background-size: cover;
+  flex: 2 1 0;
+  margin: 2vh 0 2vh 8vw;
 }
 .contact-copy {
-  padding: 0 4vw 5vh;
+  flex: 3 1 0;
+  padding: 2vh 0 5vh;
 }
 .contact-copy h1 {
-  font-size: 4.5vw;
+  font-size: 4vh;
 }
 .contact-copy p {
-  font-size: 2.5vw;
-  padding: 4vh 10vw 3vh;
+  font-size: 2vh;
+  padding: 4vh 5vw 0;
 }
 .contact-copy-form{
-  padding: 3vh 18vw;
+  padding: 3vh 10vw;
 }
 label {
-  font-size: 2.3vw;
-  font-weight: 200;
+  font-size: 2vh;
+  font-weight: 400;
 }
 input[type=text], input[type=email], input[type=message], input[type=tel], select, textarea {
-  margin-bottom: 6vh; 
-  margin-top: 3vh; 
+  margin-bottom: 4vh; 
+  margin-top: 2vh; 
 }
 
 }
@@ -2785,7 +2400,7 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 
 .generic-main-content {
   line-height: 1.8;
-  margin: 2vh 14vw 5vh;
+  margin: 2vh 18vw 5vh;
 }
 .generic-main-content h1 {
   font-size: 3vw;
@@ -2808,13 +2423,6 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 .hide-in-mobile {
   display: none;
 }
-  
-/* LANDSCAPE MOBILE HEADER STYLES */
-
-.header-logo a {
-  font-size: 3vw;
-}
-
 
 /* LANDSCAPE MOBILE DROPDOWN MENU */
 
@@ -2828,7 +2436,7 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   margin-bottom: 1.2rem;
 }
 .header-nav li a {
-  font-size: 2.5vw;
+  font-size: 3vw;
 }
 
 /* LANDSCAPE MOBILE FOOTER STYLES */
@@ -3037,12 +2645,6 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   max-height: 75vh;
   margin: 1vh 0 3vh;
 }
-.second-series-image, 
-.third-series-image, 
-.fourth-series-image {
-  /* height: 35vh; */
-}
-
 .gallery {
   margin: 6vh 0;
 }
@@ -3103,7 +2705,6 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   font-size: 2.5vw;
 }
 
-
 /* LANDSCAPE MOBILE BIOGRAPHY PAGE STYLES */
 
 .biography-hero-image {
@@ -3122,33 +2723,37 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 /* CRITICAS MOBILE LANDSCAPE MAIN PAGE */
 
 .accordion {
-  font-size: 1.1rem;
+  font-size: 2.8vw;
 }
 .accordion span {
-  font-size: 0.9rem;
+  font-size: 2vw;
 }
 .panel h1 {
-  font-size: 1.5rem;
+  font-size: 3vw;
   margin-top: 3vh;
 }
 .panel h2 {
-  font-size: 1.2rem;
+  font-size: 2.3vw;
 }
 .panel p {
-  font-size: 1.05rem;
+  font-size: 2vw;
   padding: 0 8vw 3vh;
 }
 .panel .quote {
-  font-size: 1.05rem;
+  font-size: 2vw;
   margin: 2vh 10vw 6vh;
 }
 .quote span {
-  font-size: 0.9rem;
+  font-size: 1.8vw;
 }
 
 /* LANDSCAPE MOBILE CONTACT FORM STYLES */
 
+.contact-wrapper {
+  flex-direction: column;
+}
 .contact-image {
+  background-image: url(../images/pedro_studio.jpg);
   margin: 1vh 4vw 6vh;
   min-height: 65vh;
 }
@@ -3156,10 +2761,10 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   padding: 0 4vw 5vh;
 }
 .contact-copy h1 {
-  font-size: 4.5vw;
+  font-size: 8.4vh;
 }
 .contact-copy p {
-  font-size: 2.5vw;
+  font-size: 4.2vh;
   padding: 4vh 10vw 3vh;
 }
 .contact-copy-form{
@@ -3174,11 +2779,7 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   margin-top: 3vh; 
 }
 
-
-
 }
-
-
 
 /* WIDE - DESKTOP DEVICES */
 
@@ -3188,19 +2789,17 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 
 .generic-main-content {
   line-height: 1.8;
-  margin: 2vh 20vw 5vh;
-  text-align: center;
+  margin: 2vh 24vw 5vh;
 }
 .generic-main-content h1 {
   font-size: 2.5vw;
 }
 .generic-main-content p {
-  font-size: 1.6vw;
-  font-weight: 200;
+  font-size: 1.5vw;
   padding: 0 0 2vh;
 }
 .generic-main-content h2 {
-  font-size: 2vw;
+  font-size: 1.8vw;
   font-weight: 600;;
   padding-bottom: 0;
 }
@@ -3215,12 +2814,8 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 
 /* WIDESCREEN HEADER STYLES */
 
-/* .header {
-  height: 14vh;
-} */
 .header-logo a {
   font-size: 3vw;
-  text-transform: uppercase;
 }
 .header-nav a,
 .drop-trigger,
@@ -3458,8 +3053,6 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   text-align: center;
   width: 80%;
 }
-
-
 /* EXHBITION LANDING PAGE STYLES */
 
 .upcoming-exhibitions-image {
@@ -3620,9 +3213,5 @@ label {
 .quote span {
   font-size: 1.6rem;
 }
-
-
-
-
 
 }
