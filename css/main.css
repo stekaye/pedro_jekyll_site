@@ -110,11 +110,11 @@ a {
 }
 .generic-main-content h1 {
   color: #4c4c4c;
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  /* border: 1px solid rgba(0, 0, 0, 0.5); */
   font-size: 2vw;
   font-weight: 600;
   margin: 3vh 0 5vh;
-  padding: 2vh 1vw;
+  /* padding: 2vh 1vw; */
 }
 .generic-main-content p {
   font-size: 1.2vw;
