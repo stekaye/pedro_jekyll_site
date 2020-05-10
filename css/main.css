@@ -505,13 +505,14 @@ a {
   width: 100%;
 }
 .work-type-heading {
+  align-self: center;
   border-top: 1px dotted rgba(0, 0, 0, 0.2);
   color: #4c4c4c;
   font-size: 2.5vw;
   font-weight: 600;
-  margin: 2vh 6vw;
+  justify-self: center;
+  margin: 2vh 0;
   padding: 4vh 0 0;
-  text-align: center;
   width: 80%;
 }
 .work-type-text {
@@ -523,7 +524,7 @@ a {
 }
 .latest-series-image {
   background-position: center center;
-  background-image: url(../images/paintings/2009-2020/2016-2020_main/incertidumbre/incertidumbre_1ab.JPG);
+  background-image: url("../images/paintings/2009-2020/2016-2020_main/incertidumbre/incertidumbre_1ab.JPG");
   background-size: contain;
   flex: 1;
   margin: 2vh 8vw 3vh 8vw;
@@ -622,12 +623,12 @@ a {
 }
 .second-series-image {
   background-position: center center;
-  background-image: url(../images/paintings/1993-2006_main/narcisista_5_s.jpg);
+  background-image: url(../images/exhibition_hero.jpg);
   background-size: contain;
 }
 .third-series-image {
   background-position: center center;
-  background-image: url(../images/paintings/1988-1994_main/resized/landscape_8.jpg);
+  background-image: url(../images/paintings/1988-1994_main/resized/landscape_7.jpg);
   background-size: cover;
 }
 .fourth-series-image {
