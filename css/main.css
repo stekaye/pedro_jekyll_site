@@ -188,7 +188,7 @@ a {
   text-decoration: none;
 }
 .header-nav a:hover {
-  color: darkgoldenrod;
+  color: #db6600;
 }
 
 /* MOBILE DROPDOWN MENU */
@@ -302,7 +302,7 @@ a {
   text-decoration: none;
 }
 .footer-nav a:hover {
-  color: darkgoldenrod;
+  color: #db6600;
 }
 .footer-image img {
   border-radius: 50%;
@@ -463,7 +463,7 @@ a {
   text-decoration: none;
 }
 .works-title h3 a:hover {
-  color: darkgoldenrod;
+  color: #db6600;
   opacity: 0.8;
 }
 .works-copy-wrapper {
@@ -636,6 +636,7 @@ a {
   background-size: cover;
 }
 .gallery {
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -646,9 +647,11 @@ a {
   align-items: center;
   display: flex;
   flex: 1;
+  justify-content: center;
   margin: 0vh 8vw;
 }
 .gallery-item {
+  align-self: center;
   flex: 1 1 24px;
   justify-self: center;
   margin: 1rem;
@@ -1181,7 +1184,7 @@ button[type=submit] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 button[type=submit]:hover {
-  background-color: darkgoldenrod;
+  background-color: #db6600;
 }
 
 /* Add a background color and some padding around the form */
@@ -2235,13 +2238,13 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   height: 100%;
   left: 50%;
   opacity: 1;
-  top: 130%;
+  top: 135%;
   transition: none;
   width: 100%;
 }
 .overlay-text-details {
   color: #4c4c4c;
-  font-size: 1.1vw;
+  font-size: 1.05vw;
   width: 100%
 }
 .overlay-title {
