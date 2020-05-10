@@ -2235,7 +2235,7 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   height: 100%;
   left: 50%;
   opacity: 1;
-  top: 120%;
+  top: 130%;
   transition: none;
   width: 100%;
 }
