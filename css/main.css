@@ -85,7 +85,7 @@ a {
   text-align: center;
 }
 .portrait-photo-gallery img {
-  height: 20vh;
+  height: 30vh;
   transition: 1s;
   padding: 15px;
   width: auto;
@@ -641,7 +641,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 4vh 0;
+  margin: 6vh 0;
   width: 100%;
 }
 .gallery-line {
@@ -910,7 +910,7 @@ h2 {
   background-color: goldenrod;
   color: #fff;
   display: block;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   font-weight: 600;
   left: 50%;
   opacity: 0.9;
@@ -935,7 +935,7 @@ h2 {
   background-color: goldenrod;
   color: #fff;
   display: block;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   font-weight: 600;
   left: 50%;
   opacity: 0.9;
@@ -960,7 +960,7 @@ h2 {
   background-color: goldenrod;
   color: #fff;
   display: block;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   font-weight: 600;
   left: 50%;
   opacity: 0.9;
@@ -1566,7 +1566,7 @@ label {
   min-height: 41vh;
 }
 .exhibitions-collective h1 {
-  background-color: #4c4c4c;
+  /* background-color: #4c4c4c; */
   font-size: 2.5vw;
   top: 10%;
   width: 90%;
@@ -2289,7 +2289,7 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   min-height: 60vh;
 }
 .exhibitions-individual h1 {
-  font-size: 2.6vw;
+  font-size: 2vw;
   padding: 3vh 0;
   top: 15%;
   width: 90%;
@@ -2299,8 +2299,8 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   min-height: 60vh;
 }
 .exhibitions-collective h1 {
-  background-color: #4c4c4c;
-  font-size: 2.6vw;
+  /* background-color: #4c4c4c; */
+  font-size: 2vw;
   padding: 3vh 0;
   top: 15%;
   width: 90%;
@@ -2310,7 +2310,7 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   min-height: 60vh;
 }
 .exhibitions-museum h1 {
-  font-size: 2.6vw;
+  font-size: 2vw;
   padding: 3vh 0;
   top: 15%;
   width: 90%;
@@ -2535,7 +2535,7 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   min-height: 70vh;
 }
 .exhibitions-collective h1 {
-  background-color: #4c4c4c;
+  /* background-color: #4c4c4c; */
   font-size: 2.6vw;
   padding: 3vh 0;
   top: 15%;
