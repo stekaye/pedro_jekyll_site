@@ -74,10 +74,10 @@ a {
   text-decoration: none;
 }
 a:link {
-  color: blue;
+  color: darkblue;
 }
 a:visited {
-  color: maroon;
+  color: darkgray;
 }
 a:hover {
   color: #db6600;
