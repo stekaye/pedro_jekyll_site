@@ -397,9 +397,9 @@ a {
 .hero-quote q {
   color: #fff;
   font-family: 'Raleway', sans-serif;
-  font-size: 1.2vw;
+  font-size: 1vw;
   font-weight: 200;
-  letter-spacing: .5rem;
+  letter-spacing: .3rem;
   line-height: 1.5;
   opacity: 0.8;
 }
@@ -446,23 +446,23 @@ a {
 }
 .works-title h3 {
   background-color: #fff;
-  font-size: 1.4rem;
   left: 50%;
-  opacity: 0.7;
+  opacity: 0.75;
   padding: 3vh 0;
   position: absolute;
-  top: 20%;
+  top: 25%;
   text-align: center;
+  text-transform: uppercase;
   transform: translate(-50%, -50%);
   width: 24vw;
 }
-.works-title h3 a {
+.works-title h3 {
   color: #4c4c4c;
-  font-size: 1.4rem;
-  font-weight: 600;
+  font-size: 1.2vw;
+  font-weight: 400;
   text-decoration: none;
 }
-.works-title h3 a:hover {
+.works-title h3:hover {
   color: #db6600;
   opacity: 0.8;
 }
@@ -513,6 +513,7 @@ a {
   justify-self: center;
   margin: 2vh 0;
   padding: 4vh 0 0;
+  text-align: center;
   width: 80%;
 }
 .work-type-text {
@@ -623,7 +624,7 @@ a {
 }
 .second-series-image {
   background-position: center center;
-  background-image: url(../images/exhibition_hero.jpg);
+  background-image: url(../images/paintings/1993-2006_main/resized/viajero_4_s.jpg);
   background-size: contain;
 }
 .third-series-image {
@@ -657,6 +658,10 @@ a {
   justify-self: center;
   margin: 1rem;
   position: relative;
+}
+.gallery-item-fullrow {
+  height: 55vh;
+  width: 84vw;
 }
 .gallery-item-normal {
   height: 45vh;
@@ -1101,15 +1106,15 @@ h2 {
   font-size: 1.1rem;
   font-weight: 200;
   line-height: 1.8;
-  padding: 0 25vw 3vh;
+  padding: 0 20vw 3vh;
   text-align: justify;
 }
 .panel .quote {
-  border: 2px solid goldenrod;
+  border: 2px solid #db6600;
   font-size: 1.1rem;
   font-weight: 200;
   line-height: 1.8;
-  margin: 1vh 30vw 4vh;
+  margin: 1vh 22vw 4vh;
   padding: 2vh 2vw;
   text-align: center;
 }
@@ -1118,7 +1123,7 @@ h2 {
   font-weight: 400;
 }
 .fa-quote-left {
-  color: goldenrod;
+  color: #db6600;
   font-size: 3vw;
   padding: 0 1vw 0 0
 }
@@ -1134,7 +1139,7 @@ h2 {
 }
 .contact-image {
   background-position: center center;
-  background-image: url(../images/contact_image.JPG);
+  background-image: url(../images/Biography/biography_hero_3.jpg);
   background-size: cover;
   flex: 2 1 0;
   margin: 4vh 0 5vh 8vw;
@@ -1313,10 +1318,10 @@ label {
   background-size: cover;
 }
 .hero-quote {
-  top: 22%;
+  top: 21%;
 }
 .hero-quote q {
-  font-size: 2.2vw;
+  font-size: 1.8vw;
   font-weight: 400;;
   opacity: 0.9;
 }
@@ -1324,11 +1329,11 @@ label {
   /* WORKS PAGE TABLET */
 
   .works-images {
-    padding: 0 0;
+    padding: 1vh 0;
   }
   .works-images img {
-    height: 50vw;
-    width: 50vw;
+    height: 70vw;
+    width: 70vw;
   }
   .works-copy-wrapper {
     padding: 0 6vw 0;
@@ -1336,9 +1341,9 @@ label {
   .works-title h3 {
     padding: 2vh 0;
     top: 22%;
-    width: 54vw;
+    width: 75vw;
   }
-  .works-title h3 a {
+  .works-title h3 {
     font-size: 3.5vw;
   }
   .works-header {
@@ -1522,13 +1527,13 @@ label {
 /* EXHBITION LANDING TABLET PAGE STYLES */
 
 .upcoming-exhibitions-image {
-  margin: 0 4vw 1vh 4vw;
-  min-height: 41vh;
+  margin: 0 4vw 5vh 4vw;
+  min-height: 82vh;
 }
 .upcoming-exhibitions-content {
   left: 50%;
   padding: 1vh 0;
-  top: 35%;
+  top: 50%;
   width: 98%;
 }
 .upcoming-exhibitions-content h1 {
@@ -1757,9 +1762,9 @@ label {
   top: 22%;
 }
 .hero-quote q {
-  font-size: 2.7vw;
+  font-size: 2vw;
   font-weight: 400;
-  letter-spacing: .2rem;
+  letter-spacing: .3rem;
   opacity: 0.9;
 }
 
@@ -1792,17 +1797,17 @@ label {
   padding: 0;
 }
 .works-title h3 {
-  width: 70vw;
+  width: 80vw;
 }
-.works-title h3 a {
-  font-size: 5vw;
+.works-title h3{
+  font-size: 3.5vw;
 }
 .works-images {
   padding: 3vh 0 0;
 }
 .works-images img {
-  height: 66vw;
-  width: 66vw;
+  height: 75vw;
+  width: 75vw;
 }
 .work-type-text {
   font-size: 3.5vw;
@@ -1955,7 +1960,7 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 /* EXHBITION LANDING MOBILE PAGE STYLES */
 
 .upcoming-exhibitions-image {
-  margin: 0 4vw 1vh 4vw;
+  margin: 0 4vw 5vh 4vw;
   min-height: 82vh;
 }
 .upcoming-exhibitions-content {
@@ -2155,8 +2160,9 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   top: 47%;
 }
 .hero-quote q {
-  font-size: 1.4vw;
+  font-size: 1.3vw;
   font-weight: 400;
+  letter-spacing: .4rem;
   line-height: 1.5;
 }
 
@@ -2176,22 +2182,15 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   padding-bottom: 5vh;
 }
 .works-images img {
-  height: 24vw;
-  width: 24vw;
+  height: 27vw;
+  width: 27vw;
+}
+.works-copy-wrapper {
+  padding: 3vh 2vw;
 }
 .works-title h3 {
-  background-color: #4c4c4c;
-  border-radius: 10%;
-  opacity: 1;
-  top: 80%;
-  width: 25vw;
-}
-.works-title h3 a {
-  color: #fff;
-  font-size: 2vw;
-  font-weight: 400;
-  text-transform: uppercase;
-}
+  font-size: 1.4vw;
+} */
 
 /* LANDSCAPE TABLET PAINTINGS STYLES */
 
@@ -2492,7 +2491,7 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   top: 32%;
 }
 .hero-quote q {
-  font-size: 1.6vw;
+  font-size: 1.2vw;
   font-weight: 400;
   letter-spacing: .3rem;
   opacity: 0.9;
@@ -2562,34 +2561,24 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   font-size: 2.7vw;
 }
 .works-box {
-  margin: 0 1vw;
+  margin: 0 2vw;
 }
 .works-copy-wrapper {
-  padding-bottom: 10vh;
+  padding: 2vh 2vw 10vh;
 }
 .works-images {
   padding: 5vh 0 5vh
 }
 .works-images img {
-  height: 25vw;
-  width: 25vw;
+  height: 27vw;
+  width: 27vw;
 }
 .works-title {
   margin: 0 0 4vh;
 }
 .works-title h3 {
-  background-color: #4c4c4c;
-  border-radius: 10%;
-  opacity: 1;
-  top: 85%;
-  width: 25vw;
-}
-.works-title h3 a {
-  color: #fff;
-  font-size: 1.8vw;
-  font-weight: 400;
-  text-transform: uppercase;
-}
+  font-size: 1.4vw;
+} */
 .work-type-text {
   font-size: 2vw;
   padding: 3vh 13vw 1vh;
@@ -2844,10 +2833,10 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 
 .callout-section-content h1 {
   font-size: 3vw;
-  top: 90%;
+  top: 86%;
 }
 .hero-quote q {
-  font-size: 1.8vw;
+  font-size: 1.2vw;
 }
 
 /* WIDESCREEN WORKS PAGE STYLES */
@@ -2872,24 +2861,10 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   margin: 0 0 4vh;
 }
 .works-title h3 {
-  background-color: #4c4c4c;
-  border-radius: 10%;
-  opacity: 1;
-  top: 90%;
   width: 25vw;
 }
 .works-title h3 a {
-  color: #fff;
   font-size: 2.4rem;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-.works-title h3 a:hover {
-  color: #fff;
-  font-weight: 600;
-}
-.works-title h3:hover {
-  background-color: goldenrod;
 }
 .works-copy-wrapper {
   padding: 3vh 6vw 8vh;
@@ -2898,12 +2873,6 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   height: 26.8vw;
   opacity: 1;
   width: 26.8vw;
-}
-.works-images img:hover {
-  /* height: 27vw;
-  width: 27vw; */
-  opacity: 0.8;
-  transition: 1s ease-out;
 }
 
 
