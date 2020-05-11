@@ -73,6 +73,15 @@ h1, h2, h3, h4, p, span, blockquote {
 a {
   text-decoration: none;
 }
+a:link {
+  color: blue;
+}
+a:visited {
+  color: maroon;
+}
+a:hover {
+  color: #db6600;
+}
 .galleria { 
   width: 700px; 
   height: 400px; 
