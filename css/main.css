@@ -671,11 +671,13 @@ a:hover {
   height: 55vh;
   width: 84vw;
 }
-.gallery-item-normal {
+.gallery-item-normal,
+.gallery-item-normal-no-fade {
   height: 45vh;
   width: 30vw;
 }
-.gallery-item-portrait {
+.gallery-item-portrait,
+.gallery-item-portrait-no-fade {
   flex: 1;
   height: 45vh;
   width: 30vw;
@@ -1454,6 +1456,12 @@ label {
   width: auto;
   margin: 0 auto 23vh;
 }
+.gallery-item-normal-no-fade,
+.gallery-item-portrait-no-fade {
+  height: 40vh;
+  width: auto;
+  margin: 0 auto 6vh;
+}
 .gallery-image-square,
 .gallery-image-square-no-fade,
 .gallery-image-portrait,
@@ -1890,6 +1898,11 @@ label {
   height: 36vh;
   margin: 0 auto 23vh;
 }
+.gallery-item-normal-no-fade,
+.gallery-item-portrait-no-fade {
+  height: 36vh;
+  margin: 0 auto 6vh;
+}
 .gallery-image-square,
 .gallery-image-square-no-fade,
 .gallery-image-portrait,
@@ -2207,6 +2220,12 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   height: 25vh;
   width: 25vw;
   margin: 0 1vw 20vh;
+}
+.gallery-item-normal-no-fade,
+.gallery-item-portrait-no-fade {
+  height: 25vh;
+  width: 25vw;
+  margin: 0 1vw 6vh;
 }
 .gallery-image-series {
 	width: 40vw;
@@ -2660,6 +2679,12 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   width: 25vw;
   margin: 0 1vw 20vh;
 }
+.gallery-item-normal-no-fade,
+.gallery-item-portrait-no-fade {
+  height: 30vh;
+  width: 25vw;
+  margin: 0 1vw 6vh;
+}
 .gallery-image-square,
 .gallery-image-square-no-fade {
   left: 0%;
@@ -2960,7 +2985,9 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   position: relative;
 }
 .gallery-item-normal,
-.gallery-item-portrait {
+.gallery-item-normal-no-fade,
+.gallery-item-portrait,
+.gallery-item-portrait-no-fade {
   height: 45vh;
   width: 30vw;
 }
