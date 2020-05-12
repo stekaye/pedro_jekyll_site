@@ -1654,7 +1654,7 @@ label {
 
 .photo-gallery img {
   height: auto;
-  width: 60vw;
+  width: 70vw;
 }
 
 
@@ -2433,6 +2433,13 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   font-size: 1.8vw;
 }
 
+/* MEDIA STYLES */
+
+.photo-gallery img {
+  height: 81vh;
+  width: auto;
+}
+
 /* LANDSCAPE TABLET CONTACT FORM STYLES */
 
 .contact-wrapper {
@@ -2820,6 +2827,13 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 }
 .quote span {
   font-size: 1.8vw;
+}
+
+/* MEDIA STYLES */
+
+.photo-gallery img {
+  height: 81vh;
+  width: auto;
 }
 
 /* LANDSCAPE MOBILE CONTACT FORM STYLES */
@@ -3269,6 +3283,13 @@ label {
 }
 .quote span {
   font-size: 1.6rem;
+}
+
+/* MEDIA STYLES */
+
+.photo-gallery img {
+  height: 35vh;
+  width: auto;
 }
 
 }
