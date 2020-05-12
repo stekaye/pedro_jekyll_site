@@ -455,21 +455,20 @@ a:hover {
 }
 .works-title h3 {
   background-color: #fff;
+  color: #4c4c4c;
+  font-size: 1.4vw;
+  font-weight: 400;
   left: 50%;
+  line-height: 1.4;
   opacity: 0.75;
   padding: 3vh 0;
   position: absolute;
   top: 25%;
   text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
   transform: translate(-50%, -50%);
   width: 24vw;
-}
-.works-title h3 {
-  color: #4c4c4c;
-  font-size: 1.2vw;
-  font-weight: 400;
-  text-decoration: none;
 }
 .works-title h3:hover {
   color: #db6600;
@@ -686,7 +685,8 @@ a:hover {
 	height: 55vh;
 	object-fit: cover;
 }
-.gallery-image-square {
+.gallery-image-square,
+.gallery-image-square-no-fade {
   left: 50%;
   max-height: 100%;
 	max-width: 100%;
@@ -697,7 +697,8 @@ a:hover {
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.gallery-image-portrait {
+.gallery-image-portrait,
+.gallery-image-portrait-no-fade {
   left: 50%;
   max-height: 100%;
 	max-width: 100%;
@@ -861,7 +862,7 @@ h2 {
   opacity: 0.4;
 }
 .upcoming-exhibitions-content {
-  background-color: goldenrod;
+  background-color: #8a0e0b;
   display: block;
   left: 50%;
   opacity: 0.8;
@@ -882,7 +883,7 @@ h2 {
 .upcoming-exhibitions-content h2 {
   background-color: #fff;
   border: 1px solid #fff;
-  color: goldenrod;
+  color: #8a0e0b;
   display: inline-block;
   font-size: 1.6rem;
   font-weight: 400;
@@ -1348,12 +1349,10 @@ label {
     padding: 0 6vw 0;
   }
   .works-title h3 {
+    font-size: 4vw;
     padding: 3vh 0;
     top: 22%;
     width: 75vw;
-  }
-  .works-title h3 {
-    font-size: 3.75vw;
   }
   .works-header {
     padding: 3vh 14vw;
@@ -1456,7 +1455,9 @@ label {
   margin: 0 auto 23vh;
 }
 .gallery-image-square,
-.gallery-image-portrait {
+.gallery-image-square-no-fade,
+.gallery-image-portrait,
+.gallery-image-portrait-no-fade {
   height: 100%;
   object-fit: contain;
   position: initial;
@@ -1805,11 +1806,11 @@ label {
   flex-direction: column;
   padding: 0;
 }
-.works-title h3 {
+.works-title h3 { 
+  font-size: 4.5vw;
+  padding: 2vh 0;
+  top: 25%;
   width: 80vw;
-}
-.works-title h3{
-  font-size: 3.5vw;
 }
 .works-images {
   padding: 3vh 0 0;
@@ -1890,7 +1891,9 @@ label {
   margin: 0 auto 23vh;
 }
 .gallery-image-square,
-.gallery-image-portrait {
+.gallery-image-square-no-fade,
+.gallery-image-portrait,
+.gallery-image-portrait-no-fade {
   height: 100%;
   object-fit: cover;
   position: initial;
@@ -2182,10 +2185,9 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   padding: 3vh 0 3vh;
 }
 .works-title h3 {
+  font-size: 1.8vw;
+  padding: 2vh 0;
   width: 28vw;
-}
-.works-title h3 a {
-  font-size: 2.5vw;
 }
 .works-images {
   padding-bottom: 5vh;
@@ -2196,9 +2198,6 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 }
 .works-copy-wrapper {
   padding: 3vh 2vw;
-}
-.works-title h3 {
-  font-size: 1.4vw;
 } */
 
 /* LANDSCAPE TABLET PAINTINGS STYLES */
@@ -2214,7 +2213,8 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 	height: 40vh;
 	object-fit: cover;
 }
-.gallery-image-square {
+.gallery-image-square,
+.gallery-image-square-no-fade {
   left: 0%;
   max-height: 100%;
 	max-width: 100%;
@@ -2226,7 +2226,8 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   transform: translate(-50%, -50%);
   width: 100%;
 }
-.gallery-image-portrait {
+.gallery-image-portrait,
+.gallery-image-portrait-no-fade {
   left: 50%;
   max-height: 100%;
 	max-width: 100%;
@@ -2659,7 +2660,8 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   width: 25vw;
   margin: 0 1vw 20vh;
 }
-.gallery-image-square {
+.gallery-image-square,
+.gallery-image-square-no-fade {
   left: 0%;
   max-height: 100%;
 	max-width: 100%;
@@ -2671,7 +2673,8 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   transform: translate(-50%, -50%);
   width: 100%;
 }
-.gallery-image-portrait {
+.gallery-image-portrait,
+.gallery-image-portrait-no-fade {
   left: 50%;
   max-height: 100%;
 	max-width: 100%;
@@ -2870,10 +2873,8 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   margin: 0 0 4vh;
 }
 .works-title h3 {
-  width: 25vw;
-}
-.works-title h3 a {
-  font-size: 2.4rem;
+  font-size: 2.8vh;
+  width: 30vw;
 }
 .works-copy-wrapper {
   padding: 3vh 6vw 8vh;
@@ -2969,7 +2970,9 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 	object-fit: cover;
 }
 .gallery-image-square,
-.gallery-image-portrait {
+.gallery-image-square-no-fade,
+.gallery-image-portrait,
+.gallery-image-portrait-no-fade {
   left: 50%;
   max-height: 95%;
 	max-width: 95%;
