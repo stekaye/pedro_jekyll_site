@@ -2130,38 +2130,7 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 /* LANDSCAPE TABLET STYLES */
 /* MAX-WIDTH: 1366px */
 
-@media (max-width: 1366px) and (orientation:landscape) {
-
-  /* LANDSCAPE TABLET GLOBAL STYLES */
-
-.generic-main-content {
-  line-height: 1.6;
-  margin: 2vh 22vw 5vh;
-}
-.generic-main-content h1 {
-  font-size: 3.5vh;
-}
-.generic-main-content p {
-  font-size: 2vh;
-  padding: 0 6vw 1vh;
-}
-.portrait-photo-gallery {
-  margin: 10px 0 0;
-}
-.portrait-photo-gallery img {
-  height: 20vh;
-  padding: 0 1vw;
-}
-.generic-main-content h2 {
-  font-size: 2.5vh;
-  padding-bottom: 1vh;
-}
-.work-type-heading {
-  font-size: 5vh;
-}
-.work-type-text {
-  font-size: 2.5vh;
-}
+@media (max-width: 1024px) and (orientation:landscape) {
 
   /* LANDSCAPE TABLETS HEADER STYLES */
 
@@ -2205,7 +2174,7 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 .header-nav li a {
   color: #fff;
   font-family: 'Raleway', sans-serif;
-  font-size: 1.6vw;
+  font-size: 2vw;
   font-weight: 200;
 }
 /* HIDE DROPDOWN IN THE NAV MENU */
@@ -2218,6 +2187,46 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 }
 .mobile-menu-check:checked ~ .header-nav {
   max-height: 1000px;
+}
+
+
+  
+}
+
+/* LANDSCAPE TABLET STYLES */
+/* MAX-WIDTH: 1366px */
+
+@media (max-width: 1366px) and (orientation:landscape) {
+
+  /* LANDSCAPE TABLET GLOBAL STYLES */
+
+.generic-main-content {
+  line-height: 1.6;
+  margin: 2vh 22vw 5vh;
+}
+.generic-main-content h1 {
+  font-size: 3.5vh;
+}
+.generic-main-content p {
+  font-size: 2vh;
+  padding: 0 6vw 1vh;
+}
+.portrait-photo-gallery {
+  margin: 10px 0 0;
+}
+.portrait-photo-gallery img {
+  height: 20vh;
+  padding: 0 1vw;
+}
+.generic-main-content h2 {
+  font-size: 2.5vh;
+  padding-bottom: 1vh;
+}
+.work-type-heading {
+  font-size: 5vh;
+}
+.work-type-text {
+  font-size: 2.5vh;
 }
 
 /* LANDSCAPE TABLETS CALLOUT STYLES */
