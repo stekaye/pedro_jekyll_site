@@ -1213,7 +1213,7 @@ h2 {
 }
 .contact-image {
   background-position: center center;
-  background-image: url(../images/Biography/biography_hero_3.jpg);
+  background-image: url(/images/Biography/biography_hero_3.jpg);
   background-size: cover;
   flex: 2 1 0;
   margin: 4vh 0 5vh 8vw;
