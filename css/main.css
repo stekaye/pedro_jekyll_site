@@ -568,6 +568,7 @@ a:hover {
   margin: 2vh 0;
   padding: 4vh 0 0;
   text-align: center;
+  text-transform: uppercase;
   width: 80%;
 }
 .work-type-text {
@@ -2446,7 +2447,7 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 /* MEDIA STYLES */
 
 .photo-gallery img {
-  height: 81vh;
+  height: 20vh;
   width: auto;
 }
 
