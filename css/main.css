@@ -1430,6 +1430,7 @@ label {
 }
 .work-type-text {
   font-size: 2.5vw;
+  padding: 2vh 12vw 4vh;
 }
 .work-type-heading {
   font-size: 4vw;
@@ -2128,7 +2129,7 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 }
 
 /* LANDSCAPE TABLET STYLES */
-/* MAX-WIDTH: 1366px */
+/* MAX-WIDTH: 1024px */
 
 @media (max-width: 1024px) and (orientation:landscape) {
 
@@ -2188,85 +2189,6 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 .mobile-menu-check:checked ~ .header-nav {
   max-height: 1000px;
 }
-
-
-  
-}
-
-/* LANDSCAPE TABLET STYLES */
-/* MAX-WIDTH: 1366px */
-
-@media (max-width: 1366px) and (orientation:landscape) {
-
-  /* LANDSCAPE TABLET GLOBAL STYLES */
-
-.generic-main-content {
-  line-height: 1.6;
-  margin: 2vh 22vw 5vh;
-}
-.generic-main-content h1 {
-  font-size: 3.5vh;
-}
-.generic-main-content p {
-  font-size: 2vh;
-  padding: 0 6vw 1vh;
-}
-.portrait-photo-gallery {
-  margin: 10px 0 0;
-}
-.portrait-photo-gallery img {
-  height: 20vh;
-  padding: 0 1vw;
-}
-.generic-main-content h2 {
-  font-size: 2.5vh;
-  padding-bottom: 1vh;
-}
-.work-type-heading {
-  font-size: 5vh;
-}
-.work-type-text {
-  font-size: 2.5vh;
-}
-
-/* LANDSCAPE TABLETS CALLOUT STYLES */
-
-.callout-section-content h1 {
-  font-size: 3.4vw;
-  padding: 0;
-  top: 93%;
-}
-.hero-quote {
-  top: 47%;
-}
-.hero-quote q {
-  font-size: 1.3vw;
-  font-weight: 400;
-  letter-spacing: .4rem;
-  line-height: 1.5;
-}
-
-/* WORKS LANDSCAPE TABLETS PAGE STYLES */
-
-.works-header h1 {
-  font-size: 5vw;
-  padding: 3vh 0 3vh;
-}
-.works-title h3 {
-  font-size: 1.8vw;
-  padding: 2vh 0;
-  width: 28vw;
-}
-.works-images {
-  padding-bottom: 5vh;
-}
-.works-images img {
-  height: 27vw;
-  width: 27vw;
-}
-.works-copy-wrapper {
-  padding: 3vh 2vw;
-} */
 
 /* LANDSCAPE TABLET PAINTINGS STYLES */
 
@@ -2344,6 +2266,85 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   color: white;
   font-size: 2.5vw;
 }
+
+
+}
+
+/* LANDSCAPE TABLET STYLES */
+/* MAX-WIDTH: 1366px */
+
+@media (max-width: 1366px) and (orientation:landscape) {
+
+  /* LANDSCAPE TABLET GLOBAL STYLES */
+
+.generic-main-content {
+  line-height: 1.6;
+  margin: 2vh 22vw 5vh;
+}
+.generic-main-content h1 {
+  font-size: 3.5vh;
+}
+.generic-main-content p {
+  font-size: 2vh;
+  padding: 0 6vw 1vh;
+}
+.portrait-photo-gallery {
+  margin: 10px 0 0;
+}
+.portrait-photo-gallery img {
+  height: 20vh;
+  padding: 0 1vw;
+}
+.generic-main-content h2 {
+  font-size: 2.5vh;
+  padding-bottom: 1vh;
+}
+.work-type-heading {
+  font-size: 5vh;
+}
+.work-type-text {
+  font-size: 2.5vh;
+}
+
+/* LANDSCAPE TABLETS CALLOUT STYLES */
+
+.callout-section-content h1 {
+  font-size: 3.4vw;
+  padding: 0;
+  top: 93%;
+}
+.hero-quote {
+  top: 47%;
+}
+.hero-quote q {
+  font-size: 1.3vw;
+  font-weight: 400;
+  letter-spacing: .4rem;
+  line-height: 1.5;
+}
+
+/* WORKS LANDSCAPE TABLETS PAGE STYLES */
+
+.works-header h1 {
+  font-size: 5vw;
+  padding: 3vh 0 3vh;
+}
+.works-title h3 {
+  font-size: 1.8vw;
+  padding: 2vh 0;
+  width: 28vw;
+}
+.works-images {
+  padding-bottom: 5vh;
+}
+.works-images img {
+  height: 27vw;
+  width: 27vw;
+}
+.works-copy-wrapper {
+  padding: 3vh 2vw;
+} */
+
 
 /* LANDSCAPE TABLET EXHIBITION STYLES */
 
