@@ -61,6 +61,9 @@ body {
 .center {
   text-align: center;
 }
+.center-text {
+  
+}
 .justify {
   text-align: justify;
 }
@@ -1185,6 +1188,12 @@ h2 {
   color: #db6600;
   font-size: 3vw;
   padding: 0 1vw 0 0
+}
+.download-pdf {
+  margin-bottom: 5vh;
+}
+.download-pdf a {
+  text-align: center;
 }
 /* CONTACT FORM STYLES */
 
