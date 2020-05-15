@@ -1213,7 +1213,7 @@ h2 {
 }
 .contact-image {
   background-position: center center;
-  background-image: url(../images/Biography/biography_hero_3.jpg);
+  background-image: url(../images/biography_hero_3.jpg);
   background-size: cover;
   flex: 2 1 0;
   margin: 4vh 0 5vh 8vw;
@@ -2017,7 +2017,7 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 /* BIOGRAPHY MAIN PAGE MOBILE STYLES */
 
 .biography-hero-image {
-  background-image: url(../images/Biography/biography_hero_3.jpg);
+  background-image: url(../images/biography_hero_3.jpg);
   background-position: center top;
   background-size: cover;
   height: 65vh;
@@ -2816,7 +2816,7 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 /* LANDSCAPE MOBILE BIOGRAPHY PAGE STYLES */
 
 .biography-hero-image {
-  background-image: url(../images/Biography/biography_hero_6.jpg);
+  background-image: url(../images/images_new/Pedro_2009.jpg);
   height: 65vh;
 }
 .biography-hero-content {
