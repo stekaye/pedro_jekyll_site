@@ -373,6 +373,12 @@ a:hover {
   transform: translate(-50%, 0); 
   width: 10rem;
 }
+.copyright {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 5vh;
+  size: 0.8rem;
+}
 
 /* CALLOUT STYLES */
 
@@ -2901,14 +2907,14 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   margin: 2vh 24vw 5vh;
 }
 .generic-main-content h1 {
-  font-size: 2.5vw;
+  font-size: 2rem;
 }
 .generic-main-content p {
-  font-size: 1.5vw;
+  font-size: 1.2rem;
   padding: 0 0 2vh;
 }
 .generic-main-content h2 {
-  font-size: 1.8vw;
+  font-size: 1.4rem;
   font-weight: 600;;
   padding-bottom: 0;
 }
@@ -2924,12 +2930,12 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 /* WIDESCREEN HEADER STYLES */
 
 .header-logo a {
-  font-size: 3vw;
+  font-size: 3rem;
 }
 .header-nav a,
 .drop-trigger,
 .show-mobile-menu {
-  font-size: 1.6vw;
+  font-size: 1.4rem;
 }
 
 /* WIDESCREEN DROPDOWN MENU */
@@ -2939,21 +2945,24 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 
 /* WIDESCREEN FOOTER STYLES */
 .footer-nav a {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .footer-image img {
-  height: 18rem;
-  width: 18rem;
+  height: 10rem;
+  width: 10rem;
 }
 
 /* WIDESCREEN CALLOUT STYLES */
 
 .callout-section-content h1 {
-  font-size: 3vw;
-  top: 86%;
+  font-size: 3rem;
+  top: 92.5%;
+}
+.hero-quote {
+  top: 50%;
 }
 .hero-quote q {
-  font-size: 1.2vw;
+  font-size: 1.2rem;
 }
 
 /* WIDESCREEN WORKS PAGE STYLES */
@@ -2963,14 +2972,14 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   padding: 9vh 22vw 0;
 }
 .works-header h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 600;
 }
 .works-subheader h1 {
   font-size: 3rem;
 }
 .works-header p {
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: 400;
   margin-bottom: 4vh;
 }
@@ -2978,7 +2987,7 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   margin: 0 0 4vh;
 }
 .works-title h3 {
-  font-size: 2.8vh;
+  font-size: 1.5rem;
   width: 30vw;
 }
 .works-copy-wrapper {
@@ -2995,10 +3004,10 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 
 .work-type-heading {
   border-top: none;
-  font-size: 2.5vw;
+  font-size: 2rem;
 }
 .work-type-text {
-  font-size: 1.6vw;
+  font-size: 1.2rem;
   padding: 3vh 21vw 0;
 }
 .latest-series-image {
@@ -3008,15 +3017,15 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   opacity: 0.9;
 }
 .latest-series-content h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   padding: 2.5vh 2vw;
 }
 .latest-series-content h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 400;
 }
 .latest-series-content h3 {
-  font-size: 2.3rem;
+  font-size: 1.8rem;
   font-weight: 200;
 }
 .sub-series-content {
@@ -3029,12 +3038,12 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 .sub-series-content h1 {
   background-color: #4c4c4c;
   color: #fff;
-  font-size: 2.2rem;
+  font-size: 1.5rem;
   padding: 2.5vh 2vw;
 }
 .sub-series-content h3 {
   color: #4c4c4c;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
 }
 .series-link-item {
   flex: 1 1 24rem;
@@ -3068,7 +3077,7 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 .gallery-item-normal-no-fade,
 .gallery-item-portrait,
 .gallery-item-portrait-no-fade {
-  height: 45vh;
+  height: 40vh;
   width: 30vw;
 }
 .gallery-image-series {
@@ -3123,7 +3132,7 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 .gallery-item .overlay-text {
   color: #4c4c4c;
   font-family: 'Raleway', sans-serif;
-  font-size: 2.2vw;
+  font-size: 2.5rem;
   font-weight: 600;
   position: absolute;
   top: 50%;
@@ -3134,7 +3143,7 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 .overlay-text-details {
   color: #4c4c4c;
   font-family: 'Raleway', sans-serif;
-  font-size: 1vw;
+  font-size: 1.2rem;
   font-weight: 600;
   line-height: 1.6;
   position: absolute;
@@ -3161,19 +3170,6 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   font-size: 2.5rem;
   font-weight: 400;
 }
-.exhibitions-individual,
-.exhibitions-collective,
-.exhibitions-museum {
-  min-height: 50vh;
-}
-.exhibitions-individual h1,
-.exhibitions-collective h1,
-.exhibitions-museum h1 {
-  font-size: 2.4rem;
-  font-weight: 600;
-  top: 12%;
-  width: 105%;
-}
 
 /* BIOGRAPHY MAIN PAGE STYLES */
 
@@ -3186,129 +3182,62 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 }
 .biography-hero-content h1 {
   color:rgba(255, 255, 255, 0.8);
-  font-size: 3.6vw;
+  font-size: 4rem;
   font-weight: 200;
 }
 
 /* CONTACT FORM STYLES */
 
 .contact-copy h1 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
 }
 .contact-copy p {
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 .contact-copy-text {
-  padding: 0 0 4vh;
+  padding: 0 6vw 4vh;
 }
 button[type=submit] {
   font-size: 1.6rem;
 }
 label {
-  font-size: 1.5rem;
-}
-
-/* CRITICAS LANDING PAGE STYLES */
-
-.reviews-wrapper {
-  display: flex;
-  flex: 1 1 0;
-  flex-direction: column;
-  text-align: center;
-  width: 100%;
-}
-.reviews-lists-wrapper {
-  display: flex;
-  flex: 1 1 0;
-  flex-direction: row;
-  text-align: center;
-  width: 100%;
-}
-.reviews-bibliografia {
-  background-position: center center;
-  background-image: url(../images/Reviews/bibliography_hero.jpg);
-  background-size: contain;
-  flex: 1;
-  margin: 2vh 1.5vw 5vh 8vw;
-  min-height: 81vh;
-  opacity: 0.8;
-  text-decoration: none;
-}
-.reviews-bibliografia h1 {
-  background-color: goldenrod;
-  color: #fff;
-  display: block;
-  font-size: 1.5rem;
-  font-weight: 600;
-  left: 50%;
-  opacity: 0.9;
-  padding: 2vh 0;
-  position: relative;
-  text-transform: uppercase;
-  top: 8%;
-  transform: translate(-50%, -50%);
-  width: 105%;
-}
-.reviews-resenas {
-  background-position: center center;
-  background-image: url(../images/Exhibitions/collective.jpg);
-  background-size: contain;
-  flex: 1;
-  margin: 2vh 8vw 5vh 1.5vw;
-  min-height: 81vh;
-  opacity: 0.8;
-  text-decoration: none;
-}
-.reviews-resenas h1 {
-  background-color: goldenrod;
-  color: #fff;
-  display: block;
-  font-size: 1.5rem;
-  font-weight: 600;
-  left: 50%;
-  opacity: 0.9;
-  padding: 2vh 0;
-  position: relative;
-  text-transform: uppercase;
-  top: 8%;
-  transform: translate(-50%, -50%);
-  width: 105%;
+  font-size: 1.3rem;
 }
 
 /* CRITICAS MAIN PAGE */
 
 .accordion {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin: 0 16vw 2vh;
 }
 .accordion span {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 .accordion:first-child {
   margin-top: 4vh;
 }
 .panel h1 {
-  font-size: 3.5rem;
+  font-size: 2rem;
 }
 .panel h2 {
-  font-size: 2.5rem;
+  font-size: 1.6rem;
 }
 .panel p {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   padding: 0 22vw 3vh;
 }
 .panel .quote {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   margin: 1vh 26vw 4vh;
 }
 .quote span {
-  font-size: 1.6rem;
+  font-size: 1.1rem;
 }
 
 /* MEDIA STYLES */
 
 .photo-gallery img {
-  height: 35vh;
+  height: 20vh;
   width: auto;
 }
 
