@@ -1843,7 +1843,7 @@ label {
   top: 22%;
 }
 .hero-quote q {
-  font-size: 2vw;
+  font-size: 1.4vh;
   font-weight: 400;
   letter-spacing: .3rem;
   opacity: 0.9;
@@ -2956,18 +2956,16 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 
 .callout-section-content h1 {
   font-size: 3rem;
-  font-weight: 400;
   top: 92.5%;
 }
 .callout-exhibitions-image h1 {
   font-weight: 400;
-  top: 50%;
 }
 .hero-quote {
   top: 50%;
 }
 .hero-quote q {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 /* WIDESCREEN WORKS PAGE STYLES */
