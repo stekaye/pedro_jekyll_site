@@ -356,7 +356,7 @@ a:hover {
   color: rgb(220, 220, 220);
   cursor: pointer;
   font-family: 'Raleway', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-decoration: none;
 }
 .footer-nav a:hover {
@@ -2904,7 +2904,7 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 
 .generic-main-content {
   line-height: 1.8;
-  margin: 2vh 24vw 5vh;
+  margin: 2vh 30vw 5vh;
 }
 .generic-main-content h1 {
   font-size: 2rem;
@@ -2940,7 +2940,7 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 
 /* WIDESCREEN DROPDOWN MENU */
 .drop-menu a {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 
 /* WIDESCREEN FOOTER STYLES */
@@ -2956,13 +2956,18 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 
 .callout-section-content h1 {
   font-size: 3rem;
+  font-weight: 400;
   top: 92.5%;
+}
+.callout-exhibitions-image h1 {
+  font-weight: 400;
+  top: 50%;
 }
 .hero-quote {
   top: 50%;
 }
 .hero-quote q {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 /* WIDESCREEN WORKS PAGE STYLES */
