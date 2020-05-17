@@ -154,7 +154,7 @@ a:hover {
   height: 12vh;
   padding-bottom: 3vh;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   z-index: 20;
 }
 .header-logo {
@@ -1514,7 +1514,8 @@ label {
   height: 50vh;
 }
 .gallery-item-normal,
-.gallery-item-portrait {
+.gallery-item-portrait,
+.gallery-item-fullrow {
   height: 40vh;
   width: auto;
   margin: 0 auto 23vh;
@@ -1961,6 +1962,11 @@ label {
   height: 36vh;
   margin: 0 auto 23vh;
 }
+.gallery-item-fullrow {
+  height: 36vh;
+  width: auto;
+  margin: 0 auto 23vh;
+}
 .gallery-item-normal-no-fade,
 .gallery-item-portrait-no-fade {
   height: 36vh;
@@ -2213,6 +2219,11 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   height: 25vh;
   width: 25vw;
   margin: 0 1vw 20vh;
+}
+.gallery-item-fullrow {
+  height: 25vh;
+  margin: 0 1vw 20vh;
+  width: 70vh;
 }
 .gallery-item-normal-no-fade,
 .gallery-item-portrait-no-fade {
