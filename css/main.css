@@ -1818,7 +1818,7 @@ label {
 .footer-nav .hide {
   display: none;
 }
-.footer-nav .social {
+.footer-nav .footer-social a {
   border: none;
 }
 .footer-image img {
