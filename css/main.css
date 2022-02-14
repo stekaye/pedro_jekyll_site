@@ -2572,7 +2572,6 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
   padding-left: 0;
 }
 .footer-nav a {
-  border: 1px solid #fff;
   font-family: 'Raleway', sans-serif;
   font-size: 6vh;
   font-weight: 200;
