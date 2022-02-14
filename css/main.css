@@ -1808,7 +1808,6 @@ label {
   padding-left: 0;
 }
 .footer-nav a {
-  border: 1px solid #fff;
   font-family: 'Raleway', sans-serif;
   font-size: 6vw;
   font-weight: 200;
@@ -1818,9 +1817,7 @@ label {
 .footer-nav .hide {
   display: none;
 }
-.footer-nav .footer-social a {
-  border: none;
-}
+
 .footer-image img {
   border-radius: 50%;
   display: inline-block;
