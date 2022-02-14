@@ -1818,6 +1818,9 @@ label {
 .footer-nav .hide {
   display: none;
 }
+.footer-nav .social {
+  border: none;
+}
 .footer-image img {
   border-radius: 50%;
   display: inline-block;
