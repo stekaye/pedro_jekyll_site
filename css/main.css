@@ -587,7 +587,7 @@ a:hover {
 }
 .latest-series-image {
   background-position: center center;
-  background-image: url("../images/paintings/2009-2020/2016-2020_main/incertidumbre/incertidumbre_1ab.JPG");
+  background-image: url("../images/paintings/2021-2022/geografia_5.JPG");
   background-size: contain;
   flex: 1;
   margin: 2vh 8vw 3vh 8vw;
@@ -673,7 +673,7 @@ a:hover {
   align-items: flex-start;
   display: flex;
   justify-content: center;
-  margin: 0 7vw 14vh;
+  margin: 0 7vw 20vh;
   width: auto;
 }
 .series-link-item {
@@ -684,10 +684,15 @@ a:hover {
   position: relative;
   text-decoration: none;
 }
+.first-series-image {
+  background-position: center center;
+  background-image: url("../images/paintings/2009-2020/2016-2020_main/incertidumbre/incertidumbre_1ab.JPG");
+  background-size: cover;
+}
 .second-series-image {
   background-position: center center;
   background-image: url(../images/paintings/1993-2006_main/resized/viajero_4_s.jpg);
-  background-size: contain;
+  background-size: cover;
 }
 .third-series-image {
   background-position: center center;
@@ -910,7 +915,7 @@ h2 {
 }
 .upcoming-exhibitions-image {
   background-position: center center;
-  background-image: url(../images/Exhibitions/exhibition_hero.jpg);
+  background-image: url(../images//paintings/2021-2022/geografia_6.JPG);
   background-size: contain;
   flex: 1;
   margin: 2vh 8vw 5vh 8vw;
@@ -918,7 +923,7 @@ h2 {
   opacity: 0.4;
 }
 .upcoming-exhibitions-content {
-  background-color: #8a0e0b;
+  background-color: #35858B;
   display: block;
   left: 50%;
   opacity: 0.8;
@@ -939,7 +944,7 @@ h2 {
 .upcoming-exhibitions-content h2 {
   background-color: #fff;
   border: 1px solid #fff;
-  color: #8a0e0b;
+  color: #35858B;
   display: inline-block;
   font-size: 1.6rem;
   font-weight: 400;
@@ -2052,8 +2057,9 @@ input[type=text], input[type=email], input[type=message], input[type=tel], selec
 /* EXHBITION LANDING MOBILE PAGE STYLES */
 
 .upcoming-exhibitions-image {
+  background-size: cover;
   margin: 0 4vw 5vh 4vw;
-  min-height: 82vh;
+  min-height: 80vh;
 }
 .upcoming-exhibitions-content {
   left: 50%;
