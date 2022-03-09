@@ -1220,6 +1220,7 @@ h2 {
   background-size: cover;
   flex: 2 1 0;
   margin: 4vh 0 5vh 8vw;
+  min-height: 70vh;
 }
 .contact-copy {
   box-sizing: border-box;
@@ -1229,6 +1230,11 @@ h2 {
 .contact-copy h1 {
   color: #4c4c4c;
   font-size: 2.5vw;
+  font-weight: 600;
+}
+.contact-copy h2 {
+  color: #4c4c4c;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 .contact-copy p {
