@@ -1220,7 +1220,7 @@ h2 {
   background-size: cover;
   flex: 2 1 0;
   margin: 4vh 0 5vh 8vw;
-  min-height: 70vh;
+  height: 70vh;
 }
 .contact-copy {
   box-sizing: border-box;
